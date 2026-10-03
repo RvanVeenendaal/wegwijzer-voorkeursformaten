@@ -1,0 +1,36 @@
+name: Ververs PRONOM-catalogus
+
+on:
+  schedule:
+    - cron: "17 4 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Installeer afhankelijkheden
+        run: pip install -r requirements.txt
+      - name: Haal de nieuwste gepinde PRONOM-catalogus op
+        run: python scripts/harvest.py
+      - name: Open review-PR
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: automation/refresh-pronom-catalog
+          delete-branch: true
+          add-paths: |
+            data/pronom_catalog.json
+          commit-message: "chore(data): refresh pinned PRONOM catalog"
+          title: "chore(data): PRONOM-catalogus verversen"
+          body: |
+            Deze PR ververst de volledige fmt/x-fmt-catalogus uit een getagde
+            PRONOM-release. De release en commit zijn in het databestand vastgelegd;
+            toepassingsgebiedsindeling wordt bij de sitebuild uit de taxonomie gemaakt.

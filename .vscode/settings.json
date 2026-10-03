@@ -1,0 +1,18 @@
+{
+    "python-envs.defaultEnvManager": "ms-python.python:system",
+    "chat.tools.terminal.autoApprove": {
+        ".venv/Scripts/python.exe": true,
+        "/^python -c \"import json; from pathlib import Path; d=json\\.loads\\(Path\\('data/pronom_catalog\\.json'\\)\\.read_text\\(encoding='utf-8'\\)\\); print\\('count',len\\(d\\.get\\('records',\\{\\}\\)\\)\\); print\\(\\*sorted\\(\\{t\\.strip\\(\\) for r in d\\.get\\('records',\\{\\}\\)\\.values\\(\\) for t in \\(r\\.get\\('formatTypes'\\) or ''\\)\\.split\\(','\\) if t\\.strip\\(\\)\\}\\),sep='\\\\\\\\n'\\)\"$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^python -c \"import yaml; from pathlib import Path; areas=\\{\\}; records=\\[\\]; \\[records\\.extend\\(\\(x\\['id'\\],x\\['naam'\\],x\\['toepassingsgebieden'\\]\\) for x in \\(yaml\\.safe_load\\(p\\.read_text\\(encoding='utf-8'\\)\\) or \\[\\]\\)\\) for p in Path\\('data/formats'\\)\\.glob\\('\\*\\.yaml'\\)\\]; print\\('areas:',sorted\\(\\{a for _,_,aa in records for a in aa\\}\\)\\); print\\(\\*\\[f'\\{i\\}: \\{a\\}' for i,n,a in records\\],sep='\\\\\\\\n'\\)\"$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^python -c \"from pathlib import Path; from scripts import score; records=\\[\\]; \\[records\\.extend\\(\\(x\\['id'\\],x\\['naam'\\],x\\['toepassingsgebieden'\\]\\) for x in \\(score\\._yaml_laden\\(p\\) or \\[\\]\\)\\) for p in Path\\('data/formats'\\)\\.glob\\('\\*\\.yaml'\\)\\]; print\\('areas:',sorted\\(\\{a for _,_,aa in records for a in aa\\}\\)\\); print\\(\\*\\[f'\\{i\\}: \\{a\\}' for i,n,a in records\\],sep='\\\\\\\\n'\\)\"$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}

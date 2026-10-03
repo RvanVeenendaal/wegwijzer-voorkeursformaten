@@ -1,0 +1,35 @@
+name: Test en bouw site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: catalogus-build
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Installeer afhankelijkheden
+        run: pip install -r requirements.txt
+      - name: Bouw toepassingsgebiedcatalogus
+        run: python scripts/publish.py
+      - name: Test catalogus en harvester
+        run: python -m unittest discover -s tests
+      - name: Bewaar statische site
+        uses: actions/upload-artifact@v4
+        with:
+          name: wegwijzer-site
+          path: site/
+          if-no-files-found: error
+          retention-days: 30

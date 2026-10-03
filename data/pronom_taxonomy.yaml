@@ -1,0 +1,61 @@
+schema_versie: 1
+
+# Canonieke toepassingsgebieden van de Wegwijzer, met hun weergavelabels.
+toepassingsgebieden:
+  afbeelding: Afbeelding
+  audio: Audio
+  berichtuitwisseling: Berichtuitwisseling
+  bewegend-beeld: Bewegend beeld
+  cad-cam-3d: CAD/CAM en 3D
+  container: Container
+  database: Database
+  datasets: Datasets
+  digitale-handtekening: Digitale handtekening
+  disk-image: Disk image
+  documenten: Documenten
+  e-mail: E-mail
+  exacte-wetenschappen: Exacte wetenschappen
+  geo-informatie: Geo-informatie
+  interactieve-media: Interactieve media
+  lettertype: Lettertype
+  muzieknotatie: Muzieknotatie
+  productiviteit: Productiviteit
+  publishing: Publishing
+  software-en-code: Software en code
+  systeem-ondersteunende-software: Systeem ondersteunende software
+  tekst: Tekst
+  webarchivering: Webarchivering
+  wiskundige-toepassingen: Wiskundige toepassingen
+
+# Mapping van PRONOM-formatTypes naar Wegwijzergebieden; niet classificeerbare
+# records blijven expliciet ongecategoriseerd.
+type_naar_toepassingsgebied:
+  Aggregate: []
+  Audio: [audio]
+  Database: [database]
+  Dataset: [datasets]
+  Email: [e-mail]
+  Font: [lettertype]
+  GIS: [geo-informatie]
+  Image (Raster): [afbeelding]
+  Image (Vector): [afbeelding]
+  Model: [cad-cam-3d]
+  Page Description: [publishing]
+  Presentation: [productiviteit]
+  Spreadsheet: [productiviteit]
+  Text (Mark-up): [tekst]
+  Text (Structured): [tekst]
+  Text (Unstructured): [tekst]
+  Video: [bewegend-beeld]
+  Word Processor: [documenten]
+
+# PRONOM deelt deze families niet eenduidig in op toepassingsgebied.
+familie_overrides:
+  Material Exchange Format:
+    id: mxf
+    label: MXF
+    toepassingsgebieden: [bewegend-beeld]
+  WARC:
+    id: warc
+    label: WARC
+    toepassingsgebieden: [webarchivering]

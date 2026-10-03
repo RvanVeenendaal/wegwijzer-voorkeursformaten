@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#173d38">
+<title>Wegwijzer Voorkeursformaten</title>
+<style>
+  :root {
+    --ink: #192b2b;
+    --muted: #607372;
+    --paper: #f2f5f3;
+    --surface: #fff;
+    --line: #d5dfdc;
+    --forest: #173d38;
+    --teal: #16776d;
+    --teal-pale: #e4f0ec;
+    --coral: #bd523c;
+    --blue: #31596a;
+    --focus: #dd9b35;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; color: var(--ink); background: var(--paper); font: 15px/1.5 "Aptos", "Segoe UI", sans-serif; }
+  button, input, select { font: inherit; }
+  a { color: var(--teal); }
+  header { background: var(--forest); color: #fff; border-bottom: 4px solid var(--coral); }
+  .header-inner { max-width: 1360px; margin: auto; padding: 1.25rem 1.5rem 1.35rem; display: flex; align-items: end; justify-content: space-between; gap: 2rem; }
+  .brand { display: flex; align-items: center; gap: 1rem; }
+  .brand-mark { width: 42px; height: 42px; display: grid; place-items: center; flex: 0 0 auto; color: var(--forest); background: #f1c16d; font-family: Georgia, serif; font-size: 1.45rem; }
+  .kicker { margin: 0 0 .1rem; color: #b9d7ce; font-size: .76rem; }
+  h1, h2, h3, p { margin-top: 0; }
+  h1 { margin-bottom: .05rem; font: 400 1.75rem/1.2 Georgia, "Times New Roman", serif; }
+  .header-copy { margin: .2rem 0 0; color: #d0dfdb; font-size: .92rem; }
+  .release-top { color: #d0dfdb; text-align: right; white-space: nowrap; font-size: .84rem; }
+  .release-top strong { display: block; color: #fff; font-size: .95rem; font-weight: 600; }
+  main { max-width: 1360px; margin: auto; padding: 1.25rem 1.5rem 2.5rem; }
+  .toolbar { display: flex; flex-wrap: wrap; gap: .65rem; align-items: center; border-bottom: 1px solid var(--line); padding-bottom: 1rem; }
+  .search-wrap { position: relative; flex: 1 1 360px; }
+  .search-wrap input { width: 100%; padding: .72rem .85rem .72rem 2.6rem; border: 1px solid #aabbb6; border-radius: 4px; background: var(--surface); color: var(--ink); }
+  .search-mark { position: absolute; top: .67rem; left: .9rem; color: var(--teal); font-size: 1rem; pointer-events: none; }
+  select { min-height: 43px; padding: .55rem .7rem; border: 1px solid #aabbb6; border-radius: 4px; background: var(--surface); color: var(--ink); }
+  input:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+  .view-switch { display: inline-flex; border: 1px solid #aabbb6; border-radius: 4px; overflow: hidden; }
+  .view-switch button { min-height: 41px; padding: .5rem .8rem; border: 0; border-right: 1px solid #aabbb6; background: var(--surface); color: var(--muted); cursor: pointer; }
+  .view-switch button:last-child { border-right: 0; }
+  .view-switch button[aria-pressed="true"] { background: var(--teal); color: #fff; }
+  .status-line { min-height: 1.3rem; margin: .75rem 0; color: var(--muted); font-size: .85rem; }
+  .section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; margin: 1rem 0 .6rem; }
+  .section-heading h2 { margin: 0; font: 400 1.35rem/1.25 Georgia, "Times New Roman", serif; }
+  .section-heading p { margin: 0; color: var(--muted); font-size: .86rem; }
+  .area-grid, .family-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(215px, 1fr)); gap: .55rem; margin: 0; padding: 0; list-style: none; }
+  .area-card, .family-card { display: flex; width: 100%; min-height: 64px; justify-content: space-between; align-items: center; gap: .8rem; padding: .7rem .8rem; border: 1px solid var(--line); border-radius: 4px; background: var(--surface); color: var(--ink); text-align: left; cursor: pointer; }
+  .area-card:hover:not(:disabled), .family-card:hover { border-color: var(--teal); background: var(--teal-pale); }
+  .area-card strong, .family-card strong { font-weight: 600; }
+  .area-card small, .family-card small { color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .area-card:disabled { color: #8b9996; background: #edf1ef; cursor: default; }
+  .area-card:disabled small { color: #8b9996; }
+  .unassigned { border-style: dashed; }
+  .crumbs { display: flex; flex-wrap: wrap; align-items: center; gap: .45rem; min-height: 2rem; margin: .25rem 0 .85rem; color: var(--muted); }
+  .crumbs button { padding: 0; border: 0; background: transparent; color: var(--teal); cursor: pointer; text-decoration: underline; text-underline-offset: 2px; }
+  .result-head { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; margin: 1.15rem 0 .5rem; }
+  .result-head h2 { margin: 0; font: 400 1.25rem/1.3 Georgia, "Times New Roman", serif; }
+  .result-head p { margin: 0; color: var(--muted); font-size: .85rem; }
+  .table-wrap { overflow-x: auto; border: 1px solid var(--line); background: var(--surface); }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { padding: .62rem .72rem; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+  th { color: #35524f; background: #e7eeeb; font-size: .79rem; font-weight: 650; white-space: nowrap; }
+  tbody tr:last-child td { border-bottom: 0; }
+  tbody tr:hover { background: #f0f7f4; }
+  td code { color: var(--blue); font-size: .84rem; white-space: nowrap; }
+  .open-record { padding: 0; border: 0; background: transparent; color: var(--teal); text-align: left; font-weight: 600; cursor: pointer; }
+  .open-record:hover { text-decoration: underline; text-underline-offset: 2px; }
+  .muted { color: var(--muted); }
+  .paging { display: flex; align-items: center; justify-content: center; gap: .8rem; padding: .75rem; color: var(--muted); font-size: .88rem; }
+  .paging button { padding: .4rem .7rem; border: 1px solid var(--line); border-radius: 4px; background: var(--surface); color: var(--ink); cursor: pointer; }
+  .paging button:disabled { opacity: .45; cursor: default; }
+  .empty { padding: 1.4rem; border: 1px solid var(--line); background: var(--surface); color: var(--muted); text-align: center; }
+  .detail { margin-top: 1.25rem; padding: 1.15rem 1.25rem; border-top: 3px solid var(--teal); background: var(--surface); }
+  .detail-top { display: flex; align-items: start; justify-content: space-between; gap: 1rem; }
+  .detail h2 { margin: 0 0 .25rem; font: 400 1.45rem/1.25 Georgia, "Times New Roman", serif; overflow-wrap: anywhere; }
+  .detail-subtitle { margin: 0 0 .8rem; color: var(--muted); }
+  .close-detail { width: 36px; height: 36px; flex: 0 0 auto; border: 1px solid var(--line); border-radius: 4px; background: #fff; color: var(--muted); cursor: pointer; font-size: 1.25rem; }
+  .detail dl { display: grid; grid-template-columns: minmax(150px, 210px) minmax(0, 1fr); gap: .35rem .85rem; margin: .75rem 0 0; }
+  .detail dt { color: var(--muted); }
+  .detail dd { min-width: 0; margin: 0; overflow-wrap: anywhere; }
+  .detail section { margin-top: 1rem; padding-top: .85rem; border-top: 1px solid var(--line); }
+  .detail h3 { margin: 0 0 .55rem; font-size: .98rem; }
+  .detail p { max-width: 90ch; overflow-wrap: anywhere; }
+  .detail a { overflow-wrap: anywhere; }
+  .detail ul { margin: .3rem 0; padding-left: 1.2rem; }
+  .detail li { margin: .28rem 0; overflow-wrap: anywhere; }
+  .signature { margin: .35rem 0; padding: .5rem .65rem; border: 1px solid var(--line); background: #f8faf9; }
+  .signature summary { cursor: pointer; font-weight: 600; }
+  .signature code, pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+  .profile-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: .55rem 1rem; }
+  .profile-grid div { min-width: 0; }
+  .profile-grid dt { color: var(--muted); font-size: .82rem; }
+  .profile-grid dd { margin: .08rem 0 0; overflow-wrap: anywhere; }
+  .durability-total { display: flex; align-items: baseline; gap: .55rem; margin-bottom: .7rem; }
+  .durability-total strong { color: var(--teal); font: 400 1.7rem Georgia, "Times New Roman", serif; }
+  .factor-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: .4rem .7rem; }
+  .factor-list details { border-bottom: 1px solid var(--line); padding: .4rem 0; }
+  .factor-list summary { display: flex; justify-content: space-between; gap: .8rem; cursor: pointer; }
+  .factor-list summary strong { color: var(--blue); font-variant-numeric: tabular-nums; }
+  .source-table { margin-top: .5rem; }
+  .source-table th { white-space: normal; }
+  footer { max-width: 1360px; margin: auto; padding: 1rem 1.5rem 2rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .84rem; }
+  footer a { margin-right: .7rem; }
+  [hidden] { display: none !important; }
+  @media (max-width: 760px) {
+    .header-inner { align-items: start; padding: 1rem; }
+    .brand { align-items: start; gap: .7rem; }
+    .brand-mark { width: 34px; height: 34px; font-size: 1.15rem; }
+    .release-top { display: none; }
+    main { padding: .9rem 1rem 2rem; }
+    .toolbar { align-items: stretch; }
+    .search-wrap { flex-basis: 100%; }
+    .view-switch { width: 100%; }
+    .view-switch button { flex: 1; }
+    .area-grid, .family-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .area-card, .family-card { min-height: 58px; padding: .55rem; font-size: .9rem; }
+    .section-heading { align-items: start; flex-direction: column; gap: .15rem; }
+    .detail { padding: .9rem; }
+    .detail dl { grid-template-columns: 1fr; gap: .1rem; }
+    .detail dd { margin-bottom: .45rem; }
+    footer { padding: .9rem 1rem 1.5rem; }
+  }
+  @media (max-width: 390px) {
+    .area-grid, .family-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <div class="brand">
+      <div class="brand-mark" aria-hidden="true">W</div>
+      <div>
+        <p class="kicker">BESTANDSFORMATENCATALOGUS</p>
+        <h1>Wegwijzer Voorkeursformaten</h1>
+        <p class="header-copy">Verken bestandsformaten per toepassingsgebied.</p>
+      </div>
+    </div>
+    <div class="release-top" id="release-top" aria-live="polite"></div>
+  </div>
+</header>
+<main>
+  <section class="toolbar" aria-label="Zoeken en weergave">
+    <label class="search-wrap">
+      <span class="search-mark" aria-hidden="true">⌕</span>
+      <input type="search" id="zoek" placeholder="Zoek op naam, PUID, extensie, MIME-type of beschrijving" aria-label="Zoek in de catalogus">
+    </label>
+    <select id="filter-type" aria-label="Filter op PRONOM-type"><option value="">Alle PRONOM-typen</option></select>
+    <select id="page-size" aria-label="Resultaten per pagina">
+      <option value="25">25 per pagina</option>
+      <option value="50" selected>50 per pagina</option>
+      <option value="100">100 per pagina</option>
+    </select>
+    <div class="view-switch" role="group" aria-label="Catalogusweergave">
+      <button type="button" id="view-areas" aria-pressed="true">Toepassingsgebieden</button>
+      <button type="button" id="view-all" aria-pressed="false">Alle records</button>
+    </div>
+  </section>
+  <p id="status" class="status-line" aria-live="polite">Catalogus laden…</p>
+  <section id="area-view" aria-labelledby="area-heading">
+    <div class="section-heading">
+      <h2 id="area-heading">Toepassingsgebieden</h2>
+      <p id="area-summary"></p>
+    </div>
+    <ul id="area-list" class="area-grid"></ul>
+  </section>
+  <section id="family-view" hidden>
+    <nav id="breadcrumbs" class="crumbs" aria-label="Locatie"></nav>
+    <div class="section-heading">
+      <h2 id="family-heading">Formaatfamilies</h2>
+      <p id="family-summary"></p>
+    </div>
+    <ul id="family-list" class="family-grid"></ul>
+  </section>
+  <section id="records-view" hidden>
+    <nav id="record-breadcrumbs" class="crumbs" aria-label="Locatie"></nav>
+    <div class="result-head">
+      <h2 id="records-heading">PRONOM-records</h2>
+      <p id="record-count"></p>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>PUID</th><th>Formaat</th><th>Versie / profiel</th><th>Type / familie</th><th>Signatures</th><th>Bijgewerkt</th></tr></thead>
+        <tbody id="records-body"></tbody>
+      </table>
+    </div>
+    <div id="paging" class="paging" hidden>
+      <button id="previous" type="button">Vorige</button>
+      <span id="page-label"></span>
+      <button id="next" type="button">Volgende</button>
+    </div>
+  </section>
+  <section id="detail" class="detail" hidden aria-live="polite"></section>
+</main>
+<footer id="footer"></footer>
+<script>
+"use strict";
+let CATALOG = null;
+const state = { query: "", type: "", page: 0, pageSize: 50, area: null, family: null, active: null, view: "areas" };
+const $ = (id) => document.getElementById(id);
+const esc = (value) => String(value ?? "").replace(/[&<>"']/g, (char) =>
+  ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[char]));
+const safeUrl = (value) => typeof value === "string" && /^https?:\/\//i.test(value) ? value : null;
+const pronomUrl = (puid) => `https://www.nationalarchives.gov.uk/PRONOM/${encodeURIComponent(puid).replace(/%2F/g, "/")}`;
+
+function records() {
+  return Object.entries(CATALOG.records || {}).map(([puid, record]) => ({ puid, record }));
+}
+
+function values(value) {
+  if (value === null || value === undefined || value === "") return [];
+  return Array.isArray(value) ? value : String(value).split(/[;,|\n]+/).map((item) => item.trim()).filter(Boolean);
+}
+
+function areaLabel(id) {
+  return CATALOG.browse_application_areas[id] || (id === "niet-ingedeeld" ? "Niet ingedeeld" : id);
+}
+
+function familyOf(record) {
+  return record.browse_family || { id: "onbekend", label: record.formatName || "Onbekende familie" };
+}
+
+function searchText(puid, record) {
+  return [
+    puid, record.formatName, record.version, record.formatDescription, record.formatAliases,
+    record.formatTypes, record.formatFamilies, record.byteOrders, record.formatNote,
+    ...(record.identifiers || []).map((item) => `${item.identifierType} ${item.identifierText}`),
+    ...(record.externalSignatures || []).map((item) => `${item.signatureType} ${item.externalSignature}`),
+  ].filter(Boolean).join(" ").toLocaleLowerCase();
+}
+
+function matches({ puid, record }) {
+  if (state.type && !values(record.formatTypes).includes(state.type)) return false;
+  return !state.query || searchText(puid, record).includes(state.query);
+}
+
+function filteredRecords() {
+  return records().filter(({ puid, record }) => {
+    if (!matches({ puid, record })) return false;
+    if (state.view !== "areas" || !state.area) return true;
+    const areas = record.browse_application_areas || [];
+    if (state.area === "niet-ingedeeld") return areas.length === 0;
+    if (!areas.includes(state.area)) return false;
+    return !state.family || familyOf(record).id === state.family;
+  }).sort((a, b) => (a.record.formatName || a.puid).localeCompare(b.record.formatName || b.puid) || a.puid.localeCompare(b.puid));
+}
+
+function setVisible(sectionId) {
+  for (const id of ["area-view", "family-view", "records-view"]) $(id).hidden = id !== sectionId;
+}
+
+function renderAreas() {
+  const labels = CATALOG.browse_application_areas;
+  const counts = new Map(Object.keys(labels).map((id) => [id, 0]));
+  let unassigned = 0;
+  for (const { record } of records()) {
+    const areas = record.browse_application_areas || [];
+    if (!areas.length) unassigned += 1;
+    for (const id of areas) counts.set(id, (counts.get(id) || 0) + 1);
+  }
+  const entries = Object.entries(labels).map(([id, label]) => [id, label, counts.get(id) || 0]);
+  entries.sort((a, b) => a[1].localeCompare(b[1], "nl"));
+  const officialCards = entries.map(([id, label, count]) => `
+    <li><button class="area-card" type="button" data-area="${esc(id)}"${count ? "" : " disabled"}>
+      <strong>${esc(label)}</strong><small>${count.toLocaleString("nl-NL")}</small>
+    </button></li>`).join("");
+  const unassignedCard = unassigned ? `
+    <li><button class="area-card unassigned" type="button" data-area="niet-ingedeeld">
+      <strong>Niet ingedeeld</strong><small>${unassigned.toLocaleString("nl-NL")}</small>
+    </button></li>` : "";
+  $("area-list").innerHTML = officialCards + unassignedCard;
+  $("area-summary").textContent = `${entries.length} Wegwijzergebieden · ${records().length.toLocaleString("nl-NL")} PRONOM-records`;
+  document.querySelectorAll("#area-list button[data-area]").forEach((button) => button.addEventListener("click", () => {
+    state.area = button.dataset.area;
+    state.family = null;
+    state.active = null;
+    state.page = 0;
+    render();
+  }));
+}
+
+function renderBreadcrumbs(targetId, includeFamily = false) {
+  const area = state.area === "niet-ingedeeld" ? "Niet ingedeeld" : areaLabel(state.area);
+  $(targetId).innerHTML = `<button type="button" data-home>Alle toepassingsgebieden</button><span>›</span><span>${esc(area)}</span>${includeFamily && state.family ? `<span>›</span><span>${esc(familyOf(filteredRecords()[0]?.record || {}).label || state.family)}</span>` : ""}`;
+  $(targetId).querySelector("[data-home]").addEventListener("click", () => {
+    state.area = null;
+    state.family = null;
+    state.view = "areas";
+    state.page = 0;
+    render();
+  });
+}
+
+function renderFamilies() {
+  const areaRecords = records().filter(({ record }) => {
+    const areas = record.browse_application_areas || [];
+    return state.area === "niet-ingedeeld" ? areas.length === 0 : areas.includes(state.area);
+  });
+  const families = new Map();
+  for (const { record } of areaRecords) {
+    const family = familyOf(record);
+    const item = families.get(family.id) || { label: family.label, count: 0 };
+    item.count += 1;
+    families.set(family.id, item);
+  }
+  const entries = [...families.entries()].sort((a, b) => a[1].label.localeCompare(b[1].label, "nl"));
+  $("family-list").innerHTML = entries.map(([id, item]) => `
+    <li><button class="family-card" type="button" data-family="${esc(id)}">
+      <strong>${esc(item.label)}</strong><small>${item.count.toLocaleString("nl-NL")}</small>
+    </button></li>`).join("") || `<li class="empty">Geen formaatfamilies in dit toepassingsgebied.</li>`;
+  $("family-heading").textContent = areaLabel(state.area);
+  $("family-summary").textContent = `${areaRecords.length.toLocaleString("nl-NL")} records · ${entries.length} formaatfamilies`;
+  renderBreadcrumbs("breadcrumbs");
+  document.querySelectorAll("#family-list button[data-family]").forEach((button) => button.addEventListener("click", () => {
+    state.family = button.dataset.family;
+    state.page = 0;
+    render();
+  }));
+}
+
+function signatureSummary(record) {
+  return `${(record.internalSignatures || []).length} intern · ${(record.externalSignatures || []).length} extern · ${(record.containerSignatures || []).length} container`;
+}
+
+function renderTable() {
+  const rows = filteredRecords();
+  const pageCount = Math.max(1, Math.ceil(rows.length / state.pageSize));
+  state.page = Math.min(state.page, pageCount - 1);
+  const start = state.page * state.pageSize;
+  const visible = rows.slice(start, start + state.pageSize);
+  $("records-body").innerHTML = visible.length ? visible.map(({ puid, record }) => `
+    <tr>
+      <td><code>${esc(puid)}</code></td>
+      <td><button class="open-record" type="button" data-puid="${esc(puid)}">${esc(record.formatName || "Onbekend formaat")}</button></td>
+      <td>${esc(record.version || "—")}</td>
+      <td>${esc([record.formatTypes, familyOf(record).label].filter(Boolean).join(" · ") || "—")}</td>
+      <td>${esc(signatureSummary(record))}</td>
+      <td>${esc(record.lastUpdatedDate || "—")}</td>
+    </tr>`).join("") : `<tr><td class="empty" colspan="6">Geen PRONOM-records gevonden.</td></tr>`;
+  $("record-count").textContent = `${rows.length.toLocaleString("nl-NL")} records`;
+  $("paging").hidden = rows.length <= state.pageSize;
+  $("page-label").textContent = `${start + 1}–${Math.min(start + state.pageSize, rows.length)} van ${rows.length.toLocaleString("nl-NL")} · pagina ${state.page + 1}/${pageCount}`;
+  $("previous").disabled = state.page === 0;
+  $("next").disabled = state.page >= pageCount - 1;
+  document.querySelectorAll("#records-body button[data-puid]").forEach((button) => button.addEventListener("click", () => openDetail(button.dataset.puid)));
+  if (state.view === "areas" && state.area && state.family) {
+    renderBreadcrumbs("record-breadcrumbs", true);
+    $("records-heading").textContent = familyOf(rows[0]?.record || {}).label || state.family;
+  } else {
+    $("record-breadcrumbs").innerHTML = state.view === "areas" && state.area
+      ? `<button type="button" data-families>${esc(areaLabel(state.area))}</button><span>›</span><span>Alle records</span>`
+      : "";
+    $("record-breadcrumbs").querySelector("[data-families]")?.addEventListener("click", () => {
+      state.family = null;
+      state.page = 0;
+      render();
+    });
+    $("records-heading").textContent = state.view === "all" ? "Alle PRONOM-records" : state.search ? "Zoekresultaten" : "PRONOM-records";
+  }
+}
+
+function openDetail(puid) {
+  state.active = puid;
+  const url = new URL(location.href);
+  url.searchParams.set("puid", puid);
+  history.replaceState(null, "", url);
+  renderDetail();
+}
+
+function detailList(items, renderItem) {
+  return items?.length ? `<ul>${items.map(renderItem).join("")}</ul>` : `<p class="muted">Geen gegevens vastgelegd.</p>`;
+}
+
+function institutionTable(items, heading) {
+  if (!items?.length) return `<p class="muted">Geen ${esc(heading.toLowerCase())} opgenomen in deze catalogus.</p>`;
+  return `<div class="table-wrap"><table><thead><tr><th>${esc(heading)}</th><th>Instellingen</th></tr></thead><tbody>${items.map((item) => `
+    <tr><td>${esc(item.status || item.niveau)}</td><td>${esc(item.instellingen?.join(", ") || "Geen")}</td></tr>`).join("")}</tbody></table></div>`;
+}
+
+function externalSourceList(items) {
+  return detailList(items, (item) => {
+    const url = safeUrl(item.url);
+    const name = url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(item.name)}</a>` : esc(item.name);
+    return `<li>${name}${item.publisher ? ` · ${esc(item.publisher)}` : ""}</li>`;
+  });
+}
+
+function renderDetail() {
+  const record = CATALOG.records[state.active];
+  if (!record) {
+    $("detail").hidden = true;
+    $("detail").innerHTML = "";
+    return;
+  }
+  const puid = state.active;
+  const areaNames = (record.browse_application_areas || []).map(areaLabel);
+  const rows = [
+    ["PRONOM-record-ID", record.fileFormatID],
+    ["Versie / profiel", record.version],
+    ["Formaattypen", record.formatTypes],
+    ["Formaatfamilies", record.formatFamilies],
+    ["Bestandsformaat", record.binaryFileFormat],
+    ["Bytevolgorde", record.byteOrders],
+    ["MIME- en andere identifiers", (record.identifiers || []).map((item) => `${item.identifierType}: ${item.identifierText}`).join("; ")],
+    ["PRONOM-risico", record.formatRisk],
+    ["Openbaarmaking", record.formatDisclosure],
+    ["Bronhouder", record.provenanceCompoundName],
+    ["Laatst bijgewerkt", record.lastUpdatedDate],
+    ["Ingetrokken op", record.withdrawnDate],
+  ].filter(([, value]) => value !== null && value !== undefined && value !== "");
+  const detailRows = rows.map(([label, value]) => `<dt>${esc(label)}</dt><dd>${esc(value)}</dd>`).join("");
+  const external = detailList(record.externalSignatures, (item) => `<li>${esc(item.signatureType)}: <code>${esc(item.externalSignature)}</code></li>`);
+  const internal = (record.internalSignatures || []).map((signature) => {
+    const sequences = (signature.byteSequences || []).map((sequence) => `<li>${esc(sequence.positionType)} · offset ${esc(sequence.offset)}: <code>${esc(sequence.byteSequence)}</code>${sequence.endianness ? ` · ${esc(sequence.endianness)}` : ""}</li>`).join("");
+    return `<details class="signature"><summary>${esc(signature.name)} (${(signature.byteSequences || []).length} byte sequences)</summary><p>${esc(signature.note || "")}</p><ul>${sequences || "<li>Geen byte sequences vastgelegd.</li>"}</ul></details>`;
+  }).join("");
+  const containers = (record.containerSignatures || []).map((item) => `<details class="signature"><summary>${esc(item.description || item.containerType || "Container signature")} (${esc(item.id)})</summary><pre>${esc(JSON.stringify(item, null, 2))}</pre></details>`).join("");
+  const relationships = detailList(record.relationships, (item) => `<li>${esc(item.relationshipType)}: ${esc(item.relatedFormatName)} (${esc(item.relatedFormatID)})</li>`);
+  const identifiers = detailList((record.identifiers || []).filter((item) => (item.identifierType || "").toLowerCase() !== "puid"), (item) => `<li>${esc(item.identifierType)}: <code>${esc(item.identifierText)}</code></li>`);
+  const profile = CATALOG.wegwijzer_profielen?.[puid];
+  const profileIdentifiers = profile?.identifiers || {};
+  const wikidataUrl = profileIdentifiers.wikidata ? `https://www.wikidata.org/wiki/${encodeURIComponent(profileIdentifiers.wikidata)}` : null;
+  const locUrl = profileIdentifiers.loc ? `https://www.loc.gov/preservation/digital/formats/fdd/${encodeURIComponent(profileIdentifiers.loc)}.shtml` : null;
+  const profileRows = [
+    ["Formaatfamilie", profile?.formaatfamilie || familyOf(record).label],
+    ["Toepassingsgebied", areaNames.join(", ") || "Niet ingedeeld"],
+    ["PRONOM ID", puid],
+    ["Wikidata ID", wikidataUrl ? `<a href="${esc(wikidataUrl)}" target="_blank" rel="noopener">${esc(profileIdentifiers.wikidata)}</a>` : "Niet gekoppeld"],
+    ["Library of Congress ID", locUrl ? `<a href="${esc(locUrl)}" target="_blank" rel="noopener">${esc(profileIdentifiers.loc)}</a>` : "Niet gekoppeld"],
+  ].map(([label, value]) => `<div><dt>${esc(label)}</dt><dd>${typeof value === "string" && value.startsWith("<a ") ? value : esc(value)}</dd></div>`).join("");
+  const durability = profile?.houdbaarheid;
+  const durabilityHtml = durability ? `
+    <div class="durability-total"><strong>${esc(durability.totaalscore)}</strong><span>Houdbaarheidsscore · methodiek ${esc(durability.methodiek)}</span></div>
+    <div class="factor-list">${(durability.factoren || []).map((factor) => `
+      <details><summary><span>${esc(factor.naam)}</span><strong>${esc(factor.score)}</strong></summary>
+      <p>${esc(factor.toelichting || `Deelscore volgens ${durability.methodiek}.`)}</p></details>`).join("")}</div>`
+    : `<p class="muted">Geen NARA-houdbaarheidsbeoordeling opgenomen in deze catalogus.</p>`;
+  const wikidata = profile?.wikidata;
+  const wikidataSources = wikidata?.sources || [];
+  const coptr = profile?.coptr;
+  const coptrList = (items) => detailList(items, (item) => {
+    const url = safeUrl(item.url);
+    return `<li>${url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(item.name)}</a>` : esc(item.name)}</li>`;
+  });
+  const sourceUrl = safeUrl(record.source_url);
+  const releaseUrl = safeUrl(CATALOG.release_url);
+  $("detail").innerHTML = `
+    <div class="detail-top"><div>
+      <h2>${esc(record.formatName || "Onbekend formaat")} · ${esc(puid)}${record.version ? ` · ${esc(record.version)}` : ""}</h2>
+      <p class="detail-subtitle">${esc(areaNames.join(", ") || "Niet ingedeeld")} · ${esc(familyOf(record).label)}</p>
+    </div><button class="close-detail" type="button" aria-label="Sluit details">×</button></div>
+    <section><h3>Beschrijving</h3><p>${esc(record.formatDescription || "Geen beschrijving vastgelegd.")}</p><dl class="profile-grid">${profileRows}</dl>${profile?.bronpagina_url ? `<p>Wegwijzerbron: <a href="${esc(profile.bronpagina_url)}" target="_blank" rel="noopener">Open oorspronkelijke detailpagina</a>${profile.bron_bijgewerkt_op ? ` · bijgewerkt ${esc(profile.bron_bijgewerkt_op)}` : ""}</p>` : ""}</section>
+    <section><h3>Formaatbeleid</h3>${institutionTable(profile?.formaatbeleid, "Formaatbeleid")}</section>
+    <section><h3>Kennisniveaus</h3>${institutionTable(profile?.kennisniveaus, "Kennisniveau")}</section>
+    <section><h3>Houdbaarheid</h3>${durabilityHtml}</section>
+    <section><h3>Aanvullende gegevens (PRONOM)</h3><dl>${detailRows}</dl><p>Aliases: ${esc(record.formatAliases || "Geen")}</p><p>Bestandsextensies en externe signatures:</p>${external}</section>
+    <section><h3>Aanvullende gegevens (Wikidata)</h3><p>Wikidata ID: ${wikidataUrl ? `<a href="${esc(wikidataUrl)}" target="_blank" rel="noopener">${esc(profileIdentifiers.wikidata)}</a>` : "Niet gekoppeld"}</p><p>Publicatiejaar: ${esc(wikidata?.publish_year?.join(", ") || "Geen gegevens")}</p><p>Ontwikkelaars: ${esc(wikidata?.developers?.join(", ") || "Geen gegevens")}</p><h4>Bronnen en uitgevers</h4>${externalSourceList(wikidataSources)}</section>
+    <section><h3>Aanvullende gegevens (COPTR)</h3><div class="profile-grid"><div><h4>Input</h4>${coptrList(coptr?.input)}</div><div><h4>Output</h4>${coptrList(coptr?.output)}</div><div><h4>Lifecycle stages</h4>${coptrList(coptr?.lifecycle_stages)}</div></div></section>
+    <section><h3>Signatures en relaties</h3><h4>Interne signatures (${(record.internalSignatures || []).length})</h4>${internal || `<p class="muted">Geen interne signatures vastgelegd.</p>`}<h4>Container signatures (${(record.containerSignatures || []).length})</h4>${containers || `<p class="muted">Geen container signatures vastgelegd.</p>`}<h4>Formaatrelaties</h4>${relationships}<h4>Andere identifiers</h4>${identifiers}</section>
+    <section><h3>Bron</h3><p>PRONOM ${esc(CATALOG.release_tag)} · commit ${esc(CATALOG.source_commit)}</p><p>${releaseUrl ? `<a href="${esc(releaseUrl)}" target="_blank" rel="noopener">PRONOM-release</a>` : ""}${sourceUrl ? ` · <a href="${esc(sourceUrl)}" target="_blank" rel="noopener">Bronsignature op GitHub</a>` : ""} · <a href="${esc(pronomUrl(puid))}" target="_blank" rel="noopener">PRONOM-record</a></p></section>`;
+  $("detail").hidden = false;
+  $("detail").querySelector(".close-detail").addEventListener("click", () => {
+    state.active = null;
+    const url = new URL(location.href);
+    url.searchParams.delete("puid");
+    history.replaceState(null, "", url);
+    renderDetail();
+  });
+}
+
+function render() {
+  const hasQuery = Boolean(state.query || state.type);
+  const allRecords = state.view === "all";
+  if (allRecords || hasQuery) {
+    setVisible("records-view");
+    renderTable();
+  } else if (!state.area) {
+    setVisible("area-view");
+  } else if (!state.family) {
+    setVisible("family-view");
+    renderFamilies();
+  } else {
+    setVisible("records-view");
+    renderTable();
+  }
+  $("view-areas").setAttribute("aria-pressed", String(state.view === "areas"));
+  $("view-all").setAttribute("aria-pressed", String(state.view === "all"));
+  const currentCount = state.query || state.type || state.view === "all" || state.area
+    ? filteredRecords().length
+    : records().length;
+  $("status").textContent = `${currentCount.toLocaleString("nl-NL")} resultaten · PRONOM ${CATALOG.release_tag}`;
+  renderDetail();
+}
+
+async function init() {
+  try {
+    const response = await fetch("pronom-catalog.json");
+    if (!response.ok) throw new Error("Catalogus niet gevonden. Voer python scripts/publish.py uit.");
+    CATALOG = await response.json();
+    const types = [...new Set(records().flatMap(({ record }) => values(record.formatTypes)))].sort((a, b) => a.localeCompare(b));
+    $("filter-type").innerHTML = `<option value="">Alle PRONOM-typen</option>` + types.map((type) => {
+      const count = records().filter(({ record }) => values(record.formatTypes).includes(type)).length;
+      return `<option value="${esc(type)}">${esc(type)} (${count.toLocaleString("nl-NL")})</option>`;
+    }).join("");
+    $("release-top").innerHTML = `<strong>PRONOM ${esc(CATALOG.release_tag)}</strong>${CATALOG.aantal.toLocaleString("nl-NL")} records · ${esc(CATALOG.opgehaald_op?.slice(0, 10) || "")}`;
+    $("footer").innerHTML = `Brondata: PRONOM ${esc(CATALOG.release_tag)} · ${CATALOG.aantal.toLocaleString("nl-NL")} records · ${CATALOG.browse_unassigned_count.toLocaleString("nl-NL")} niet ingedeeld · <a href="pronom-catalog.json">Catalogus JSON</a>${safeUrl(CATALOG.release_url) ? ` · <a href="${esc(CATALOG.release_url)}" target="_blank" rel="noopener">PRONOM-release</a>` : ""}`;
+    $("zoek").addEventListener("input", (event) => {
+      state.query = event.target.value.toLocaleLowerCase().trim();
+      state.page = 0;
+      render();
+    });
+    $("filter-type").addEventListener("change", (event) => {
+      state.type = event.target.value;
+      state.page = 0;
+      render();
+    });
+    $("page-size").addEventListener("change", (event) => {
+      state.pageSize = Number(event.target.value);
+      state.page = 0;
+      render();
+    });
+    $("view-areas").addEventListener("click", () => {
+      state.view = "areas";
+      state.area = null;
+      state.family = null;
+      state.query = "";
+      state.type = "";
+      $("zoek").value = "";
+      $("filter-type").value = "";
+      state.page = 0;
+      render();
+    });
+    $("view-all").addEventListener("click", () => {
+      state.view = "all";
+      state.area = null;
+      state.family = null;
+      state.page = 0;
+      render();
+    });
+    $("previous").addEventListener("click", () => { state.page = Math.max(0, state.page - 1); render(); });
+    $("next").addEventListener("click", () => { state.page += 1; render(); });
+
+    renderAreas();
+    const requestedPuid = new URLSearchParams(location.search).get("puid");
+    if (requestedPuid && CATALOG.records[requestedPuid]) state.active = requestedPuid;
+    render();
+  } catch (error) {
+    $("status").textContent = error.message;
+    $("area-view").hidden = true;
+  }
+}
+
+init();
+</script>
+</body>
+</html>

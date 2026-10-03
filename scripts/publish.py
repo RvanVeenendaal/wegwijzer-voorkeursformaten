@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verrijk de gepinde PRONOM-catalogus met Wegwijzer-toepassingsgebieden."""
+"""Verrijk de gepinde PRONOM-catalogus met toepassingsgebieden."""
 
 import argparse
 import json
@@ -12,11 +12,10 @@ import yaml
 ROOT = Path(__file__).resolve().parent.parent
 SOURCE_PATH = ROOT / "data" / "pronom_catalog.json"
 TAXONOMY_PATH = ROOT / "data" / "pronom_taxonomy.yaml"
-GUIDE_PROFILES_PATH = ROOT / "data" / "wegwijzer_profielen.json"
 OUTPUT_PATH = ROOT / "site" / "pronom-catalog.json"
 
 
-def verrijk_pronom_catalogus(catalogus, taxonomy, guide_profiles=None):
+def verrijk_pronom_catalogus(catalogus, taxonomy):
     if taxonomy.get("schema_versie") != 1:
         raise ValueError("pronom_taxonomy.yaml moet schema_versie 1 hebben")
 
@@ -27,13 +26,6 @@ def verrijk_pronom_catalogus(catalogus, taxonomy, guide_profiles=None):
     mappings = taxonomy.get("type_naar_toepassingsgebied", {})
     overrides = taxonomy.get("familie_overrides", {})
     bekende_gebieden = set(application_areas)
-    guide_profiles = guide_profiles or {}
-    if not isinstance(guide_profiles, dict):
-        raise ValueError("wegwijzer_profielen.json moet records per PUID bevatten")
-    onbekende_puids = set(guide_profiles) - set(catalogus.get("records", {}))
-    if onbekende_puids:
-        raise ValueError(f"onbekende PUID's in Wegwijzer-profielen: {sorted(onbekende_puids)}")
-
     for type_naam, gebieden in mappings.items():
         onbekend = set(gebieden) - bekende_gebieden
         if onbekend:
@@ -72,7 +64,6 @@ def verrijk_pronom_catalogus(catalogus, taxonomy, guide_profiles=None):
     catalogus["browse_taxonomy_version"] = taxonomy["schema_versie"]
     catalogus["browse_application_areas"] = application_areas
     catalogus["browse_unassigned_count"] = niet_ingedeeld
-    catalogus["wegwijzer_profielen"] = guide_profiles
     return catalogus
 
 
@@ -85,10 +76,7 @@ def main():
 
     catalogus = json.loads(args.source.read_text(encoding="utf-8"))
     taxonomy = yaml.safe_load(args.taxonomy.read_text(encoding="utf-8")) or {}
-    profile_document = json.loads(GUIDE_PROFILES_PATH.read_text(encoding="utf-8"))
-    if profile_document.get("schema_versie") != 1:
-        raise ValueError("wegwijzer_profielen.json moet schema_versie 1 hebben")
-    enriched = verrijk_pronom_catalogus(catalogus, taxonomy, profile_document.get("records", {}))
+    enriched = verrijk_pronom_catalogus(catalogus, taxonomy)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(
         json.dumps(enriched, ensure_ascii=False, indent=2) + "\n",

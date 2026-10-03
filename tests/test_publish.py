@@ -84,30 +84,7 @@ class CatalogPublishingTests(unittest.TestCase):
         self.assertLessEqual(mapped_areas, known_areas)
         self.assertGreater(enriched["browse_unassigned_count"], 0)
         self.assertIn("webarchivering", mapped_areas)
-
-    def test_guide_profile_is_joined_by_puid(self):
-        source = json.loads((ROOT / "data" / "pronom_catalog.json").read_text(encoding="utf-8"))
-        taxonomy = yaml.safe_load((ROOT / "data" / "pronom_taxonomy.yaml").read_text(encoding="utf-8"))
-        profile_document = json.loads((ROOT / "data" / "wegwijzer_profielen.json").read_text(encoding="utf-8"))
-
-        enriched = publish.verrijk_pronom_catalogus(source, taxonomy, profile_document["records"])
-
-        png = enriched["wegwijzer_profielen"]["fmt/11"]
-        self.assertEqual(png["formaatbeleid"][0]["instellingen"], ["Stadsarchief Amsterdam"])
-        self.assertEqual(png["houdbaarheid"]["totaalscore"], 21)
-        self.assertEqual(len(png["houdbaarheid"]["factoren"]), 9)
-        self.assertEqual(enriched["aantal"], 2571)
-
-    def test_profile_for_unknown_puid_is_rejected(self):
-        catalog = {"records": {"fmt/1": {"formatTypes": "Video"}}}
-        taxonomy = {
-            "schema_versie": 1,
-            "toepassingsgebieden": {"bewegend-beeld": "Bewegend beeld"},
-            "type_naar_toepassingsgebied": {"Video": ["bewegend-beeld"]},
-        }
-
-        with self.assertRaisesRegex(ValueError, "onbekende PUID's"):
-            publish.verrijk_pronom_catalogus(catalog, taxonomy, {"fmt/2": {}})
+        self.assertNotIn("wegwijzer_profielen", enriched)
 
     def test_unknown_taxonomy_area_is_rejected(self):
         catalog = {"records": {"fmt/1": {"formatTypes": "Video"}}}

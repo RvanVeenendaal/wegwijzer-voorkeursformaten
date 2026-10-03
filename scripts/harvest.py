@@ -12,7 +12,7 @@ import zipfile
 
 ROOT = Path(__file__).resolve().parent.parent
 OUTPUT_PATH = ROOT / "data" / "pronom_catalog.json"
-USER_AGENT = "WegwijzerVoorkeursformaten/2.0 (read-only PRONOM catalog harvester)"
+USER_AGENT = "BestandsformatenCatalogus/1.0 (read-only PRONOM catalog harvester)"
 RELEASE_API = "https://api.github.com/repos/nationalarchives/pronom/releases/latest"
 REPOSITORY_API = "https://api.github.com/repos/nationalarchives/pronom"
 _CATALOG = None

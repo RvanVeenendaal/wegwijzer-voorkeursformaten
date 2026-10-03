@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#173d38">
-<title>Wegwijzer Voorkeursformaten</title>
+<title>Bestandsformatencatalogus</title>
 <style>
   :root {
     --ink: #192b2b;
@@ -137,7 +137,7 @@
       <div class="brand-mark" aria-hidden="true">W</div>
       <div>
         <p class="kicker">BESTANDSFORMATENCATALOGUS</p>
-        <h1>Wegwijzer Voorkeursformaten</h1>
+        <h1>Bestandsformatencatalogus</h1>
         <p class="header-copy">Verken bestandsformaten per toepassingsgebied.</p>
       </div>
     </div>
@@ -208,6 +208,17 @@ const esc = (value) => String(value ?? "").replace(/[&<>"']/g, (char) =>
 const safeUrl = (value) => typeof value === "string" && /^https?:\/\//i.test(value) ? value : null;
 const pronomUrl = (puid) => `https://www.nationalarchives.gov.uk/PRONOM/${encodeURIComponent(puid).replace(/%2F/g, "/")}`;
 
+function identifierUrl(type, value) {
+  const normalizedType = (type || "").toLowerCase();
+  if (normalizedType === "wikidata qid identifier" && /^Q\d+$/i.test(value)) {
+    return `https://www.wikidata.org/wiki/${encodeURIComponent(value)}`;
+  }
+  if (normalizedType === "library of congress format description identifier" && /^fdd\d+$/i.test(value)) {
+    return `https://www.loc.gov/preservation/digital/formats/fdd/${encodeURIComponent(value)}.shtml`;
+  }
+  return null;
+}
+
 function records() {
   return Object.entries(CATALOG.records || {}).map(([puid, record]) => ({ puid, record }));
 }
@@ -274,7 +285,7 @@ function renderAreas() {
       <strong>Niet ingedeeld</strong><small>${unassigned.toLocaleString("nl-NL")}</small>
     </button></li>` : "";
   $("area-list").innerHTML = officialCards + unassignedCard;
-  $("area-summary").textContent = `${entries.length} Wegwijzergebieden · ${records().length.toLocaleString("nl-NL")} PRONOM-records`;
+  $("area-summary").textContent = `${entries.length} toepassingsgebieden · ${records().length.toLocaleString("nl-NL")} PRONOM-records`;
   document.querySelectorAll("#area-list button[data-area]").forEach((button) => button.addEventListener("click", () => {
     state.area = button.dataset.area;
     state.family = null;
@@ -421,32 +432,30 @@ function renderDetail() {
   }).join("");
   const containers = (record.containerSignatures || []).map((item) => `<details class="signature"><summary>${esc(item.description || item.containerType || "Container signature")} (${esc(item.id)})</summary><pre>${esc(JSON.stringify(item, null, 2))}</pre></details>`).join("");
   const relationships = detailList(record.relationships, (item) => `<li>${esc(item.relationshipType)}: ${esc(item.relatedFormatName)} (${esc(item.relatedFormatID)})</li>`);
-  const identifiers = detailList((record.identifiers || []).filter((item) => (item.identifierType || "").toLowerCase() !== "puid"), (item) => `<li>${esc(item.identifierType)}: <code>${esc(item.identifierText)}</code></li>`);
-  const profile = CATALOG.wegwijzer_profielen?.[puid];
-  const profileIdentifiers = profile?.identifiers || {};
-  const wikidataUrl = profileIdentifiers.wikidata ? `https://www.wikidata.org/wiki/${encodeURIComponent(profileIdentifiers.wikidata)}` : null;
-  const locUrl = profileIdentifiers.loc ? `https://www.loc.gov/preservation/digital/formats/fdd/${encodeURIComponent(profileIdentifiers.loc)}.shtml` : null;
-  const profileRows = [
-    ["Formaatfamilie", profile?.formaatfamilie || familyOf(record).label],
-    ["Toepassingsgebied", areaNames.join(", ") || "Niet ingedeeld"],
-    ["PRONOM ID", puid],
-    ["Wikidata ID", wikidataUrl ? `<a href="${esc(wikidataUrl)}" target="_blank" rel="noopener">${esc(profileIdentifiers.wikidata)}</a>` : "Niet gekoppeld"],
-    ["Library of Congress ID", locUrl ? `<a href="${esc(locUrl)}" target="_blank" rel="noopener">${esc(profileIdentifiers.loc)}</a>` : "Niet gekoppeld"],
-  ].map(([label, value]) => `<div><dt>${esc(label)}</dt><dd>${typeof value === "string" && value.startsWith("<a ") ? value : esc(value)}</dd></div>`).join("");
-  const durability = profile?.houdbaarheid;
-  const durabilityHtml = durability ? `
-    <div class="durability-total"><strong>${esc(durability.totaalscore)}</strong><span>Houdbaarheidsscore · methodiek ${esc(durability.methodiek)}</span></div>
-    <div class="factor-list">${(durability.factoren || []).map((factor) => `
-      <details><summary><span>${esc(factor.naam)}</span><strong>${esc(factor.score)}</strong></summary>
-      <p>${esc(factor.toelichting || `Deelscore volgens ${durability.methodiek}.`)}</p></details>`).join("")}</div>`
-    : `<p class="muted">Geen NARA-houdbaarheidsbeoordeling opgenomen in deze catalogus.</p>`;
-  const wikidata = profile?.wikidata;
-  const wikidataSources = wikidata?.sources || [];
-  const coptr = profile?.coptr;
-  const coptrList = (items) => detailList(items, (item) => {
-    const url = safeUrl(item.url);
-    return `<li>${url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(item.name)}</a>` : esc(item.name)}</li>`;
-  });
+  const identifiers = detailList(
+    (record.identifiers || []).filter((item) => (item.identifierType || "").toLowerCase() !== "puid"),
+    (item) => {
+      const url = identifierUrl(item.identifierType, item.identifierText);
+      const value = url
+        ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(item.identifierText)}</a>`
+        : `<code>${esc(item.identifierText)}</code>`;
+      return `<li>${esc(item.identifierType)}: ${value}</li>`;
+    },
+  );
+  const profile = null;
+  const sourceIdentifiers = record.identifiers || [];
+  const profileIdentifiers = {
+    wikidata: sourceIdentifiers.find((item) => item.identifierType === "Wikidata QID Identifier")?.identifierText,
+    loc: sourceIdentifiers.find((item) => item.identifierType === "Library of Congress Format Description Identifier")?.identifierText,
+  };
+  const wikidataUrl = profileIdentifiers.wikidata ? identifierUrl("Wikidata QID Identifier", profileIdentifiers.wikidata) : null;
+  const locUrl = profileIdentifiers.loc ? identifierUrl("Library of Congress Format Description Identifier", profileIdentifiers.loc) : null;
+  const profileRows = "";
+  const durabilityHtml = "";
+  const wikidata = null;
+  const wikidataSources = [];
+  const coptr = null;
+  const coptrList = () => "";
   const sourceUrl = safeUrl(record.source_url);
   const releaseUrl = safeUrl(CATALOG.release_url);
   $("detail").innerHTML = `
@@ -463,6 +472,21 @@ function renderDetail() {
     <section><h3>Aanvullende gegevens (COPTR)</h3><div class="profile-grid"><div><h4>Input</h4>${coptrList(coptr?.input)}</div><div><h4>Output</h4>${coptrList(coptr?.output)}</div><div><h4>Lifecycle stages</h4>${coptrList(coptr?.lifecycle_stages)}</div></div></section>
     <section><h3>Signatures en relaties</h3><h4>Interne signatures (${(record.internalSignatures || []).length})</h4>${internal || `<p class="muted">Geen interne signatures vastgelegd.</p>`}<h4>Container signatures (${(record.containerSignatures || []).length})</h4>${containers || `<p class="muted">Geen container signatures vastgelegd.</p>`}<h4>Formaatrelaties</h4>${relationships}<h4>Andere identifiers</h4>${identifiers}</section>
     <section><h3>Bron</h3><p>PRONOM ${esc(CATALOG.release_tag)} · commit ${esc(CATALOG.source_commit)}</p><p>${releaseUrl ? `<a href="${esc(releaseUrl)}" target="_blank" rel="noopener">PRONOM-release</a>` : ""}${sourceUrl ? ` · <a href="${esc(sourceUrl)}" target="_blank" rel="noopener">Bronsignature op GitHub</a>` : ""} · <a href="${esc(pronomUrl(puid))}" target="_blank" rel="noopener">PRONOM-record</a></p></section>`;
+  const externalOnlySections = new Set(["Formaatbeleid", "Kennisniveaus", "Houdbaarheid", "Aanvullende gegevens (Wikidata)", "Aanvullende gegevens (COPTR)"]);
+  for (const section of $("detail").querySelectorAll("section")) {
+    if (externalOnlySections.has(section.querySelector("h3")?.textContent)) section.remove();
+  }
+  const identifierHeading = [...$("detail").querySelectorAll("h4")].find((heading) => heading.textContent === "Andere identifiers");
+  if (identifierHeading) identifierHeading.textContent = "Externe bronidentifiers";
+  const sourceQuery = encodeURIComponent(record.formatName || puid);
+  const externalSources = [
+    { name: wikidataUrl ? "Wikidata" : "Wikidata zoeken", url: wikidataUrl || `https://www.wikidata.org/w/index.php?search=${sourceQuery}` },
+    { name: locUrl ? "Library of Congress FDD" : "Library of Congress FDD-index", url: locUrl || "https://www.loc.gov/preservation/digital/formats/fdd/" },
+    { name: "COPTR-formaatindex", url: "https://coptr.digipres.org/File_Formats" },
+  ];
+  const sourceSection = document.createElement("section");
+  sourceSection.innerHTML = `<h3>Externe bronnen</h3>${externalSourceList(externalSources)}`;
+  $("detail").append(sourceSection);
   $("detail").hidden = false;
   $("detail").querySelector(".close-detail").addEventListener("click", () => {
     state.active = null;

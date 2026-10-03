@@ -1,6 +1,6 @@
 schema_versie: 1
 
-# Canonieke toepassingsgebieden van de Wegwijzer, met hun weergavelabels.
+# Canonieke toepassingsgebieden, met hun weergavelabels.
 toepassingsgebieden:
   afbeelding: Afbeelding
   audio: Audio
@@ -27,7 +27,7 @@ toepassingsgebieden:
   webarchivering: Webarchivering
   wiskundige-toepassingen: Wiskundige toepassingen
 
-# Mapping van PRONOM-formatTypes naar Wegwijzergebieden; niet classificeerbare
+# Mapping van PRONOM-formatTypes naar toepassingsgebieden; niet classificeerbare
 # records blijven expliciet ongecategoriseerd.
 type_naar_toepassingsgebied:
   Aggregate: []

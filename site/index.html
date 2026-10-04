@@ -98,6 +98,8 @@
   .profile-grid dd { margin: .08rem 0 0; overflow-wrap: anywhere; }
   .risk-total { display: flex; align-items: baseline; gap: .55rem; margin-bottom: .7rem; }
   .risk-total strong { color: var(--teal); font: 400 1.7rem Georgia, "Times New Roman", serif; }
+  .score-range-wrap { display: flex; flex-wrap: wrap; align-items: baseline; gap: .25rem .7rem; margin: .35rem 0 .75rem; }
+  .score-range { white-space: pre; font: .86rem/1.3 "Cascadia Code", Consolas, monospace; }
   .factor-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: .4rem .7rem; }
   .factor-list details { border-bottom: 1px solid var(--line); padding: .4rem 0; }
   .factor-list summary { display: flex; justify-content: space-between; gap: .8rem; cursor: pointer; }
@@ -403,6 +405,23 @@ function externalSourceList(items) {
   });
 }
 
+function scoreRangeBar(score, minimum, maximum) {
+  if (![score, minimum, maximum].every(Number.isFinite) || minimum > maximum) {
+    return `<span class="muted">Bereik onbekend</span>`;
+  }
+  if (score < minimum || score > maximum) {
+    return `<span class="muted">Score ${esc(score)} valt buiten het bereik</span>`;
+  }
+
+  const width = 15;
+  const fraction = minimum === maximum ? 0.5 : (score - minimum) / (maximum - minimum);
+  const markerIndex = Math.round(fraction * (width - 1));
+  const cells = Array(width).fill(" ");
+  cells[markerIndex] = "x";
+  const label = `Score ${score}; bereik ${minimum} tot ${maximum}; lagere score betekent hoger risico`;
+  return `<code class="score-range" aria-label="${esc(label)}">(${minimum})[${cells.join("")}](${maximum})</code>`;
+}
+
 function renderDetail() {
   const record = CATALOG.records[state.active];
   if (!record) {
@@ -471,10 +490,11 @@ function renderDetail() {
   const naraMatrixUrl = "https://github.com/usnationalarchives/digital-preservation/tree/master/Digital_Preservation_Risk_Matrix";
   const naraWeightsUrl = "https://github.com/usnationalarchives/digital-preservation/blob/master/Supporting_Documentation/Risk_Matrix_Weights/NARA_File_Format_Risk_Matrix_Weights_20241218.csv";
   const naraRiskHtml = naraRisk ? `
-    <div class="risk-total"><strong>${esc(naraRisk.numeric_risk_rating ?? "Onbekend")}</strong><span>TOTAL Numeric Risk Rating · ${esc(naraRisk.risk_level || "risiconiveau onbekend")} · mogelijk bereik ${esc(naraRisk.numeric_risk_rating_range.minimum)} tot ${esc(naraRisk.numeric_risk_rating_range.maximum)}</span></div>
+    <div class="risk-total"><strong>${esc(naraRisk.numeric_risk_rating ?? "Onbekend")}</strong><span>TOTAL Numeric Risk Rating · ${esc(naraRisk.risk_level || "risiconiveau onbekend")}</span></div>
+    <div class="score-range-wrap">${scoreRangeBar(naraRisk.numeric_risk_rating, naraRisk.numeric_risk_rating_range.minimum, naraRisk.numeric_risk_rating_range.maximum)}<span class="muted">Lagere score = hoger risico · minimum links, maximum rechts</span></div>
     <dl><dt>Methodiek NARA</dt><dd><a href="${esc(naraMatrixUrl)}" target="_blank" rel="noopener">NARA-risicomatrix</a> · matrix ${esc(naraRisk.matrix_date || "onbekende datum")}</dd><dt>NARA Format ID</dt><dd>${esc(naraRisk.nara_format_id)} · ${esc(naraRisk.format_name)}</dd><dt>Koppelbasis</dt><dd>${esc(naraRisk.match_basis)}${naraRisk.match_scope === "shared_family" ? " · gedeelde NARA-familierij" : ""}</dd><dt>Koppelbewijs</dt><dd>${esc(naraRisk.match_evidence)}</dd><dt>Bestandsextensies</dt><dd>${esc(naraRisk.file_extensions || "Niet opgegeven")}</dd></dl>
     <p class="muted">Scoregrenzen volgens <a href="${esc(naraWeightsUrl)}" target="_blank" rel="noopener">NARA Risk Matrix Weights</a>. Prevalence, Feasibility en NARA TOTAL zijn niet meegerekend.</p>
-    <div class="table-wrap"><table><thead><tr><th>Risicocategorie</th><th>TOTAL</th><th>Mogelijk bereik</th></tr></thead><tbody>${(naraRisk.category_totals || []).map((category) => `<tr><td>${esc(category.name)}</td><td>${esc(category.score ?? "Onbekend")}</td><td>${esc(category.minimum)} tot ${esc(category.maximum)}</td></tr>`).join("")}</tbody></table></div>`
+    <div class="table-wrap"><table><thead><tr><th>Risicocategorie</th><th>TOTAL</th><th>Positie in bereik</th></tr></thead><tbody>${(naraRisk.category_totals || []).map((category) => `<tr><td>${esc(category.name)}</td><td>${esc(category.score ?? "Onbekend")}</td><td>${scoreRangeBar(category.score, category.minimum, category.maximum)}</td></tr>`).join("")}</tbody></table></div>`
     : `<p class="muted">Geen eenduidige NARA-formatmatch; er is geen risicoscore ingevuld.</p>`;
   const wikidata = null;
   const wikidataSources = [];

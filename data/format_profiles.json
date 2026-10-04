@@ -6614,7 +6614,73 @@
           "level": "In opslag",
           "institutions": []
         }
-      ]
+      ],
+      "nara_risk": {
+        "nara_format_id": "NF00662",
+        "format_name": "Portable Document Format (PDF) version 2.0",
+        "file_extensions": "pdf",
+        "numeric_risk_rating": 26,
+        "numeric_risk_rating_range": {
+          "minimum": -52,
+          "maximum": 39
+        },
+        "risk_level": "Low Risk",
+        "category_totals": [
+          {
+            "name": "Disclosure",
+            "score": 6,
+            "minimum": -7,
+            "maximum": 6
+          },
+          {
+            "name": "Adoption",
+            "score": 3,
+            "minimum": -3,
+            "maximum": 5
+          },
+          {
+            "name": "Transparency",
+            "score": 2,
+            "minimum": -7,
+            "maximum": 5
+          },
+          {
+            "name": "Self-Documentation",
+            "score": 3,
+            "minimum": -3,
+            "maximum": 3
+          },
+          {
+            "name": "External Hardware Dependencies",
+            "score": 4,
+            "minimum": -10,
+            "maximum": 4
+          },
+          {
+            "name": "External Software Dependencies",
+            "score": 8,
+            "minimum": -11,
+            "maximum": 8
+          },
+          {
+            "name": "Impact of Patents",
+            "score": 0,
+            "minimum": -4,
+            "maximum": 4
+          },
+          {
+            "name": "Technical Protection Mechanisms",
+            "score": 0,
+            "minimum": -7,
+            "maximum": 4
+          }
+        ],
+        "matrix_date": "2026-03-20",
+        "source_url": "https://github.com/usnationalarchives/digital-preservation/blob/master/Digital_Preservation_Risk_Matrix/NARA_File_Format_Risk_Matrix_20260320_Numbered.csv",
+        "match_basis": "PDF en versie in naam",
+        "match_evidence": "PRONOM-naam='PDF 2.0 - Portable Document Format' bevat PDF 2.0; NARA-naam='Portable Document Format (PDF) version 2.0'",
+        "match_scope": "individual"
+      }
     },
     "fmt/113": {
       "page_title": "Still Picture Interchange File Format 2.0",
@@ -19889,7 +19955,73 @@
           "level": "In opslag",
           "institutions": []
         }
-      ]
+      ],
+      "nara_risk": {
+        "nara_format_id": "NF00362",
+        "format_name": "Portable Document Format (PDF) version 1.0",
+        "file_extensions": "pdf",
+        "numeric_risk_rating": 10,
+        "numeric_risk_rating_range": {
+          "minimum": -52,
+          "maximum": 39
+        },
+        "risk_level": "Moderate Risk",
+        "category_totals": [
+          {
+            "name": "Disclosure",
+            "score": 0,
+            "minimum": -7,
+            "maximum": 6
+          },
+          {
+            "name": "Adoption",
+            "score": 3,
+            "minimum": -3,
+            "maximum": 5
+          },
+          {
+            "name": "Transparency",
+            "score": 4,
+            "minimum": -7,
+            "maximum": 5
+          },
+          {
+            "name": "Self-Documentation",
+            "score": -3,
+            "minimum": -3,
+            "maximum": 3
+          },
+          {
+            "name": "External Hardware Dependencies",
+            "score": 4,
+            "minimum": -10,
+            "maximum": 4
+          },
+          {
+            "name": "External Software Dependencies",
+            "score": 6,
+            "minimum": -11,
+            "maximum": 8
+          },
+          {
+            "name": "Impact of Patents",
+            "score": -4,
+            "minimum": -4,
+            "maximum": 4
+          },
+          {
+            "name": "Technical Protection Mechanisms",
+            "score": 0,
+            "minimum": -7,
+            "maximum": 4
+          }
+        ],
+        "matrix_date": "2026-03-20",
+        "source_url": "https://github.com/usnationalarchives/digital-preservation/blob/master/Digital_Preservation_Risk_Matrix/NARA_File_Format_Risk_Matrix_20260320_Numbered.csv",
+        "match_basis": "PDF en versie in naam",
+        "match_evidence": "PRONOM-naam='Acrobat PDF 1.0 - Portable Document Format' bevat PDF 1.0; NARA-naam='Portable Document Format (PDF) version 1.0'",
+        "match_scope": "individual"
+      }
     },
     "fmt/140": {
       "page_title": "OpenDocument Database Format 1.0",
@@ -24617,7 +24749,73 @@
           "level": "In opslag",
           "institutions": []
         }
-      ]
+      ],
+      "nara_risk": {
+        "nara_format_id": "NF00363",
+        "format_name": "Portable Document Format (PDF) version 1.1",
+        "file_extensions": "pdf",
+        "numeric_risk_rating": 10,
+        "numeric_risk_rating_range": {
+          "minimum": -52,
+          "maximum": 39
+        },
+        "risk_level": "Moderate Risk",
+        "category_totals": [
+          {
+            "name": "Disclosure",
+            "score": 0,
+            "minimum": -7,
+            "maximum": 6
+          },
+          {
+            "name": "Adoption",
+            "score": 3,
+            "minimum": -3,
+            "maximum": 5
+          },
+          {
+            "name": "Transparency",
+            "score": 4,
+            "minimum": -7,
+            "maximum": 5
+          },
+          {
+            "name": "Self-Documentation",
+            "score": -3,
+            "minimum": -3,
+            "maximum": 3
+          },
+          {
+            "name": "External Hardware Dependencies",
+            "score": 4,
+            "minimum": -10,
+            "maximum": 4
+          },
+          {
+            "name": "External Software Dependencies",
+            "score": 6,
+            "minimum": -11,
+            "maximum": 8
+          },
+          {
+            "name": "Impact of Patents",
+            "score": -4,
+            "minimum": -4,
+            "maximum": 4
+          },
+          {
+            "name": "Technical Protection Mechanisms",
+            "score": 0,
+            "minimum": -7,
+            "maximum": 4
+          }
+        ],
+        "matrix_date": "2026-03-20",
+        "source_url": "https://github.com/usnationalarchives/digital-preservation/blob/master/Digital_Preservation_Risk_Matrix/NARA_File_Format_Risk_Matrix_20260320_Numbered.csv",
+        "match_basis": "PDF en versie in naam",
+        "match_evidence": "PRONOM-naam='Acrobat PDF 1.1 - Portable Document Format' bevat PDF 1.1; NARA-naam='Portable Document Format (PDF) version 1.1'",
+        "match_scope": "individual"
+      }
     },
     "fmt/150": {
       "page_title": "JPEG-LS",
@@ -29411,7 +29609,73 @@
           "level": "In opslag",
           "institutions": []
         }
-      ]
+      ],
+      "nara_risk": {
+        "nara_format_id": "NF00364",
+        "format_name": "Portable Document Format (PDF) version 1.2",
+        "file_extensions": "pdf",
+        "numeric_risk_rating": 10,
+        "numeric_risk_rating_range": {
+          "minimum": -52,
+          "maximum": 39
+        },
+        "risk_level": "Moderate Risk",
+        "category_totals": [
+          {
+            "name": "Disclosure",
+            "score": 0,
+            "minimum": -7,
+            "maximum": 6
+          },
+          {
+            "name": "Adoption",
+            "score": 3,
+            "minimum": -3,
+            "maximum": 5
+          },
+          {
+            "name": "Transparency",
+            "score": 4,
+            "minimum": -7,
+            "maximum": 5
+          },
+          {
+            "name": "Self-Documentation",
+            "score": -3,
+            "minimum": -3,
+            "maximum": 3
+          },
+          {
+            "name": "External Hardware Dependencies",
+            "score": 4,
+            "minimum": -10,
+            "maximum": 4
+          },
+          {
+            "name": "External Software Dependencies",
+            "score": 6,
+            "minimum": -11,
+            "maximum": 8
+          },
+          {
+            "name": "Impact of Patents",
+            "score": -4,
+            "minimum": -4,
+            "maximum": 4
+          },
+          {
+            "name": "Technical Protection Mechanisms",
+            "score": 0,
+            "minimum": -7,
+            "maximum": 4
+          }
+        ],
+        "matrix_date": "2026-03-20",
+        "source_url": "https://github.com/usnationalarchives/digital-preservation/blob/master/Digital_Preservation_Risk_Matrix/NARA_File_Format_Risk_Matrix_20260320_Numbered.csv",
+        "match_basis": "PDF en versie in naam",
+        "match_evidence": "PRONOM-naam='Acrobat PDF 1.2 - Portable Document Format' bevat PDF 1.2; NARA-naam='Portable Document Format (PDF) version 1.2'",
+        "match_scope": "individual"
+      }
     },
     "fmt/160": {
       "page_title": "TeX/LaTeX Device Independent Document",
@@ -32915,7 +33179,73 @@
           "level": "In opslag",
           "institutions": []
         }
-      ]
+      ],
+      "nara_risk": {
+        "nara_format_id": "NF00365",
+        "format_name": "Portable Document Format (PDF) version 1.3",
+        "file_extensions": "pdf",
+        "numeric_risk_rating": 18,
+        "numeric_risk_rating_range": {
+          "minimum": -52,
+          "maximum": 39
+        },
+        "risk_level": "Moderate Risk",
+        "category_totals": [
+          {
+            "name": "Disclosure",
+            "score": 0,
+            "minimum": -7,
+            "maximum": 6
+          },
+          {
+            "name": "Adoption",
+            "score": 3,
+            "minimum": -3,
+            "maximum": 5
+          },
+          {
+            "name": "Transparency",
+            "score": 4,
+            "minimum": -7,
+            "maximum": 5
+          },
+          {
+            "name": "Self-Documentation",
+            "score": 3,
+            "minimum": -3,
+            "maximum": 3
+          },
+          {
+            "name": "External Hardware Dependencies",
+            "score": 4,
+            "minimum": -10,
+            "maximum": 4
+          },
+          {
+            "name": "External Software Dependencies",
+            "score": 8,
+            "minimum": -11,
+            "maximum": 8
+          },
+          {
+            "name": "Impact of Patents",
+            "score": -4,
+            "minimum": -4,
+            "maximum": 4
+          },
+          {
+            "name": "Technical Protection Mechanisms",
+            "score": 0,
+            "minimum": -7,
+            "maximum": 4
+          }
+        ],
+        "matrix_date": "2026-03-20",
+        "source_url": "https://github.com/usnationalarchives/digital-preservation/blob/master/Digital_Preservation_Risk_Matrix/NARA_File_Format_Risk_Matrix_20260320_Numbered.csv",
+        "match_basis": "PDF en versie in naam",
+        "match_evidence": "PRONOM-naam='Acrobat PDF 1.3 - Portable Document Format' bevat PDF 1.3; NARA-naam='Portable Document Format (PDF) version 1.3'",
+        "match_scope": "individual"
+      }
     },
     "fmt/170": {
       "page_title": "Microsoft Works Database for DOS 1.12",
@@ -38393,7 +38723,73 @@
           "level": "In opslag",
           "institutions": []
         }
-      ]
+      ],
+      "nara_risk": {
+        "nara_format_id": "NF00366",
+        "format_name": "Portable Document Format (PDF) version 1.4",
+        "file_extensions": "pdf",
+        "numeric_risk_rating": 16,
+        "numeric_risk_rating_range": {
+          "minimum": -52,
+          "maximum": 39
+        },
+        "risk_level": "Moderate Risk",
+        "category_totals": [
+          {
+            "name": "Disclosure",
+            "score": 0,
+            "minimum": -7,
+            "maximum": 6
+          },
+          {
+            "name": "Adoption",
+            "score": 3,
+            "minimum": -3,
+            "maximum": 5
+          },
+          {
+            "name": "Transparency",
+            "score": 2,
+            "minimum": -7,
+            "maximum": 5
+          },
+          {
+            "name": "Self-Documentation",
+            "score": 3,
+            "minimum": -3,
+            "maximum": 3
+          },
+          {
+            "name": "External Hardware Dependencies",
+            "score": 4,
+            "minimum": -10,
+            "maximum": 4
+          },
+          {
+            "name": "External Software Dependencies",
+            "score": 8,
+            "minimum": -11,
+            "maximum": 8
+          },
+          {
+            "name": "Impact of Patents",
+            "score": -4,
+            "minimum": -4,
+            "maximum": 4
+          },
+          {
+            "name": "Technical Protection Mechanisms",
+            "score": 0,
+            "minimum": -7,
+            "maximum": 4
+          }
+        ],
+        "matrix_date": "2026-03-20",
+        "source_url": "https://github.com/usnationalarchives/digital-preservation/blob/master/Digital_Preservation_Risk_Matrix/NARA_File_Format_Risk_Matrix_20260320_Numbered.csv",
+        "match_basis": "PDF en versie in naam",
+        "match_evidence": "PRONOM-naam='Acrobat PDF 1.4 - Portable Document Format' bevat PDF 1.4; NARA-naam='Portable Document Format (PDF) version 1.4'",
+        "match_scope": "individual"
+      }
     },
     "fmt/180": {
       "page_title": "Microsoft PowerPoint for Macintosh 98",
@@ -43175,7 +43571,73 @@
           "level": "In opslag",
           "institutions": []
         }
-      ]
+      ],
+      "nara_risk": {
+        "nara_format_id": "NF00367",
+        "format_name": "Portable Document Format (PDF) version 1.5",
+        "file_extensions": "pdf",
+        "numeric_risk_rating": 16,
+        "numeric_risk_rating_range": {
+          "minimum": -52,
+          "maximum": 39
+        },
+        "risk_level": "Moderate Risk",
+        "category_totals": [
+          {
+            "name": "Disclosure",
+            "score": 0,
+            "minimum": -7,
+            "maximum": 6
+          },
+          {
+            "name": "Adoption",
+            "score": 3,
+            "minimum": -3,
+            "maximum": 5
+          },
+          {
+            "name": "Transparency",
+            "score": 2,
+            "minimum": -7,
+            "maximum": 5
+          },
+          {
+            "name": "Self-Documentation",
+            "score": 3,
+            "minimum": -3,
+            "maximum": 3
+          },
+          {
+            "name": "External Hardware Dependencies",
+            "score": 4,
+            "minimum": -10,
+            "maximum": 4
+          },
+          {
+            "name": "External Software Dependencies",
+            "score": 8,
+            "minimum": -11,
+            "maximum": 8
+          },
+          {
+            "name": "Impact of Patents",
+            "score": -4,
+            "minimum": -4,
+            "maximum": 4
+          },
+          {
+            "name": "Technical Protection Mechanisms",
+            "score": 0,
+            "minimum": -7,
+            "maximum": 4
+          }
+        ],
+        "matrix_date": "2026-03-20",
+        "source_url": "https://github.com/usnationalarchives/digital-preservation/blob/master/Digital_Preservation_Risk_Matrix/NARA_File_Format_Risk_Matrix_20260320_Numbered.csv",
+        "match_basis": "PDF en versie in naam",
+        "match_evidence": "PRONOM-naam='Acrobat PDF 1.5 - Portable Document Format' bevat PDF 1.5; NARA-naam='Portable Document Format (PDF) version 1.5'",
+        "match_scope": "individual"
+      }
     },
     "fmt/190": {
       "page_title": "Adobe FrameMaker Document 5.0",
@@ -43695,7 +44157,73 @@
           "level": "In opslag",
           "institutions": []
         }
-      ]
+      ],
+      "nara_risk": {
+        "nara_format_id": "NF00646",
+        "format_name": "Portable Document Format/Archiving (PDF/A-4)",
+        "file_extensions": "pdf",
+        "numeric_risk_rating": 36,
+        "numeric_risk_rating_range": {
+          "minimum": -52,
+          "maximum": 39
+        },
+        "risk_level": "Low Risk",
+        "category_totals": [
+          {
+            "name": "Disclosure",
+            "score": 6,
+            "minimum": -7,
+            "maximum": 6
+          },
+          {
+            "name": "Adoption",
+            "score": 3,
+            "minimum": -3,
+            "maximum": 5
+          },
+          {
+            "name": "Transparency",
+            "score": 4,
+            "minimum": -7,
+            "maximum": 5
+          },
+          {
+            "name": "Self-Documentation",
+            "score": 3,
+            "minimum": -3,
+            "maximum": 3
+          },
+          {
+            "name": "External Hardware Dependencies",
+            "score": 4,
+            "minimum": -10,
+            "maximum": 4
+          },
+          {
+            "name": "External Software Dependencies",
+            "score": 8,
+            "minimum": -11,
+            "maximum": 8
+          },
+          {
+            "name": "Impact of Patents",
+            "score": 4,
+            "minimum": -4,
+            "maximum": 4
+          },
+          {
+            "name": "Technical Protection Mechanisms",
+            "score": 4,
+            "minimum": -7,
+            "maximum": 4
+          }
+        ],
+        "matrix_date": "2026-03-20",
+        "source_url": "https://github.com/usnationalarchives/digital-preservation/blob/master/Digital_Preservation_Risk_Matrix/NARA_File_Format_Risk_Matrix_20260320_Numbered.csv",
+        "match_basis": "PDF/A-4 versie exact",
+        "match_evidence": "PRONOM-alias='PDF/A-4' -> NARA-naam='Portable Document Format/Archiving (PDF/A-4)'",
+        "match_scope": "shared_family"
+      }
     },
     "fmt/1911": {
       "page_title": "Acrobat PDF/A - Portable Document Format 4e",
@@ -43735,7 +44263,73 @@
           "level": "In opslag",
           "institutions": []
         }
-      ]
+      ],
+      "nara_risk": {
+        "nara_format_id": "NF00646",
+        "format_name": "Portable Document Format/Archiving (PDF/A-4)",
+        "file_extensions": "pdf",
+        "numeric_risk_rating": 36,
+        "numeric_risk_rating_range": {
+          "minimum": -52,
+          "maximum": 39
+        },
+        "risk_level": "Low Risk",
+        "category_totals": [
+          {
+            "name": "Disclosure",
+            "score": 6,
+            "minimum": -7,
+            "maximum": 6
+          },
+          {
+            "name": "Adoption",
+            "score": 3,
+            "minimum": -3,
+            "maximum": 5
+          },
+          {
+            "name": "Transparency",
+            "score": 4,
+            "minimum": -7,
+            "maximum": 5
+          },
+          {
+            "name": "Self-Documentation",
+            "score": 3,
+            "minimum": -3,
+            "maximum": 3
+          },
+          {
+            "name": "External Hardware Dependencies",
+            "score": 4,
+            "minimum": -10,
+            "maximum": 4
+          },
+          {
+            "name": "External Software Dependencies",
+            "score": 8,
+            "minimum": -11,
+            "maximum": 8
+          },
+          {
+            "name": "Impact of Patents",
+            "score": 4,
+            "minimum": -4,
+            "maximum": 4
+          },
+          {
+            "name": "Technical Protection Mechanisms",
+            "score": 4,
+            "minimum": -7,
+            "maximum": 4
+          }
+        ],
+        "matrix_date": "2026-03-20",
+        "source_url": "https://github.com/usnationalarchives/digital-preservation/blob/master/Digital_Preservation_Risk_Matrix/NARA_File_Format_Risk_Matrix_20260320_Numbered.csv",
+        "match_basis": "PDF/A-4 subtype in familie",
+        "match_evidence": "PRONOM-alias='PDF/A-4e' -> NARA-naam='Portable Document Format/Archiving (PDF/A-4)'",
+        "match_scope": "shared_family"
+      }
     },
     "fmt/1912": {
       "page_title": "Acrobat PDF/A - Portable Document Format 4f",
@@ -43775,7 +44369,73 @@
           "level": "In opslag",
           "institutions": []
         }
-      ]
+      ],
+      "nara_risk": {
+        "nara_format_id": "NF00646",
+        "format_name": "Portable Document Format/Archiving (PDF/A-4)",
+        "file_extensions": "pdf",
+        "numeric_risk_rating": 36,
+        "numeric_risk_rating_range": {
+          "minimum": -52,
+          "maximum": 39
+        },
+        "risk_level": "Low Risk",
+        "category_totals": [
+          {
+            "name": "Disclosure",
+            "score": 6,
+            "minimum": -7,
+            "maximum": 6
+          },
+          {
+            "name": "Adoption",
+            "score": 3,
+            "minimum": -3,
+            "maximum": 5
+          },
+          {
+            "name": "Transparency",
+            "score": 4,
+            "minimum": -7,
+            "maximum": 5
+          },
+          {
+            "name": "Self-Documentation",
+            "score": 3,
+            "minimum": -3,
+            "maximum": 3
+          },
+          {
+            "name": "External Hardware Dependencies",
+            "score": 4,
+            "minimum": -10,
+            "maximum": 4
+          },
+          {
+            "name": "External Software Dependencies",
+            "score": 8,
+            "minimum": -11,
+            "maximum": 8
+          },
+          {
+            "name": "Impact of Patents",
+            "score": 4,
+            "minimum": -4,
+            "maximum": 4
+          },
+          {
+            "name": "Technical Protection Mechanisms",
+            "score": 4,
+            "minimum": -7,
+            "maximum": 4
+          }
+        ],
+        "matrix_date": "2026-03-20",
+        "source_url": "https://github.com/usnationalarchives/digital-preservation/blob/master/Digital_Preservation_Risk_Matrix/NARA_File_Format_Risk_Matrix_20260320_Numbered.csv",
+        "match_basis": "PDF/A-4 subtype in familie",
+        "match_evidence": "PRONOM-versie='4f' -> NARA-naam='Portable Document Format/Archiving (PDF/A-4)'",
+        "match_scope": "shared_family"
+      }
     },
     "fmt/1913": {
       "page_title": "Graphisoft Archicad Project 17+",
@@ -45718,7 +46378,73 @@
           "level": "In opslag",
           "institutions": []
         }
-      ]
+      ],
+      "nara_risk": {
+        "nara_format_id": "NF00368",
+        "format_name": "Portable Document Format (PDF) version 1.6",
+        "file_extensions": "pdf",
+        "numeric_risk_rating": 14,
+        "numeric_risk_rating_range": {
+          "minimum": -52,
+          "maximum": 39
+        },
+        "risk_level": "Moderate Risk",
+        "category_totals": [
+          {
+            "name": "Disclosure",
+            "score": 0,
+            "minimum": -7,
+            "maximum": 6
+          },
+          {
+            "name": "Adoption",
+            "score": 3,
+            "minimum": -3,
+            "maximum": 5
+          },
+          {
+            "name": "Transparency",
+            "score": 2,
+            "minimum": -7,
+            "maximum": 5
+          },
+          {
+            "name": "Self-Documentation",
+            "score": 3,
+            "minimum": -3,
+            "maximum": 3
+          },
+          {
+            "name": "External Hardware Dependencies",
+            "score": 4,
+            "minimum": -10,
+            "maximum": 4
+          },
+          {
+            "name": "External Software Dependencies",
+            "score": 6,
+            "minimum": -11,
+            "maximum": 8
+          },
+          {
+            "name": "Impact of Patents",
+            "score": -4,
+            "minimum": -4,
+            "maximum": 4
+          },
+          {
+            "name": "Technical Protection Mechanisms",
+            "score": 0,
+            "minimum": -7,
+            "maximum": 4
+          }
+        ],
+        "matrix_date": "2026-03-20",
+        "source_url": "https://github.com/usnationalarchives/digital-preservation/blob/master/Digital_Preservation_Risk_Matrix/NARA_File_Format_Risk_Matrix_20260320_Numbered.csv",
+        "match_basis": "PDF en versie in naam",
+        "match_evidence": "PRONOM-naam='Acrobat PDF 1.6 - Portable Document Format' bevat PDF 1.6; NARA-naam='Portable Document Format (PDF) version 1.6'",
+        "match_scope": "individual"
+      }
     },
     "fmt/200": {
       "page_title": "Material Exchange Format Operational Pattern 1a",
@@ -50791,7 +51517,73 @@
           "level": "In opslag",
           "institutions": []
         }
-      ]
+      ],
+      "nara_risk": {
+        "nara_format_id": "NF00369",
+        "format_name": "Portable Document Format (PDF) version 1.7",
+        "file_extensions": "pdf",
+        "numeric_risk_rating": 24,
+        "numeric_risk_rating_range": {
+          "minimum": -52,
+          "maximum": 39
+        },
+        "risk_level": "Low Risk",
+        "category_totals": [
+          {
+            "name": "Disclosure",
+            "score": 6,
+            "minimum": -7,
+            "maximum": 6
+          },
+          {
+            "name": "Adoption",
+            "score": 3,
+            "minimum": -3,
+            "maximum": 5
+          },
+          {
+            "name": "Transparency",
+            "score": 2,
+            "minimum": -7,
+            "maximum": 5
+          },
+          {
+            "name": "Self-Documentation",
+            "score": 3,
+            "minimum": -3,
+            "maximum": 3
+          },
+          {
+            "name": "External Hardware Dependencies",
+            "score": 4,
+            "minimum": -10,
+            "maximum": 4
+          },
+          {
+            "name": "External Software Dependencies",
+            "score": 6,
+            "minimum": -11,
+            "maximum": 8
+          },
+          {
+            "name": "Impact of Patents",
+            "score": 0,
+            "minimum": -4,
+            "maximum": 4
+          },
+          {
+            "name": "Technical Protection Mechanisms",
+            "score": 0,
+            "minimum": -7,
+            "maximum": 4
+          }
+        ],
+        "matrix_date": "2026-03-20",
+        "source_url": "https://github.com/usnationalarchives/digital-preservation/blob/master/Digital_Preservation_Risk_Matrix/NARA_File_Format_Risk_Matrix_20260320_Numbered.csv",
+        "match_basis": "PDF en versie in naam",
+        "match_evidence": "PRONOM-naam='Acrobat PDF 1.7 - Portable Document Format' bevat PDF 1.7; NARA-naam='Portable Document Format (PDF) version 1.7'",
+        "match_scope": "individual"
+      }
     },
     "fmt/277": {
       "page_title": "ESRI Arc/View Shapefile Index",
@@ -55333,7 +56125,73 @@
           "level": "In opslag",
           "institutions": []
         }
-      ]
+      ],
+      "nara_risk": {
+        "nara_format_id": "NF00372",
+        "format_name": "Portable Document Format/Archiving (PDF/A-1b) basic",
+        "file_extensions": "pdf",
+        "numeric_risk_rating": 37,
+        "numeric_risk_rating_range": {
+          "minimum": -52,
+          "maximum": 39
+        },
+        "risk_level": "Low Risk",
+        "category_totals": [
+          {
+            "name": "Disclosure",
+            "score": 6,
+            "minimum": -7,
+            "maximum": 6
+          },
+          {
+            "name": "Adoption",
+            "score": 3,
+            "minimum": -3,
+            "maximum": 5
+          },
+          {
+            "name": "Transparency",
+            "score": 5,
+            "minimum": -7,
+            "maximum": 5
+          },
+          {
+            "name": "Self-Documentation",
+            "score": 3,
+            "minimum": -3,
+            "maximum": 3
+          },
+          {
+            "name": "External Hardware Dependencies",
+            "score": 4,
+            "minimum": -10,
+            "maximum": 4
+          },
+          {
+            "name": "External Software Dependencies",
+            "score": 8,
+            "minimum": -11,
+            "maximum": 8
+          },
+          {
+            "name": "Impact of Patents",
+            "score": 4,
+            "minimum": -4,
+            "maximum": 4
+          },
+          {
+            "name": "Technical Protection Mechanisms",
+            "score": 4,
+            "minimum": -7,
+            "maximum": 4
+          }
+        ],
+        "matrix_date": "2026-03-20",
+        "source_url": "https://github.com/usnationalarchives/digital-preservation/blob/master/Digital_Preservation_Risk_Matrix/NARA_File_Format_Risk_Matrix_20260320_Numbered.csv",
+        "match_basis": "PDF/A subtype in versie",
+        "match_evidence": "PRONOM-versie='1b' -> NARA-naam='Portable Document Format/Archiving (PDF/A-1b) basic'",
+        "match_scope": "individual"
+      }
     },
     "fmt/355": {
       "page_title": "Rich Text Format 1.9",
@@ -62158,7 +63016,73 @@
           "level": "In opslag",
           "institutions": []
         }
-      ]
+      ],
+      "nara_risk": {
+        "nara_format_id": "NF00602",
+        "format_name": "Portable Document Format/Archiving (PDF/A-2a) accessible",
+        "file_extensions": "pdf",
+        "numeric_risk_rating": 37,
+        "numeric_risk_rating_range": {
+          "minimum": -52,
+          "maximum": 39
+        },
+        "risk_level": "Low Risk",
+        "category_totals": [
+          {
+            "name": "Disclosure",
+            "score": 6,
+            "minimum": -7,
+            "maximum": 6
+          },
+          {
+            "name": "Adoption",
+            "score": 3,
+            "minimum": -3,
+            "maximum": 5
+          },
+          {
+            "name": "Transparency",
+            "score": 5,
+            "minimum": -7,
+            "maximum": 5
+          },
+          {
+            "name": "Self-Documentation",
+            "score": 3,
+            "minimum": -3,
+            "maximum": 3
+          },
+          {
+            "name": "External Hardware Dependencies",
+            "score": 4,
+            "minimum": -10,
+            "maximum": 4
+          },
+          {
+            "name": "External Software Dependencies",
+            "score": 8,
+            "minimum": -11,
+            "maximum": 8
+          },
+          {
+            "name": "Impact of Patents",
+            "score": 4,
+            "minimum": -4,
+            "maximum": 4
+          },
+          {
+            "name": "Technical Protection Mechanisms",
+            "score": 4,
+            "minimum": -7,
+            "maximum": 4
+          }
+        ],
+        "matrix_date": "2026-03-20",
+        "source_url": "https://github.com/usnationalarchives/digital-preservation/blob/master/Digital_Preservation_Risk_Matrix/NARA_File_Format_Risk_Matrix_20260320_Numbered.csv",
+        "match_basis": "PDF/A subtype in versie",
+        "match_evidence": "PRONOM-versie='2a' -> NARA-naam='Portable Document Format/Archiving (PDF/A-2a) accessible'",
+        "match_scope": "individual"
+      }
     },
     "fmt/477": {
       "page_title": "Acrobat PDF/A - Portable Document Format 2b",
@@ -62202,7 +63126,73 @@
           "level": "In opslag",
           "institutions": []
         }
-      ]
+      ],
+      "nara_risk": {
+        "nara_format_id": "NF00634",
+        "format_name": "Portable Document Format/Archiving (PDF/A-2b) basic",
+        "file_extensions": "pdf",
+        "numeric_risk_rating": 36,
+        "numeric_risk_rating_range": {
+          "minimum": -52,
+          "maximum": 39
+        },
+        "risk_level": "Low Risk",
+        "category_totals": [
+          {
+            "name": "Disclosure",
+            "score": 6,
+            "minimum": -7,
+            "maximum": 6
+          },
+          {
+            "name": "Adoption",
+            "score": 3,
+            "minimum": -3,
+            "maximum": 5
+          },
+          {
+            "name": "Transparency",
+            "score": 4,
+            "minimum": -7,
+            "maximum": 5
+          },
+          {
+            "name": "Self-Documentation",
+            "score": 3,
+            "minimum": -3,
+            "maximum": 3
+          },
+          {
+            "name": "External Hardware Dependencies",
+            "score": 4,
+            "minimum": -10,
+            "maximum": 4
+          },
+          {
+            "name": "External Software Dependencies",
+            "score": 8,
+            "minimum": -11,
+            "maximum": 8
+          },
+          {
+            "name": "Impact of Patents",
+            "score": 4,
+            "minimum": -4,
+            "maximum": 4
+          },
+          {
+            "name": "Technical Protection Mechanisms",
+            "score": 4,
+            "minimum": -7,
+            "maximum": 4
+          }
+        ],
+        "matrix_date": "2026-03-20",
+        "source_url": "https://github.com/usnationalarchives/digital-preservation/blob/master/Digital_Preservation_Risk_Matrix/NARA_File_Format_Risk_Matrix_20260320_Numbered.csv",
+        "match_basis": "PDF/A subtype in versie",
+        "match_evidence": "PRONOM-versie='2b' -> NARA-naam='Portable Document Format/Archiving (PDF/A-2b) basic'",
+        "match_scope": "individual"
+      }
     },
     "fmt/478": {
       "page_title": "Acrobat PDF/A - Portable Document Format 2u",
@@ -62245,7 +63235,73 @@
           "level": "In opslag",
           "institutions": []
         }
-      ]
+      ],
+      "nara_risk": {
+        "nara_format_id": "NF00642",
+        "format_name": "Portable Document Format/Archiving (PDF/A-2u) unicode",
+        "file_extensions": "pdf",
+        "numeric_risk_rating": 36,
+        "numeric_risk_rating_range": {
+          "minimum": -52,
+          "maximum": 39
+        },
+        "risk_level": "Low Risk",
+        "category_totals": [
+          {
+            "name": "Disclosure",
+            "score": 6,
+            "minimum": -7,
+            "maximum": 6
+          },
+          {
+            "name": "Adoption",
+            "score": 3,
+            "minimum": -3,
+            "maximum": 5
+          },
+          {
+            "name": "Transparency",
+            "score": 4,
+            "minimum": -7,
+            "maximum": 5
+          },
+          {
+            "name": "Self-Documentation",
+            "score": 3,
+            "minimum": -3,
+            "maximum": 3
+          },
+          {
+            "name": "External Hardware Dependencies",
+            "score": 4,
+            "minimum": -10,
+            "maximum": 4
+          },
+          {
+            "name": "External Software Dependencies",
+            "score": 8,
+            "minimum": -11,
+            "maximum": 8
+          },
+          {
+            "name": "Impact of Patents",
+            "score": 4,
+            "minimum": -4,
+            "maximum": 4
+          },
+          {
+            "name": "Technical Protection Mechanisms",
+            "score": 4,
+            "minimum": -7,
+            "maximum": 4
+          }
+        ],
+        "matrix_date": "2026-03-20",
+        "source_url": "https://github.com/usnationalarchives/digital-preservation/blob/master/Digital_Preservation_Risk_Matrix/NARA_File_Format_Risk_Matrix_20260320_Numbered.csv",
+        "match_basis": "PDF/A subtype in versie",
+        "match_evidence": "PRONOM-versie='2u' -> NARA-naam='Portable Document Format/Archiving (PDF/A-2u) unicode'",
+        "match_scope": "individual"
+      }
     },
     "fmt/479": {
       "page_title": "Acrobat PDF/A - Portable Document Format 3a",
@@ -62289,7 +63345,73 @@
           "level": "In opslag",
           "institutions": []
         }
-      ]
+      ],
+      "nara_risk": {
+        "nara_format_id": "NF00643",
+        "format_name": "Portable Document Format/Archiving (PDF/A-3a) accessible",
+        "file_extensions": "pdf",
+        "numeric_risk_rating": 36,
+        "numeric_risk_rating_range": {
+          "minimum": -52,
+          "maximum": 39
+        },
+        "risk_level": "Low Risk",
+        "category_totals": [
+          {
+            "name": "Disclosure",
+            "score": 6,
+            "minimum": -7,
+            "maximum": 6
+          },
+          {
+            "name": "Adoption",
+            "score": 3,
+            "minimum": -3,
+            "maximum": 5
+          },
+          {
+            "name": "Transparency",
+            "score": 4,
+            "minimum": -7,
+            "maximum": 5
+          },
+          {
+            "name": "Self-Documentation",
+            "score": 3,
+            "minimum": -3,
+            "maximum": 3
+          },
+          {
+            "name": "External Hardware Dependencies",
+            "score": 4,
+            "minimum": -10,
+            "maximum": 4
+          },
+          {
+            "name": "External Software Dependencies",
+            "score": 8,
+            "minimum": -11,
+            "maximum": 8
+          },
+          {
+            "name": "Impact of Patents",
+            "score": 4,
+            "minimum": -4,
+            "maximum": 4
+          },
+          {
+            "name": "Technical Protection Mechanisms",
+            "score": 4,
+            "minimum": -7,
+            "maximum": 4
+          }
+        ],
+        "matrix_date": "2026-03-20",
+        "source_url": "https://github.com/usnationalarchives/digital-preservation/blob/master/Digital_Preservation_Risk_Matrix/NARA_File_Format_Risk_Matrix_20260320_Numbered.csv",
+        "match_basis": "PDF/A subtype in versie",
+        "match_evidence": "PRONOM-versie='3a' -> NARA-naam='Portable Document Format/Archiving (PDF/A-3a) accessible'",
+        "match_scope": "individual"
+      }
     },
     "fmt/48": {
       "page_title": "Rich Text Format 1.3",
@@ -62439,7 +63561,73 @@
           "level": "In opslag",
           "institutions": []
         }
-      ]
+      ],
+      "nara_risk": {
+        "nara_format_id": "NF00644",
+        "format_name": "Portable Document Format/Archiving (PDF/A-3b) basic",
+        "file_extensions": "pdf",
+        "numeric_risk_rating": 36,
+        "numeric_risk_rating_range": {
+          "minimum": -52,
+          "maximum": 39
+        },
+        "risk_level": "Low Risk",
+        "category_totals": [
+          {
+            "name": "Disclosure",
+            "score": 6,
+            "minimum": -7,
+            "maximum": 6
+          },
+          {
+            "name": "Adoption",
+            "score": 3,
+            "minimum": -3,
+            "maximum": 5
+          },
+          {
+            "name": "Transparency",
+            "score": 4,
+            "minimum": -7,
+            "maximum": 5
+          },
+          {
+            "name": "Self-Documentation",
+            "score": 3,
+            "minimum": -3,
+            "maximum": 3
+          },
+          {
+            "name": "External Hardware Dependencies",
+            "score": 4,
+            "minimum": -10,
+            "maximum": 4
+          },
+          {
+            "name": "External Software Dependencies",
+            "score": 8,
+            "minimum": -11,
+            "maximum": 8
+          },
+          {
+            "name": "Impact of Patents",
+            "score": 4,
+            "minimum": -4,
+            "maximum": 4
+          },
+          {
+            "name": "Technical Protection Mechanisms",
+            "score": 4,
+            "minimum": -7,
+            "maximum": 4
+          }
+        ],
+        "matrix_date": "2026-03-20",
+        "source_url": "https://github.com/usnationalarchives/digital-preservation/blob/master/Digital_Preservation_Risk_Matrix/NARA_File_Format_Risk_Matrix_20260320_Numbered.csv",
+        "match_basis": "PDF/A subtype in versie",
+        "match_evidence": "PRONOM-versie='3b' -> NARA-naam='Portable Document Format/Archiving (PDF/A-3b) basic'",
+        "match_scope": "individual"
+      }
     },
     "fmt/481": {
       "page_title": "Acrobat PDF/A - Portable Document Format 3u",
@@ -62483,7 +63671,73 @@
           "level": "In opslag",
           "institutions": []
         }
-      ]
+      ],
+      "nara_risk": {
+        "nara_format_id": "NF00645",
+        "format_name": "Portable Document Format/Archiving (PDF/A-3u) unicode",
+        "file_extensions": "pdf",
+        "numeric_risk_rating": 36,
+        "numeric_risk_rating_range": {
+          "minimum": -52,
+          "maximum": 39
+        },
+        "risk_level": "Low Risk",
+        "category_totals": [
+          {
+            "name": "Disclosure",
+            "score": 6,
+            "minimum": -7,
+            "maximum": 6
+          },
+          {
+            "name": "Adoption",
+            "score": 3,
+            "minimum": -3,
+            "maximum": 5
+          },
+          {
+            "name": "Transparency",
+            "score": 4,
+            "minimum": -7,
+            "maximum": 5
+          },
+          {
+            "name": "Self-Documentation",
+            "score": 3,
+            "minimum": -3,
+            "maximum": 3
+          },
+          {
+            "name": "External Hardware Dependencies",
+            "score": 4,
+            "minimum": -10,
+            "maximum": 4
+          },
+          {
+            "name": "External Software Dependencies",
+            "score": 8,
+            "minimum": -11,
+            "maximum": 8
+          },
+          {
+            "name": "Impact of Patents",
+            "score": 4,
+            "minimum": -4,
+            "maximum": 4
+          },
+          {
+            "name": "Technical Protection Mechanisms",
+            "score": 4,
+            "minimum": -7,
+            "maximum": 4
+          }
+        ],
+        "matrix_date": "2026-03-20",
+        "source_url": "https://github.com/usnationalarchives/digital-preservation/blob/master/Digital_Preservation_Risk_Matrix/NARA_File_Format_Risk_Matrix_20260320_Numbered.csv",
+        "match_basis": "PDF/A subtype in versie",
+        "match_evidence": "PRONOM-versie='3u' -> NARA-naam='Portable Document Format/Archiving (PDF/A-3u) unicode'",
+        "match_scope": "individual"
+      }
     },
     "fmt/482": {
       "page_title": "Apple iBook format",
@@ -86853,7 +88107,73 @@
           "level": "In opslag",
           "institutions": []
         }
-      ]
+      ],
+      "nara_risk": {
+        "nara_format_id": "NF00371",
+        "format_name": "Portable Document Format/Archiving (PDF/A-1a) accessible",
+        "file_extensions": "pdf",
+        "numeric_risk_rating": 36,
+        "numeric_risk_rating_range": {
+          "minimum": -52,
+          "maximum": 39
+        },
+        "risk_level": "Low Risk",
+        "category_totals": [
+          {
+            "name": "Disclosure",
+            "score": 6,
+            "minimum": -7,
+            "maximum": 6
+          },
+          {
+            "name": "Adoption",
+            "score": 3,
+            "minimum": -3,
+            "maximum": 5
+          },
+          {
+            "name": "Transparency",
+            "score": 4,
+            "minimum": -7,
+            "maximum": 5
+          },
+          {
+            "name": "Self-Documentation",
+            "score": 3,
+            "minimum": -3,
+            "maximum": 3
+          },
+          {
+            "name": "External Hardware Dependencies",
+            "score": 4,
+            "minimum": -10,
+            "maximum": 4
+          },
+          {
+            "name": "External Software Dependencies",
+            "score": 8,
+            "minimum": -11,
+            "maximum": 8
+          },
+          {
+            "name": "Impact of Patents",
+            "score": 4,
+            "minimum": -4,
+            "maximum": 4
+          },
+          {
+            "name": "Technical Protection Mechanisms",
+            "score": 4,
+            "minimum": -7,
+            "maximum": 4
+          }
+        ],
+        "matrix_date": "2026-03-20",
+        "source_url": "https://github.com/usnationalarchives/digital-preservation/blob/master/Digital_Preservation_Risk_Matrix/NARA_File_Format_Risk_Matrix_20260320_Numbered.csv",
+        "match_basis": "PDF/A subtype in versie",
+        "match_evidence": "PRONOM-versie='1a' -> NARA-naam='Portable Document Format/Archiving (PDF/A-1a) accessible'",
+        "match_scope": "individual"
+      }
     },
     "fmt/950": {
       "page_title": "MIME Email 1.0",

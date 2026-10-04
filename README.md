@@ -1,6 +1,8 @@
 # Bestandsformatencatalogus
 
-Een catalogus om bestandsformaten te verkennen per toepassingsgebied. De site gebruikt de volledige, aan een PRONOM-release vastgepinde `fmt`- en `x-fmt`-catalogus. De PRONOM-indeling is bronmetadata; deze site kent zelf geen voorkeursstatus, duurzaamheidsscore of beleidsadvies toe.
+Deze catalogus helpt archieven, bibliotheken en andere erfgoedorganisaties bestandsformaten te verkennen en hun eigen beleid daarbij in context te plaatsen. Blader door de volledige, aan een PRONOM-release vastgepinde `fmt`- en `x-fmt`-catalogus op toepassingsgebied of formaatfamilie, bekijk formaatdetails en vergelijk instellingsprofielen, beleidsstatussen en NARA-risicoscores waar een expliciete koppeling beschikbaar is.
+
+De catalogus biedt een herleidbaar overzicht, geen voorkeurs- of preserveringsadvies. Toepassingsgebieden zijn bronclassificaties; ze zeggen op zichzelf niets over de geschiktheid van een formaat voor een specifieke instelling. NARA-risicoscores worden alleen getoond voor formaten die expliciet in de kruistabel zijn gekoppeld.
 
 ## Starten
 

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#173d38">
 <meta name="referrer" content="no-referrer">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-eieni8ASvKhA2vq6dOK1ZgZBA/A4sTPIUTFRyFv/ZyA='; style-src 'sha256-FbzVKnB0bNpHZcapqTya8j5C/DRWfkB7vj2wl5xew5I='; connect-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-kY0ebaqeKFyFaEdVjX0ng8tP9vqRh4tKXZnaKr1kqQo='; style-src 'sha256-FbzVKnB0bNpHZcapqTya8j5C/DRWfkB7vj2wl5xew5I='; connect-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'; object-src 'none'">
 <title>Bestandsformatencatalogus</title>
 <style>
   :root {
@@ -303,7 +303,7 @@
 <script>
 "use strict";
 let CATALOG = null;
-const state = { query: "", type: "", page: 0, pageSize: 50, area: null, family: null, active: null, activeInstitution: null, view: "areas" };
+const state = { query: "", type: "", page: 0, pageSize: 50, area: null, family: null, active: null, activeInstitution: null, activeInstitutionFamily: null, view: "areas" };
 const $ = (id) => document.getElementById(id);
 let institutionEditorStep = 0;
 const institutionEditorFamilies = new Set();
@@ -690,6 +690,7 @@ function renderDetail() {
 function openInstitution(institutionId) {
   state.view = "institutions";
   state.activeInstitution = institutionId;
+  state.activeInstitutionFamily = null;
   state.active = null;
   const url = new URL(location.href);
   url.searchParams.delete("puid");
@@ -1215,11 +1216,35 @@ function renderInstitutionView() {
   const institutionsOverviewUrl = safeUrl(institution.overview_sources?.institutions_overview);
   const preferredOverviewUrl = safeUrl(institution.overview_sources?.preferred_formats_overview);
   const formats = institution.formats || [];
+  if (state.activeInstitutionFamily) {
+    const familyName = state.activeInstitutionFamily;
+    const familyFormats = formats.filter((item) => String(item.family_name || "").trim().toLocaleLowerCase() === familyName.trim().toLocaleLowerCase());
+    const rows = familyFormats.map((item) => {
+      const record = CATALOG.records[item.puid] || {};
+      const applicationAreas = (record.browse_application_areas || []).map(areaLabel).join(", ") || "Niet ingedeeld";
+      return `<tr><td><button class="open-record" type="button" data-puid="${esc(item.puid)}">${esc(item.puid)}</button></td>
+        <td>${esc(item.format_name)}</td><td>${esc(item.version || "—")}</td><td>${esc(applicationAreas)}</td>
+        <td>${esc(item.policy_statuses.join(", ") || "—")}</td><td>${esc(item.knowledge_levels.join(", ") || "—")}</td></tr>`;
+    }).join("");
+    detail.innerHTML = `<div class="detail-top"><div><h2>${esc(familyName)}</h2><p class="detail-subtitle">Formaatfamilie bij ${esc(institution.name)} · ${familyFormats.length.toLocaleString("nl-NL")} formaten</p></div>
+      <button type="button" class="editor-actions-button" data-back-to-institution>Terug naar instelling</button></div>
+      <section><h3>Formaten en toepassingsgebieden</h3>${familyFormats.length ? `<div class="table-wrap"><table><thead><tr><th>PUID</th><th>Formaat</th><th>Versie</th><th>Toepassingsgebieden</th><th>Formaatbeleid</th><th>Kennisniveau</th></tr></thead><tbody>${rows}</tbody></table></div>` : `<p class="muted">Geen gekoppelde formaten voor deze formaatfamilie.</p>`}</section>`;
+    detail.hidden = false;
+    detail.querySelector("[data-back-to-institution]").addEventListener("click", () => {
+      state.activeInstitutionFamily = null;
+      renderInstitutionView();
+    });
+    detail.querySelectorAll("button[data-puid]").forEach((button) => {
+      button.addEventListener("click", () => openDetail(button.dataset.puid));
+    });
+    return;
+  }
   const familyImportance = institution.family_importance || [];
   const riskPlot = institutionRiskPlot(institution);
   const formatRows = formats.map((item) => `
     <tr><td><button class="open-record" type="button" data-puid="${esc(item.puid)}">${esc(item.puid)}</button></td>
     <td>${esc(item.format_name)}</td><td>${esc(item.version || "—")}</td>
+    <td>${item.family_name ? `<button class="open-record" type="button" data-institution-family="${esc(item.family_name)}">${esc(item.family_name)}</button>` : "—"}</td>
     <td>${esc(item.policy_statuses.join(", ") || "—")}</td><td>${esc(item.knowledge_levels.join(", ") || "—")}</td>
     <td>${item.nara_risk ? `${esc(item.nara_risk.numeric_risk_rating ?? "Onbekend")} · ${esc(item.nara_risk.risk_level || "")}` : "—"}</td></tr>`).join("");
   detail.innerHTML = `
@@ -1232,9 +1257,15 @@ function renderInstitutionView() {
       <dt>Overzichten</dt><dd>${institutionsOverviewUrl ? `<a href="${esc(institutionsOverviewUrl)}" target="_blank" rel="noopener">Instellingen</a>` : ""}${institutionsOverviewUrl && preferredOverviewUrl ? " · " : ""}${preferredOverviewUrl ? `<a href="${esc(preferredOverviewUrl)}" target="_blank" rel="noopener">Voorkeursformaten</a>` : ""}</dd></dl></section>
     ${(institution.policy_scheme?.length || institution.knowledge_scheme?.length) ? `<section><h3>Beleidskader</h3><p>Formaatbeleid: ${esc(institution.policy_scheme.join(", ") || "Niet vastgelegd")}</p><p>Kennisniveaus: ${esc(institution.knowledge_scheme.join(", ") || "Niet vastgelegd")}</p></section>` : ""}
     <section><h3>Belang en NARA-risico</h3>${riskPlot}</section>
-    ${familyImportance.length ? `<section><h3>Belang per formaatfamilie</h3><div class="table-wrap"><table><thead><tr><th>Formaatfamilie</th><th>Belangscore</th><th>Gebruikers</th><th>Archief</th><th>Systemen</th><th>Strategie</th></tr></thead><tbody>${familyImportance.map((item) => `<tr><td>${esc(item.family_name)}</td><td>${esc(item.importance_score ?? "—")}</td><td>${esc(item.importance_users || "—")}</td><td>${esc(item.importance_archive || "—")}</td><td>${esc(item.importance_systems || "—")}</td><td>${esc(item.importance_strategy || "—")}</td></tr>`).join("")}</tbody></table></div></section>` : ""}
-    <section><h3>Formaatbeleid en kennisniveaus</h3>${formats.length ? `<div class="table-wrap"><table><thead><tr><th>PUID</th><th>Formaat</th><th>Versie</th><th>Formaatbeleid</th><th>Kennisniveau</th><th>NARA-risico</th></tr></thead><tbody>${formatRows}</tbody></table></div>` : `<p class="muted">Geen formaatbeleid of kennisniveaus gekoppeld aan PRONOM-records in deze catalogus.</p>`}</section>`;
+    ${familyImportance.length ? `<section><h3>Belang per formaatfamilie</h3><div class="table-wrap"><table><thead><tr><th>Formaatfamilie</th><th>Belangscore</th><th>Gebruikers</th><th>Archief</th><th>Systemen</th><th>Strategie</th></tr></thead><tbody>${familyImportance.map((item) => `<tr><td><button class="open-record" type="button" data-institution-family="${esc(item.family_name)}">${esc(item.family_name)}</button></td><td>${esc(item.importance_score ?? "—")}</td><td>${esc(item.importance_users || "—")}</td><td>${esc(item.importance_archive || "—")}</td><td>${esc(item.importance_systems || "—")}</td><td>${esc(item.importance_strategy || "—")}</td></tr>`).join("")}</tbody></table></div></section>` : ""}
+    <section><h3>Formaatbeleid en kennisniveaus</h3>${formats.length ? `<div class="table-wrap"><table><thead><tr><th>PUID</th><th>Formaat</th><th>Versie</th><th>Formaatfamilie</th><th>Formaatbeleid</th><th>Kennisniveau</th><th>NARA-risico</th></tr></thead><tbody>${formatRows}</tbody></table></div>` : `<p class="muted">Geen formaatbeleid of kennisniveaus gekoppeld aan PRONOM-records in deze catalogus.</p>`}</section>`;
   detail.hidden = false;
+  detail.querySelectorAll("button[data-institution-family]").forEach((button) => {
+    button.addEventListener("click", () => {
+      state.activeInstitutionFamily = button.dataset.institutionFamily;
+      renderInstitutionView();
+    });
+  });
   detail.querySelector(".close-detail").addEventListener("click", () => {
     state.activeInstitution = null;
     const url = new URL(location.href);

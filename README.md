@@ -18,9 +18,10 @@ Tests uitvoeren:
 python -m unittest discover -s tests
 ```
 
-GitHub Actions bouwt en test de catalogus en bewaart de statische site als
-`bestandsformaten-site`-artifact. Deze private repository heeft geen GitHub Pages-
-deployment; publicatie op de bestaande hosting gebeurt buiten deze workflow.
+GitHub Actions bouwt, test en publiceert de statische site naar GitHub Pages bij
+iedere push naar `main`. De Pages-bron staat ingesteld op **GitHub Actions**. De
+projectpagina is beschikbaar op
+`https://rvanveenendaal.github.io/wegwijzer-voorkeursformaten/`.
 
 ## Catalogus en indeling
 

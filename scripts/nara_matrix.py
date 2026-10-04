@@ -14,7 +14,14 @@ PROFILES_PATH = ROOT / "data" / "format_profiles.json"
 CATALOG_PATH = ROOT / "data" / "pronom_catalog.json"
 MATRIX_PATH = ROOT / "data" / "NARA_File_Format_Risk_Matrix_20260320_Numbered.csv"
 CROSSWALK_PATH = ROOT / "data" / "nara_crosswalk.csv"
+WEIGHTS_PATH = ROOT / "data" / "NARA_File_Format_Risk_Matrix_Weights_20241218.csv"
 MATRIX_SOURCE_URL = "https://github.com/usnationalarchives/digital-preservation/blob/master/Digital_Preservation_Risk_Matrix/NARA_File_Format_Risk_Matrix_20260320_Numbered.csv"
+WEIGHTS_SOURCE_URL = "https://github.com/usnationalarchives/digital-preservation/blob/master/Supporting_Documentation/Risk_Matrix_Weights/NARA_File_Format_Risk_Matrix_Weights_20241218.csv"
+WEIGHTS_TOTAL_COLUMN = "TOTAL NARA Risk Level Numeric Score"
+SCORE_RANGE_PATTERN = re.compile(
+    r"Highest possible score\s*=\s*(-?\d+)\s*;\s*Lowest possible score\s*=\s*(-?\d+)",
+    re.IGNORECASE,
+)
 CATEGORY_COLUMNS = (
     ("Disclosure", "1: TOTAL Disclosure Score"),
     ("Adoption", "2: TOTAL Adoption Score"),
@@ -37,7 +44,28 @@ def _number(value):
     return int(number) if number.is_integer() else number
 
 
-def apply_nara_matrix(profiles, catalog_records, matrix_rows, crosswalk_rows, matrix_date):
+def parse_score_ranges(weight_rows):
+    if len(weight_rows) != 1:
+        raise ValueError("De NARA-gewichten-CSV moet precies één gegevensrij bevatten")
+
+    row = weight_rows[0]
+
+    def extract_range(column):
+        description = row.get(column, "")
+        match = SCORE_RANGE_PATTERN.search(description)
+        if not match:
+            raise ValueError(f"Geen min/max-scoregrens gevonden in gewichtenkolom: {column}")
+        maximum, minimum = (int(value) for value in match.groups())
+        return {"minimum": minimum, "maximum": maximum}
+
+    categories = {name: extract_range(column) for name, column in CATEGORY_COLUMNS}
+    return {
+        "numeric_risk_rating": extract_range(WEIGHTS_TOTAL_COLUMN),
+        "categories": categories,
+    }
+
+
+def apply_nara_matrix(profiles, catalog_records, matrix_rows, crosswalk_rows, score_ranges, matrix_date):
     matrix_by_id = {}
     for row in matrix_rows:
         nara_id = row.get("NARA Format ID", "").strip()
@@ -82,9 +110,14 @@ def apply_nara_matrix(profiles, catalog_records, matrix_rows, crosswalk_rows, ma
             "format_name": row["Format Name"],
             "file_extensions": row.get("File Extension(s)"),
             "numeric_risk_rating": _number(row.get("TOTAL Numeric Risk Rating")),
+            "numeric_risk_rating_range": score_ranges["numeric_risk_rating"],
             "risk_level": row.get("Risk Level"),
             "category_totals": [
-                {"name": name, "score": _number(row.get(column))}
+                {
+                    "name": name,
+                    "score": _number(row.get(column)),
+                    **score_ranges["categories"][name],
+                }
                 for name, column in CATEGORY_COLUMNS
             ],
             "matrix_date": matrix_date,
@@ -122,10 +155,12 @@ def main():
         crosswalk_rows = list(csv.DictReader(handle))
     if not crosswalk_rows:
         raise ValueError(f"De NARA-kruistabel is leeg: {args.crosswalk}")
+    with WEIGHTS_PATH.open(encoding="utf-8-sig", newline="") as handle:
+        score_ranges = parse_score_ranges(list(csv.DictReader(handle)))
 
     matrix_date = _matrix_date(args.matrix)
     counts = apply_nara_matrix(
-        profile_document["records"], catalog["records"], matrix_rows, crosswalk_rows, matrix_date
+        profile_document["records"], catalog["records"], matrix_rows, crosswalk_rows, score_ranges, matrix_date
     )
     profile_document["nara_matrix"] = {
         "matrix_date": matrix_date,

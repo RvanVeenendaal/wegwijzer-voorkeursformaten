@@ -469,10 +469,12 @@ function renderDetail() {
   ].map(([label, value]) => `<div><dt>${esc(label)}</dt><dd>${typeof value === "string" && value.startsWith("<a ") ? value : esc(value)}</dd></div>`).join("");
   const naraRisk = profile?.nara_risk;
   const naraMatrixUrl = "https://github.com/usnationalarchives/digital-preservation/tree/master/Digital_Preservation_Risk_Matrix";
+  const naraWeightsUrl = "https://github.com/usnationalarchives/digital-preservation/blob/master/Supporting_Documentation/Risk_Matrix_Weights/NARA_File_Format_Risk_Matrix_Weights_20241218.csv";
   const naraRiskHtml = naraRisk ? `
-    <div class="risk-total"><strong>${esc(naraRisk.numeric_risk_rating ?? "Onbekend")}</strong><span>TOTAL Numeric Risk Rating · ${esc(naraRisk.risk_level || "risiconiveau onbekend")}</span></div>
+    <div class="risk-total"><strong>${esc(naraRisk.numeric_risk_rating ?? "Onbekend")}</strong><span>TOTAL Numeric Risk Rating · ${esc(naraRisk.risk_level || "risiconiveau onbekend")} · mogelijk bereik ${esc(naraRisk.numeric_risk_rating_range.minimum)} tot ${esc(naraRisk.numeric_risk_rating_range.maximum)}</span></div>
     <dl><dt>Methodiek NARA</dt><dd><a href="${esc(naraMatrixUrl)}" target="_blank" rel="noopener">NARA-risicomatrix</a> · matrix ${esc(naraRisk.matrix_date || "onbekende datum")}</dd><dt>NARA Format ID</dt><dd>${esc(naraRisk.nara_format_id)} · ${esc(naraRisk.format_name)}</dd><dt>Koppelbasis</dt><dd>${esc(naraRisk.match_basis)}${naraRisk.match_scope === "shared_family" ? " · gedeelde NARA-familierij" : ""}</dd><dt>Koppelbewijs</dt><dd>${esc(naraRisk.match_evidence)}</dd><dt>Bestandsextensies</dt><dd>${esc(naraRisk.file_extensions || "Niet opgegeven")}</dd></dl>
-    <div class="table-wrap"><table><thead><tr><th>Risicocategorie</th><th>TOTAL</th></tr></thead><tbody>${(naraRisk.category_totals || []).map((category) => `<tr><td>${esc(category.name)}</td><td>${esc(category.score ?? "Onbekend")}</td></tr>`).join("")}</tbody></table></div>`
+    <p class="muted">Scoregrenzen volgens <a href="${esc(naraWeightsUrl)}" target="_blank" rel="noopener">NARA Risk Matrix Weights</a>. Prevalence, Feasibility en NARA TOTAL zijn niet meegerekend.</p>
+    <div class="table-wrap"><table><thead><tr><th>Risicocategorie</th><th>TOTAL</th><th>Mogelijk bereik</th></tr></thead><tbody>${(naraRisk.category_totals || []).map((category) => `<tr><td>${esc(category.name)}</td><td>${esc(category.score ?? "Onbekend")}</td><td>${esc(category.minimum)} tot ${esc(category.maximum)}</td></tr>`).join("")}</tbody></table></div>`
     : `<p class="muted">Geen eenduidige NARA-formatmatch; er is geen risicoscore ingevuld.</p>`;
   const wikidata = null;
   const wikidataSources = [];

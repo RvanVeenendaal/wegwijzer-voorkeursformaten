@@ -30,6 +30,8 @@ projectpagina is beschikbaar op
 - `data/format_profiles.json` bevat per gevonden PUID lokaal beleid en kennisniveaus, plus NARA-risicototalen voor PUID's uit de kruistabel. De oudere Wegwijzer-duurzaamheidsscores worden niet bewaard.
 - `data/nara_crosswalk.csv` is de handmatig beheerde koppeling van PRONOM-PUID naar NARA Format ID. `basis` benoemt het gebruikte naam-/alias-/signatuurbewijs, `evidence` legt de bronwaarden vast en `scope` markeert NARA-rijen die door meerdere PUID's worden gedeeld.
 - `data/NARA_File_Format_Risk_Matrix_20260320_Numbered.csv` is de lokaal gedownloade NARA-bronmatrix die de risicototalen levert.
+- `data/NARA_File_Format_Risk_Matrix_Weights_20241218.csv` bevat de officiële NARA-gewichten en mogelijke minimum-/maximumscore per categorie en Numeric Risk Rating.
+- `scripts/nara_matrix.py` leest de grenzen uit de acht categorie-totalen en `TOTAL NARA Risk Level Numeric Score`. Prevalence, Feasibility en NARA TOTAL worden niet meegenomen.
 - `scripts/harvest.py` haalt de nieuwste getagde PRONOM-release op, resolveert die naar een commit en vervangt de broncatalogus.
 - `scripts/harvest_profiles.py` zoekt bronpagina's per PUID en slaat lokaal beleid, kennisniveaus en identifiers op.
 - `scripts/nara_matrix.py` vervangt legacy-scores door de totalen uit de gedownloade NARA-CSV en gebruikt uitsluitend expliciete regels uit de kruistabel. Onbekende PUID's en NARA-ID's worden geweigerd.
@@ -51,6 +53,7 @@ data/
   format_profiles.json      # lokaal beleid en NARA-risicototalen per PUID
   nara_crosswalk.csv        # handmatig beheerde PUID-naar-NARA-koppelingen
   NARA_File_Format_Risk_Matrix_20260320_Numbered.csv  # gedownloade matrixbron
+  NARA_File_Format_Risk_Matrix_Weights_20241218.csv  # scoregrenzen uit NARA-gewichten
 scripts/
   harvest.py                # PRONOM-release ophalen
   harvest_profiles.py      # lokaal beleid en kennisniveaus ophalen

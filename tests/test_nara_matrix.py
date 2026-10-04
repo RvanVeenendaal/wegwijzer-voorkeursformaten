@@ -1,6 +1,21 @@
 import unittest
 
-from scripts.nara_matrix import apply_nara_matrix
+from scripts.nara_matrix import apply_nara_matrix, parse_score_ranges
+
+
+SCORE_RANGES = {
+    "numeric_risk_rating": {"minimum": -52, "maximum": 39},
+    "categories": {
+        "Disclosure": {"minimum": -7, "maximum": 6},
+        "Adoption": {"minimum": -3, "maximum": 5},
+        "Transparency": {"minimum": -7, "maximum": 5},
+        "Self-Documentation": {"minimum": -3, "maximum": 3},
+        "External Hardware Dependencies": {"minimum": -10, "maximum": 4},
+        "External Software Dependencies": {"minimum": -11, "maximum": 8},
+        "Impact of Patents": {"minimum": -4, "maximum": 4},
+        "Technical Protection Mechanisms": {"minimum": -7, "maximum": 4},
+    },
+}
 
 
 class NaraMatrixTests(unittest.TestCase):
@@ -35,15 +50,16 @@ class NaraMatrixTests(unittest.TestCase):
             "scope": "individual",
         }]
 
-        counts = apply_nara_matrix(profiles, catalog, matrix_rows, crosswalk, "2026-03-20")
+        counts = apply_nara_matrix(profiles, catalog, matrix_rows, crosswalk, SCORE_RANGES, "2026-03-20")
 
         self.assertEqual(counts, {"matched": 1, "unmatched": 1})
         self.assertNotIn("durability", profiles["fmt/1"])
         self.assertEqual(profiles["fmt/1"]["nara_risk"]["nara_format_id"], "NF00439")
         self.assertEqual(profiles["fmt/1"]["nara_risk"]["numeric_risk_rating"], 24)
+        self.assertEqual(profiles["fmt/1"]["nara_risk"]["numeric_risk_rating_range"], {"minimum": -52, "maximum": 39})
         self.assertNotIn("nara_total", profiles["fmt/1"]["nara_risk"])
         self.assertEqual(profiles["fmt/1"]["nara_risk"]["match_basis"], "profielnaam_via_nara_afkorting")
-        self.assertEqual(profiles["fmt/1"]["nara_risk"]["category_totals"][0], {"name": "Disclosure", "score": 6})
+        self.assertEqual(profiles["fmt/1"]["nara_risk"]["category_totals"][0], {"name": "Disclosure", "score": 6, "minimum": -7, "maximum": 6})
         self.assertNotIn("nara_risk", profiles["fmt/2"])
         self.assertNotIn("durability", profiles["fmt/2"])
 
@@ -59,7 +75,7 @@ class NaraMatrixTests(unittest.TestCase):
             "scope": "individual",
         }]
 
-        apply_nara_matrix(profiles, catalog, matrix_rows, crosswalk, "2026-03-20")
+        apply_nara_matrix(profiles, catalog, matrix_rows, crosswalk, SCORE_RANGES, "2026-03-20")
 
         self.assertEqual(profiles["fmt/1"]["format_policy"], [])
         self.assertEqual(profiles["fmt/1"]["nara_risk"]["nara_format_id"], "NF1")
@@ -76,9 +92,32 @@ class NaraMatrixTests(unittest.TestCase):
         }
 
         with self.assertRaisesRegex(ValueError, "Onbekende PUID"):
-            apply_nara_matrix({}, catalog, matrix_rows, [{**valid, "puid": "fmt/2"}], "2026-03-20")
+            apply_nara_matrix({}, catalog, matrix_rows, [{**valid, "puid": "fmt/2"}], SCORE_RANGES, "2026-03-20")
         with self.assertRaisesRegex(ValueError, "Dubbele PUID"):
-            apply_nara_matrix({}, catalog, matrix_rows, [valid, valid], "2026-03-20")
+            apply_nara_matrix({}, catalog, matrix_rows, [valid, valid], SCORE_RANGES, "2026-03-20")
+
+    def test_extracts_only_category_and_risk_rating_ranges(self):
+        weight_row = {
+            "1: TOTAL Disclosure Score": "Highest possible score = 6; Lowest possible score = -7",
+            "2: TOTAL Adoption Score": "Highest possible score = 5; Lowest possible score = -3",
+            "3: TOTAL Transparency Score": "Highest possible score = 5; Lowest possible score = -7",
+            "4: TOTAL Self-Documentation Score": "Highest possible score = 3; Lowest possible score = -3",
+            "5: TOTAL External Hardware Dependencies Score": "Highest possible score = 4; Lowest possible score = -10",
+            "6: TOTAL External Software Dependencies Score": "Highest possible score = 8; Lowest possible score = -11",
+            "7: TOTAL Impact of Patents Score": "Highest possible score = 4; Lowest possible score = -4",
+            "8: TOTAL Technical Protection Mechanisms Score": "Highest possible score = 4; Lowest possible score = -7",
+            "TOTAL NARA Risk Level Numeric Score": "Highest possible score = 39; Lowest possible score = -52",
+            "Prevalence": "Highest possible score = -5; Lowest possible score = -15",
+            "Feasibility Score": "Highest possible score = 5; Lowest possible score = -5",
+            "NARA TOTAL": "Highest possible score = 39; Lowest possible score = -72",
+        }
+
+        ranges = parse_score_ranges([weight_row])
+
+        self.assertEqual(ranges, SCORE_RANGES)
+        self.assertNotIn("Prevalence", ranges)
+        self.assertNotIn("Feasibility Score", ranges)
+        self.assertNotIn("NARA TOTAL", ranges)
 
 
 if __name__ == "__main__":

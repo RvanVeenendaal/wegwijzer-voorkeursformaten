@@ -206,7 +206,7 @@ const $ = (id) => document.getElementById(id);
 const esc = (value) => String(value ?? "").replace(/[&<>"']/g, (char) =>
   ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[char]));
 const safeUrl = (value) => typeof value === "string" && /^https?:\/\//i.test(value) ? value : null;
-const pronomUrl = (puid) => `https://www.nationalarchives.gov.uk/PRONOM/${encodeURIComponent(puid).replace(/%2F/g, "/")}`;
+const pronomUrl = (puid) => `https://pronom.nationalarchives.gov.uk/${encodeURIComponent(puid).replace(/%2F/g, "/")}`;
 
 function identifierUrl(type, value) {
   const normalizedType = (type || "").toLowerCase();
@@ -463,7 +463,7 @@ function renderDetail() {
   const profileRows = [
     ["Formaatfamilie", profile?.formaatfamilie || familyOf(record).label],
     ["Toepassingsgebied", areaNames.join(", ") || "Niet ingedeeld"],
-    ["PRONOM ID", puid],
+    ["PRONOM ID", `<a href="${esc(pronomUrl(puid))}" target="_blank" rel="noopener">${esc(puid)}</a>`],
     ["Wikidata ID", wikidataUrl ? `<a href="${esc(wikidataUrl)}" target="_blank" rel="noopener">${esc(wikidataId)}</a>` : "Niet gekoppeld"],
     ["Library of Congress ID", locUrl ? `<a href="${esc(locUrl)}" target="_blank" rel="noopener">${esc(locId)}</a>` : "Niet gekoppeld"],
   ].map(([label, value]) => `<div><dt>${esc(label)}</dt><dd>${typeof value === "string" && value.startsWith("<a ") ? value : esc(value)}</dd></div>`).join("");

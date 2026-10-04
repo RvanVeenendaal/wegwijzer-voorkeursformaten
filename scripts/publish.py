@@ -70,10 +70,12 @@ def build_institution_profiles(institution_documents, format_profiles, catalog_r
                 "puid": puid,
                 "format_name": record.get("formatName") or puid,
                 "version": record.get("version"),
+                "family_name": entry.get("family_name"),
                 "policy_statuses": sorted(set(policy_statuses), key=lambda value: (status_order.get(value, 99), value.casefold())),
                 "knowledge_levels": sorted(set(knowledge_levels), key=lambda value: (knowledge_order.get(value, 99), value.casefold())),
                 "nara_risk": {
                     "numeric_risk_rating": shared_nara.get("numeric_risk_rating"),
+                    "numeric_risk_rating_range": shared_nara.get("numeric_risk_rating_range"),
                     "risk_level": shared_nara.get("risk_level"),
                 } if shared_nara else None,
             })

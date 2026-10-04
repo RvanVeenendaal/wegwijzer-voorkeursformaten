@@ -20,63 +20,72 @@
       ],
       "knowledge_levels": [
         "Gekend"
-      ]
+      ],
+      "family_name": "PDF"
     },
     {
       "puid": "fmt/354",
       "policy_statuses": [
         "Voorkeursformaat"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "PDF"
     },
     {
       "puid": "fmt/476",
       "policy_statuses": [
         "Voorkeursformaat"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "PDF"
     },
     {
       "puid": "fmt/95",
       "policy_statuses": [
         "Voorkeursformaat"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "PDF"
     },
     {
       "puid": "fmt/410",
       "policy_statuses": [
         "Voorkeursformaat"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "Web ARChive"
     },
     {
       "puid": "x-fmt/219",
       "policy_statuses": [
         "Legacy"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "Web ARChive"
     },
     {
       "puid": "fmt/1281",
       "policy_statuses": [
         "Voorkeursformaat"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "Web ARChive"
     },
     {
       "puid": "fmt/1355",
       "policy_statuses": [
         "Geaccepteerd"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "Web ARChive"
     },
     {
       "puid": "fmt/289",
       "policy_statuses": [
         "Legacy"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "Web ARChive"
     }
   ],
   "family_importance": [

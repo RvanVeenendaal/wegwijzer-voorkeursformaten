@@ -139,6 +139,7 @@ class CatalogPublishingTests(unittest.TestCase):
             "source_url": "https://example.org/profile",
             "formats": [{
                 "puid": "fmt/1",
+                "family_name": "Example Family",
                 "policy_statuses": ["Voorkeursformaat"],
                 "knowledge_levels": ["Gekend"],
             }],
@@ -150,6 +151,7 @@ class CatalogPublishingTests(unittest.TestCase):
         self.assertEqual(pages[0]["id"], "archief-x")
         self.assertEqual(pages[0]["preferred_count"], 1)
         self.assertEqual(pages[0]["formats"][0]["puid"], "fmt/1")
+        self.assertEqual(pages[0]["formats"][0]["family_name"], "Example Family")
         self.assertEqual(pages[0]["formats"][0]["policy_statuses"], ["Voorkeursformaat"])
         self.assertEqual(pages[0]["formats"][0]["knowledge_levels"], ["Gekend"])
         self.assertEqual(pages[0]["formats"][0]["nara_risk"]["numeric_risk_rating"], 24)

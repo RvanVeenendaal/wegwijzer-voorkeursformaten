@@ -5,7 +5,7 @@ Kopieer `institution.json` naar `data/institutions/<id>.json`. Gebruik dezelfde 
 ## Velden
 
 - Vul publieke organisatiegegevens en `source_url` in. Laat onbekende waarden `null`.
-- Voeg bij `formats` één object per PUID toe, met `policy_statuses` en/of `knowledge_levels`.
+- Voeg bij `formats` één object per PUID toe, met `family_name`, `policy_statuses` en/of `knowledge_levels`. Gebruik voor `family_name` dezelfde familienaam als een regel in `family_importance`; die koppeling is nodig voor de plot.
 - Geldige beleidsstatussen: `Voorkeursformaat`, `Geaccepteerd`, `Legacy`, `Open`.
 - Geldige kennisniveaus: `Gekend`, `Geidentificeerd`, `In opslag`.
 - Voeg optioneel `family_importance` toe met score 0–12 en dimensies `Laag`, `Midden` of `Hoog`.
@@ -15,6 +15,7 @@ Een voorbeeld van een formatregel:
 ```json
 {
 	"puid": "fmt/199",
+	"family_name": "PDF",
 	"policy_statuses": ["Geaccepteerd"],
 	"knowledge_levels": ["Gekend"]
 }

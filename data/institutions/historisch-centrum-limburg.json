@@ -18,504 +18,576 @@
       "policy_statuses": [
         "Geaccepteerd"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "PDF"
     },
     {
       "puid": "fmt/354",
       "policy_statuses": [
         "Voorkeursformaat"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "PDF"
     },
     {
       "puid": "fmt/476",
       "policy_statuses": [
         "Voorkeursformaat"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "PDF"
     },
     {
       "puid": "fmt/477",
       "policy_statuses": [
         "Geaccepteerd"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "PDF"
     },
     {
       "puid": "fmt/478",
       "policy_statuses": [
         "Voorkeursformaat"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "PDF"
     },
     {
       "puid": "fmt/479",
       "policy_statuses": [
         "Geaccepteerd"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "PDF"
     },
     {
       "puid": "fmt/480",
       "policy_statuses": [
         "Geaccepteerd"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "PDF"
     },
     {
       "puid": "fmt/481",
       "policy_statuses": [
         "Geaccepteerd"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "PDF"
     },
     {
       "puid": "fmt/95",
       "policy_statuses": [
         "Voorkeursformaat"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "PDF"
     },
     {
       "puid": "fmt/5",
       "policy_statuses": [
         "Open"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "Windows Media"
     },
     {
       "puid": "fmt/1",
       "policy_statuses": [
         "Geaccepteerd"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "WAVE"
     },
     {
       "puid": "fmt/2",
       "policy_statuses": [
         "Geaccepteerd"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "WAVE"
     },
     {
       "puid": "fmt/527",
       "policy_statuses": [
         "Voorkeursformaat"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "WAVE"
     },
     {
       "puid": "x-fmt/18",
       "policy_statuses": [
         "Geaccepteerd"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "Comma Separated Values formaatfamilie"
     },
     {
       "puid": "x-fmt/392",
       "policy_statuses": [
         "Geaccepteerd"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "JPEG 2000"
     },
     {
       "puid": "fmt/42",
       "policy_statuses": [
         "Geaccepteerd"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "JPEG"
     },
     {
       "puid": "fmt/43",
       "policy_statuses": [
         "Geaccepteerd"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "JPEG"
     },
     {
       "puid": "fmt/44",
       "policy_statuses": [
         "Geaccepteerd"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "JPEG"
     },
     {
       "puid": "fmt/151",
       "policy_statuses": [
         "Geaccepteerd"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "JPEG 2000"
     },
     {
       "puid": "fmt/200",
       "policy_statuses": [
         "Voorkeursformaat"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "MXF"
     },
     {
       "puid": "fmt/783",
       "policy_statuses": [
         "Geaccepteerd"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "MXF"
     },
     {
       "puid": "fmt/784",
       "policy_statuses": [
         "Geaccepteerd"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "MXF"
     },
     {
       "puid": "fmt/786",
       "policy_statuses": [
         "Geaccepteerd"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "MXF"
     },
     {
       "puid": "fmt/787",
       "policy_statuses": [
         "Geaccepteerd"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "MXF"
     },
     {
       "puid": "fmt/788",
       "policy_statuses": [
         "Geaccepteerd"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "MXF"
     },
     {
       "puid": "fmt/789",
       "policy_statuses": [
         "Geaccepteerd"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "MXF"
     },
     {
       "puid": "fmt/790",
       "policy_statuses": [
         "Geaccepteerd"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "MXF"
     },
     {
       "puid": "fmt/569",
       "policy_statuses": [
         "Open"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "EBML"
     },
     {
       "puid": "fmt/720",
       "policy_statuses": [
         "Open"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "Productiviteit (Algemeen)"
     },
     {
       "puid": "fmt/275",
       "policy_statuses": [
         "Open"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "Microsoft Office"
     },
     {
       "puid": "x-fmt/240",
       "policy_statuses": [
         "Open"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "Microsoft Office"
     },
     {
       "puid": "x-fmt/241",
       "policy_statuses": [
         "Open"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "Microsoft Office"
     },
     {
       "puid": "fmt/61",
       "policy_statuses": [
         "Open"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "Microsoft Office"
     },
     {
       "puid": "fmt/214",
       "policy_statuses": [
         "Geaccepteerd"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "Microsoft Office"
     },
     {
       "puid": "x-fmt/430",
       "policy_statuses": [
         "Open"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "Microsoft Office"
     },
     {
       "puid": "x-fmt/250",
       "policy_statuses": [
         "Open"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "Microsoft Office"
     },
     {
       "puid": "x-fmt/248",
       "policy_statuses": [
         "Open"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "Microsoft Office"
     },
     {
       "puid": "x-fmt/249",
       "policy_statuses": [
         "Open"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "Microsoft Office"
     },
     {
       "puid": "fmt/215",
       "policy_statuses": [
         "Geaccepteerd"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "Microsoft Office"
     },
     {
       "puid": "fmt/126",
       "policy_statuses": [
         "Open"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "Microsoft Office"
     },
     {
       "puid": "fmt/40",
       "policy_statuses": [
         "Open"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "Microsoft Office"
     },
     {
       "puid": "fmt/412",
       "policy_statuses": [
         "Geaccepteerd"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "Microsoft Office"
     },
     {
       "puid": "fmt/950",
       "policy_statuses": [
         "Open"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "MIME Email"
     },
     {
       "puid": "fmt/134",
       "policy_statuses": [
         "Open"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "MPEG-1 Audio"
     },
     {
       "puid": "fmt/199",
       "policy_statuses": [
         "Open"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "MP4"
     },
     {
       "puid": "fmt/140",
       "policy_statuses": [
         "Geaccepteerd"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "ODF (OpenDocument Format)"
     },
     {
       "puid": "fmt/424",
       "policy_statuses": [
         "Voorkeursformaat"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "ODF (OpenDocument Format)"
     },
     {
       "puid": "fmt/444",
       "policy_statuses": [
         "Geaccepteerd"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "ODF (OpenDocument Format)"
     },
     {
       "puid": "fmt/138",
       "policy_statuses": [
         "Geaccepteerd"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "ODF (OpenDocument Format)"
     },
     {
       "puid": "fmt/292",
       "policy_statuses": [
         "Geaccepteerd"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "ODF (OpenDocument Format)"
     },
     {
       "puid": "fmt/293",
       "policy_statuses": [
         "Voorkeursformaat"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "ODF (OpenDocument Format)"
     },
     {
       "puid": "fmt/137",
       "policy_statuses": [
         "Geaccepteerd"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "ODF (OpenDocument Format)"
     },
     {
       "puid": "fmt/294",
       "policy_statuses": [
         "Geaccepteerd"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "ODF (OpenDocument Format)"
     },
     {
       "puid": "fmt/295",
       "policy_statuses": [
         "Voorkeursformaat"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "ODF (OpenDocument Format)"
     },
     {
       "puid": "fmt/136",
       "policy_statuses": [
         "Geaccepteerd"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "ODF (OpenDocument Format)"
     },
     {
       "puid": "fmt/290",
       "policy_statuses": [
         "Geaccepteerd"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "ODF (OpenDocument Format)"
     },
     {
       "puid": "fmt/291",
       "policy_statuses": [
         "Voorkeursformaat"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "ODF (OpenDocument Format)"
     },
     {
       "puid": "fmt/11",
       "policy_statuses": [
         "Geaccepteerd"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "PNG"
     },
     {
       "puid": "fmt/12",
       "policy_statuses": [
         "Geaccepteerd"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "PNG"
     },
     {
       "puid": "fmt/13",
       "policy_statuses": [
         "Voorkeursformaat"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "PNG"
     },
     {
       "puid": "fmt/91",
       "policy_statuses": [
         "Geaccepteerd"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "SVG"
     },
     {
       "puid": "fmt/92",
       "policy_statuses": [
         "Geaccepteerd"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "SVG"
     },
     {
       "puid": "fmt/413",
       "policy_statuses": [
         "Voorkeursformaat"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "SVG"
     },
     {
       "puid": "fmt/1196",
       "policy_statuses": [
         "Voorkeursformaat"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "SIARD"
     },
     {
       "puid": "fmt/161",
       "policy_statuses": [
         "Geaccepteerd"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "SIARD"
     },
     {
       "puid": "fmt/995",
       "policy_statuses": [
         "Geaccepteerd"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "SIARD"
     },
     {
       "puid": "fmt/206",
       "policy_statuses": [
         "Voorkeursformaat"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "SQL"
     },
     {
       "puid": "fmt/10",
       "policy_statuses": [
         "Open"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "TIFF"
     },
     {
       "puid": "fmt/1281",
       "policy_statuses": [
         "Open"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "Web ARChive"
     },
     {
       "puid": "fmt/1355",
       "policy_statuses": [
         "Open"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "Web ARChive"
     },
     {
       "puid": "fmt/141",
       "policy_statuses": [
         "Geaccepteerd"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "WAVE"
     },
     {
       "puid": "fmt/142",
       "policy_statuses": [
         "Voorkeursformaat"
       ],
-      "knowledge_levels": []
+      "knowledge_levels": [],
+      "family_name": "WAVE"
     }
   ],
   "family_importance": [

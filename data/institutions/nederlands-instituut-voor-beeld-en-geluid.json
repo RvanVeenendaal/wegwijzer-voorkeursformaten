@@ -18,7 +18,8 @@
       "policy_statuses": [],
       "knowledge_levels": [
         "In opslag"
-      ]
+      ],
+      "family_name": "Apple Codec"
     },
     {
       "puid": "fmt/1",
@@ -27,7 +28,8 @@
       ],
       "knowledge_levels": [
         "Gekend"
-      ]
+      ],
+      "family_name": "WAVE"
     },
     {
       "puid": "fmt/2",
@@ -36,7 +38,8 @@
       ],
       "knowledge_levels": [
         "Gekend"
-      ]
+      ],
+      "family_name": "WAVE"
     },
     {
       "puid": "fmt/527",
@@ -45,7 +48,8 @@
       ],
       "knowledge_levels": [
         "Gekend"
-      ]
+      ],
+      "family_name": "WAVE"
     },
     {
       "puid": "fmt/193",
@@ -54,7 +58,8 @@
       ],
       "knowledge_levels": [
         "Gekend"
-      ]
+      ],
+      "family_name": "Digital Moving Picture Exchange Bitmap"
     },
     {
       "puid": "x-fmt/392",
@@ -63,7 +68,8 @@
       ],
       "knowledge_levels": [
         "In opslag"
-      ]
+      ],
+      "family_name": "JPEG 2000"
     },
     {
       "puid": "fmt/42",
@@ -72,7 +78,8 @@
       ],
       "knowledge_levels": [
         "In opslag"
-      ]
+      ],
+      "family_name": "JPEG"
     },
     {
       "puid": "fmt/43",
@@ -81,7 +88,8 @@
       ],
       "knowledge_levels": [
         "In opslag"
-      ]
+      ],
+      "family_name": "JPEG"
     },
     {
       "puid": "fmt/44",
@@ -90,7 +98,8 @@
       ],
       "knowledge_levels": [
         "In opslag"
-      ]
+      ],
+      "family_name": "JPEG"
     },
     {
       "puid": "fmt/200",
@@ -99,7 +108,8 @@
       ],
       "knowledge_levels": [
         "Gekend"
-      ]
+      ],
+      "family_name": "MXF"
     },
     {
       "puid": "fmt/199",
@@ -108,14 +118,16 @@
       ],
       "knowledge_levels": [
         "Gekend"
-      ]
+      ],
+      "family_name": "MP4"
     },
     {
       "puid": "x-fmt/384",
       "policy_statuses": [],
       "knowledge_levels": [
         "In opslag"
-      ]
+      ],
+      "family_name": "Quicktime Movie"
     },
     {
       "puid": "fmt/353",
@@ -124,7 +136,8 @@
       ],
       "knowledge_levels": [
         "Gekend"
-      ]
+      ],
+      "family_name": "TIFF"
     }
   ],
   "family_importance": [

@@ -304839,12 +304839,17 @@
           "puid": "fmt/14",
           "format_name": "Acrobat PDF 1.0 - Portable Document Format",
           "version": "1.0",
+          "family_name": "PDF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 10,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -304852,12 +304857,17 @@
           "puid": "fmt/15",
           "format_name": "Acrobat PDF 1.1 - Portable Document Format",
           "version": "1.1",
+          "family_name": "PDF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 10,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -304865,12 +304875,17 @@
           "puid": "fmt/16",
           "format_name": "Acrobat PDF 1.2 - Portable Document Format",
           "version": "1.2",
+          "family_name": "PDF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 10,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -304878,12 +304893,17 @@
           "puid": "fmt/17",
           "format_name": "Acrobat PDF 1.3 - Portable Document Format",
           "version": "1.3",
+          "family_name": "PDF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 18,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -304891,12 +304911,17 @@
           "puid": "fmt/18",
           "format_name": "Acrobat PDF 1.4 - Portable Document Format",
           "version": "1.4",
+          "family_name": "PDF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 16,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -304904,12 +304929,17 @@
           "puid": "fmt/19",
           "format_name": "Acrobat PDF 1.5 - Portable Document Format",
           "version": "1.5",
+          "family_name": "PDF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 16,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -304917,12 +304947,17 @@
           "puid": "fmt/20",
           "format_name": "Acrobat PDF 1.6 - Portable Document Format",
           "version": "1.6",
+          "family_name": "PDF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 14,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -304930,12 +304965,17 @@
           "puid": "fmt/276",
           "format_name": "Acrobat PDF 1.7 - Portable Document Format",
           "version": "1.7",
+          "family_name": "PDF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 24,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -304943,12 +304983,17 @@
           "puid": "fmt/354",
           "format_name": "Acrobat PDF/A - Portable Document Format",
           "version": "1b",
+          "family_name": "PDF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 37,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -304956,12 +305001,17 @@
           "puid": "fmt/476",
           "format_name": "Acrobat PDF/A - Portable Document Format",
           "version": "2a",
+          "family_name": "PDF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 37,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -304969,12 +305019,17 @@
           "puid": "fmt/477",
           "format_name": "Acrobat PDF/A - Portable Document Format",
           "version": "2b",
+          "family_name": "PDF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 36,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -304982,12 +305037,17 @@
           "puid": "fmt/478",
           "format_name": "Acrobat PDF/A - Portable Document Format",
           "version": "2u",
+          "family_name": "PDF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 36,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -304995,12 +305055,17 @@
           "puid": "fmt/479",
           "format_name": "Acrobat PDF/A - Portable Document Format",
           "version": "3a",
+          "family_name": "PDF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 36,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -305008,12 +305073,17 @@
           "puid": "fmt/480",
           "format_name": "Acrobat PDF/A - Portable Document Format",
           "version": "3b",
+          "family_name": "PDF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 36,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -305021,12 +305091,17 @@
           "puid": "fmt/481",
           "format_name": "Acrobat PDF/A - Portable Document Format",
           "version": "3u",
+          "family_name": "PDF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 36,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -305034,12 +305109,17 @@
           "puid": "fmt/95",
           "format_name": "Acrobat PDF/A - Portable Document Format",
           "version": "1a",
+          "family_name": "PDF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 36,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -305047,6 +305127,7 @@
           "puid": "fmt/493",
           "format_name": "Acrobat PDF/E - Portable Document Format for Engineering PDF/E-1",
           "version": null,
+          "family_name": "PDF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305057,6 +305138,7 @@
           "puid": "fmt/144",
           "format_name": "Acrobat PDF/X - Portable Document Format - Exchange 1:1999",
           "version": null,
+          "family_name": "PDF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305067,6 +305149,7 @@
           "puid": "fmt/145",
           "format_name": "Acrobat PDF/X - Portable Document Format - Exchange 1:2001",
           "version": null,
+          "family_name": "PDF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305077,6 +305160,7 @@
           "puid": "fmt/157",
           "format_name": "Acrobat PDF/X - Portable Document Format - Exchange 1a:2001",
           "version": null,
+          "family_name": "PDF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305087,6 +305171,7 @@
           "puid": "fmt/146",
           "format_name": "Acrobat PDF/X - Portable Document Format - Exchange 1a:2003",
           "version": null,
+          "family_name": "PDF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305097,6 +305182,7 @@
           "puid": "fmt/147",
           "format_name": "Acrobat PDF/X - Portable Document Format - Exchange 2:2003",
           "version": null,
+          "family_name": "PDF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305107,6 +305193,7 @@
           "puid": "fmt/158",
           "format_name": "Acrobat PDF/X - Portable Document Format - Exchange 3:2002",
           "version": null,
+          "family_name": "PDF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305117,6 +305204,7 @@
           "puid": "fmt/148",
           "format_name": "Acrobat PDF/X - Portable Document Format - Exchange 3:2003",
           "version": null,
+          "family_name": "PDF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305127,6 +305215,7 @@
           "puid": "fmt/488",
           "format_name": "Acrobat PDF/X - Portable Document Format - Exchange PDF/X-4",
           "version": null,
+          "family_name": "PDF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305137,6 +305226,7 @@
           "puid": "fmt/489",
           "format_name": "Acrobat PDF/X - Portable Document Format - Exchange PDF/X-4p",
           "version": null,
+          "family_name": "PDF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305147,6 +305237,7 @@
           "puid": "fmt/490",
           "format_name": "Acrobat PDF/X - Portable Document Format - Exchange PDF/X-5g",
           "version": null,
+          "family_name": "PDF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305157,6 +305248,7 @@
           "puid": "fmt/492",
           "format_name": "Acrobat PDF/X - Portable Document Format - Exchange PDF/X-5n",
           "version": null,
+          "family_name": "PDF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305167,6 +305259,7 @@
           "puid": "fmt/491",
           "format_name": "Acrobat PDF/X - Portable Document Format - Exchange PDF/X-5pg",
           "version": null,
+          "family_name": "PDF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305177,6 +305270,7 @@
           "puid": "x-fmt/98",
           "format_name": "AutoCAD ACIS Export File",
           "version": null,
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305187,6 +305281,7 @@
           "puid": "x-fmt/26",
           "format_name": "AutoCAD Batch Plot File",
           "version": "1.0-R14",
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305197,6 +305292,7 @@
           "puid": "x-fmt/27",
           "format_name": "AutoCAD Batch Plot File",
           "version": "2000-2005",
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305207,6 +305303,7 @@
           "puid": "x-fmt/24",
           "format_name": "AutoCAD Block Attribute Template",
           "version": null,
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305217,6 +305314,7 @@
           "puid": "x-fmt/37",
           "format_name": "AutoCAD Colour-Dependant Plot Style Table",
           "version": null,
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305227,6 +305325,7 @@
           "puid": "x-fmt/68",
           "format_name": "AutoCAD Compiled Menu",
           "version": null,
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305237,6 +305336,7 @@
           "puid": "x-fmt/103",
           "format_name": "AutoCAD Compiled Shape/Font File",
           "version": null,
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305247,6 +305347,7 @@
           "puid": "x-fmt/38",
           "format_name": "AutoCAD Custom Dictionary",
           "version": null,
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305257,6 +305358,7 @@
           "puid": "x-fmt/441",
           "format_name": "AutoCAD Database File Locking Information",
           "version": null,
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305267,6 +305369,7 @@
           "puid": "x-fmt/39",
           "format_name": "AutoCAD dbConnect Query Set",
           "version": null,
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305277,6 +305380,7 @@
           "puid": "x-fmt/40",
           "format_name": "AutoCAD dbConnect Template Set",
           "version": null,
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305287,6 +305391,7 @@
           "puid": "x-fmt/49",
           "format_name": "AutoCAD Design Web Format",
           "version": "6.0",
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305297,6 +305402,7 @@
           "puid": "fmt/977",
           "format_name": "AutoCAD Design Web Format(DWFx)",
           "version": null,
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305307,6 +305413,7 @@
           "puid": "x-fmt/134",
           "format_name": "AutoCAD Device-Independent Binary Plotter File",
           "version": null,
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305317,6 +305424,7 @@
           "puid": "fmt/1395",
           "format_name": "AutoCAD Drawing",
           "version": "2018/2019/2020/2021",
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305327,6 +305435,7 @@
           "puid": "fmt/21",
           "format_name": "AutoCAD Drawing",
           "version": "1.0",
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305337,6 +305446,7 @@
           "puid": "fmt/22",
           "format_name": "AutoCAD Drawing",
           "version": "1.2",
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305347,6 +305457,7 @@
           "puid": "fmt/23",
           "format_name": "AutoCAD Drawing",
           "version": "1.3",
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305357,6 +305468,7 @@
           "puid": "fmt/24",
           "format_name": "AutoCAD Drawing",
           "version": "1.4",
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305367,6 +305479,7 @@
           "puid": "fmt/25",
           "format_name": "AutoCAD Drawing",
           "version": "2.0",
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305377,6 +305490,7 @@
           "puid": "fmt/26",
           "format_name": "AutoCAD Drawing",
           "version": "2.1",
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305387,6 +305501,7 @@
           "puid": "fmt/27",
           "format_name": "AutoCAD Drawing",
           "version": "2.2",
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305397,6 +305512,7 @@
           "puid": "fmt/28",
           "format_name": "AutoCAD Drawing",
           "version": "2.5",
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305407,6 +305523,7 @@
           "puid": "fmt/29",
           "format_name": "AutoCAD Drawing",
           "version": "2.6",
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305417,6 +305534,7 @@
           "puid": "fmt/30",
           "format_name": "AutoCAD Drawing",
           "version": "R9",
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305427,12 +305545,17 @@
           "puid": "fmt/31",
           "format_name": "AutoCAD Drawing",
           "version": "R10",
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": -2,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -305440,12 +305563,17 @@
           "puid": "fmt/32",
           "format_name": "AutoCAD Drawing",
           "version": "R11/12",
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": -2,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -305453,6 +305581,7 @@
           "puid": "fmt/33",
           "format_name": "AutoCAD Drawing",
           "version": "R13",
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305463,12 +305592,17 @@
           "puid": "fmt/34",
           "format_name": "AutoCAD Drawing",
           "version": "R14",
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 0,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -305476,12 +305610,17 @@
           "puid": "fmt/35",
           "format_name": "AutoCAD Drawing",
           "version": "2000-2002",
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 0,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -305489,12 +305628,17 @@
           "puid": "fmt/36",
           "format_name": "AutoCAD Drawing",
           "version": "2004-2005",
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 0,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -305502,6 +305646,7 @@
           "puid": "fmt/434",
           "format_name": "AutoCAD Drawing",
           "version": "2010/2011/2012",
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305512,6 +305657,7 @@
           "puid": "fmt/531",
           "format_name": "AutoCAD Drawing",
           "version": "2013/2014",
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305522,12 +305668,17 @@
           "puid": "x-fmt/455",
           "format_name": "AutoCAD Drawing",
           "version": "2007-2008",
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 0,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -305535,6 +305686,7 @@
           "puid": "x-fmt/50",
           "format_name": "AutoCAD Drawing Standards File",
           "version": null,
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305545,6 +305697,7 @@
           "puid": "x-fmt/51",
           "format_name": "AutoCAD Drawing Template",
           "version": null,
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305555,6 +305708,7 @@
           "puid": "x-fmt/112",
           "format_name": "AutoCAD External Database Configuration File",
           "version": null,
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305565,6 +305719,7 @@
           "puid": "x-fmt/155",
           "format_name": "AutoCAD Film Roll",
           "version": null,
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305575,6 +305730,7 @@
           "puid": "x-fmt/54",
           "format_name": "AutoCAD Font Mapping Table",
           "version": null,
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305585,6 +305741,7 @@
           "puid": "fmt/1103",
           "format_name": "AutoCAD Hatch Pattern",
           "version": null,
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305595,6 +305752,7 @@
           "puid": "x-fmt/61",
           "format_name": "AutoCAD Landscape Library",
           "version": null,
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305605,6 +305763,7 @@
           "puid": "x-fmt/59",
           "format_name": "AutoCAD Last Saved Layer State",
           "version": null,
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305615,6 +305774,7 @@
           "puid": "x-fmt/60",
           "format_name": "AutoCAD Linetype Definition File",
           "version": null,
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305625,6 +305785,7 @@
           "puid": "x-fmt/70",
           "format_name": "AutoCAD Menu Resource File",
           "version": null,
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305635,6 +305796,7 @@
           "puid": "x-fmt/107",
           "format_name": "AutoCAD Named Plot Style Table",
           "version": null,
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305645,6 +305807,7 @@
           "puid": "x-fmt/77",
           "format_name": "AutoCAD Plot Configuration File",
           "version": "R14",
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305655,6 +305818,7 @@
           "puid": "x-fmt/78",
           "format_name": "AutoCAD Plot Configuration File",
           "version": "2000",
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305665,6 +305829,7 @@
           "puid": "x-fmt/79",
           "format_name": "AutoCAD Plot Configuration File",
           "version": "1.0-R13",
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305675,6 +305840,7 @@
           "puid": "x-fmt/100",
           "format_name": "AutoCAD Script",
           "version": null,
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305685,6 +305851,7 @@
           "puid": "x-fmt/105",
           "format_name": "AutoCAD Slide",
           "version": null,
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305695,6 +305862,7 @@
           "puid": "x-fmt/104",
           "format_name": "AutoCAD Slide Library",
           "version": null,
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305705,6 +305873,7 @@
           "puid": "x-fmt/71",
           "format_name": "AutoCAD Source Menu File",
           "version": null,
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305715,6 +305884,7 @@
           "puid": "x-fmt/72",
           "format_name": "AutoCAD Template Menu File",
           "version": null,
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305725,6 +305895,7 @@
           "puid": "fmt/1257",
           "format_name": "AutoCAD Temporary File",
           "version": null,
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305735,6 +305906,7 @@
           "puid": "x-fmt/127",
           "format_name": "AutoCAD Xref Log",
           "version": null,
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305745,6 +305917,7 @@
           "puid": "x-fmt/63",
           "format_name": "AutoLISP File",
           "version": null,
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305755,6 +305928,7 @@
           "puid": "x-fmt/69",
           "format_name": "AutoLISP Menu Source File",
           "version": null,
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305765,6 +305939,7 @@
           "puid": "fmt/1044",
           "format_name": "AutoShade Rendering Slide",
           "version": null,
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305775,6 +305950,7 @@
           "puid": "fmt/902",
           "format_name": "Blender 3D",
           "version": "32 bit",
+          "family_name": "Blender",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -305785,6 +305961,7 @@
           "puid": "fmt/903",
           "format_name": "Blender 3D",
           "version": "64 bit",
+          "family_name": "Blender",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -305795,12 +305972,17 @@
           "puid": "x-fmt/18",
           "format_name": "Comma Separated Values",
           "version": null,
+          "family_name": "Comma Separated Values formaatfamilie",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 26,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -305808,6 +305990,7 @@
           "puid": "fmt/574",
           "format_name": "Digital Imaging and Communications in Medicine File Format",
           "version": null,
+          "family_name": "DICOM",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -305818,6 +306001,7 @@
           "puid": "fmt/54",
           "format_name": "Drawing Interchange Binary Format",
           "version": "1.0",
+          "family_name": "DXF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305828,6 +306012,7 @@
           "puid": "fmt/433",
           "format_name": "Drawing Interchange File Format (ASCII)",
           "version": "2007/2008/2009",
+          "family_name": "DXF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305838,6 +306023,7 @@
           "puid": "fmt/435",
           "format_name": "Drawing Interchange File Format (ASCII)",
           "version": "2010/2011/2012",
+          "family_name": "DXF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305848,6 +306034,7 @@
           "puid": "fmt/532",
           "format_name": "Drawing Interchange File Format (ASCII)",
           "version": "2013/2014/2015/2016/2017",
+          "family_name": "DXF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305858,12 +306045,17 @@
           "puid": "fmt/63",
           "format_name": "Drawing Interchange File Format (ASCII)",
           "version": "Generic",
+          "family_name": "DXF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 25,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -305871,6 +306063,7 @@
           "puid": "fmt/64",
           "format_name": "Drawing Interchange File Format (ASCII)",
           "version": "1.0",
+          "family_name": "DXF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305881,6 +306074,7 @@
           "puid": "fmt/65",
           "format_name": "Drawing Interchange File Format (ASCII)",
           "version": "1.2",
+          "family_name": "DXF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305891,6 +306085,7 @@
           "puid": "fmt/66",
           "format_name": "Drawing Interchange File Format (ASCII)",
           "version": "1.3",
+          "family_name": "DXF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305901,6 +306096,7 @@
           "puid": "fmt/67",
           "format_name": "Drawing Interchange File Format (ASCII)",
           "version": "1.4",
+          "family_name": "DXF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305911,6 +306107,7 @@
           "puid": "fmt/68",
           "format_name": "Drawing Interchange File Format (ASCII)",
           "version": "2.0",
+          "family_name": "DXF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305921,6 +306118,7 @@
           "puid": "fmt/69",
           "format_name": "Drawing Interchange File Format (ASCII)",
           "version": "2.1",
+          "family_name": "DXF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305931,6 +306129,7 @@
           "puid": "fmt/70",
           "format_name": "Drawing Interchange File Format (ASCII)",
           "version": "2.2",
+          "family_name": "DXF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305941,6 +306140,7 @@
           "puid": "fmt/71",
           "format_name": "Drawing Interchange File Format (ASCII)",
           "version": "2.5",
+          "family_name": "DXF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305951,6 +306151,7 @@
           "puid": "fmt/72",
           "format_name": "Drawing Interchange File Format (ASCII)",
           "version": "2.6",
+          "family_name": "DXF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305961,6 +306162,7 @@
           "puid": "fmt/73",
           "format_name": "Drawing Interchange File Format (ASCII)",
           "version": "R9",
+          "family_name": "DXF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305971,6 +306173,7 @@
           "puid": "fmt/74",
           "format_name": "Drawing Interchange File Format (ASCII)",
           "version": "R10",
+          "family_name": "DXF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -305981,6 +306184,7 @@
           "puid": "fmt/75",
           "format_name": "Drawing Interchange File Format (ASCII)",
           "version": "R11/12",
+          "family_name": "DXF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -305991,6 +306195,7 @@
           "puid": "fmt/76",
           "format_name": "Drawing Interchange File Format (ASCII)",
           "version": "R13",
+          "family_name": "DXF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306001,6 +306206,7 @@
           "puid": "fmt/77",
           "format_name": "Drawing Interchange File Format (ASCII)",
           "version": "R14",
+          "family_name": "DXF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306011,6 +306217,7 @@
           "puid": "fmt/78",
           "format_name": "Drawing Interchange File Format (ASCII)",
           "version": "2000-2002",
+          "family_name": "DXF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306021,6 +306228,7 @@
           "puid": "fmt/79",
           "format_name": "Drawing Interchange File Format (ASCII)",
           "version": "2004/2005/2006",
+          "family_name": "DXF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306031,6 +306239,7 @@
           "puid": "fmt/80",
           "format_name": "Drawing Interchange File Format (Binary)",
           "version": "R10",
+          "family_name": "DXF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306041,6 +306250,7 @@
           "puid": "fmt/81",
           "format_name": "Drawing Interchange File Format (Binary)",
           "version": "R11/12",
+          "family_name": "DXF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306051,6 +306261,7 @@
           "puid": "fmt/82",
           "format_name": "Drawing Interchange File Format (Binary)",
           "version": "R13",
+          "family_name": "DXF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306061,6 +306272,7 @@
           "puid": "fmt/83",
           "format_name": "Drawing Interchange File Format (Binary)",
           "version": "R14",
+          "family_name": "DXF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306071,6 +306283,7 @@
           "puid": "fmt/84",
           "format_name": "Drawing Interchange File Format (Binary)",
           "version": "2000-2002",
+          "family_name": "DXF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306081,6 +306294,7 @@
           "puid": "fmt/85",
           "format_name": "Drawing Interchange File Format (Binary)",
           "version": "2004-2006",
+          "family_name": "DXF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306091,6 +306305,7 @@
           "puid": "fmt/1389",
           "format_name": "Drawing Interchange Format (ASCII)",
           "version": "2018/2019/2020",
+          "family_name": "DXF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306101,6 +306316,7 @@
           "puid": "fmt/1390",
           "format_name": "Drawing Interchange Format (Binary)",
           "version": "2007-2009",
+          "family_name": "DXF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306111,6 +306327,7 @@
           "puid": "fmt/1391",
           "format_name": "Drawing Interchange Format (Binary)",
           "version": "2010-2012",
+          "family_name": "DXF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306121,6 +306338,7 @@
           "puid": "fmt/1392",
           "format_name": "Drawing Interchange Format (Binary)",
           "version": "2013-2017",
+          "family_name": "DXF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306131,6 +306349,7 @@
           "puid": "fmt/1393",
           "format_name": "Drawing Interchange Format (Binary)",
           "version": "2018-2021",
+          "family_name": "DXF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306141,6 +306360,7 @@
           "puid": "fmt/1394",
           "format_name": "Drawing Interchange Format (Binary)",
           "version": "Generic",
+          "family_name": "DXF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306151,6 +306371,7 @@
           "puid": "x-fmt/52",
           "format_name": "Drawing Interchange Format Style Extract",
           "version": null,
+          "family_name": "DXF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306161,6 +306382,7 @@
           "puid": "x-fmt/218",
           "format_name": "ESRI Arc/Info Binary Grid",
           "version": null,
+          "family_name": "ESRI",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306171,6 +306393,7 @@
           "puid": "x-fmt/226",
           "format_name": "ESRI Arc/Info Export File",
           "version": null,
+          "family_name": "ESRI",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306181,6 +306404,7 @@
           "puid": "fmt/332",
           "format_name": "ESRI Arc/View Project",
           "version": "3.x",
+          "family_name": "ESRI",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306191,6 +306415,7 @@
           "puid": "x-fmt/317",
           "format_name": "ESRI Arc/View Project",
           "version": "2.x",
+          "family_name": "ESRI",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306201,6 +306426,7 @@
           "puid": "x-fmt/235",
           "format_name": "ESRI Arc/View ShapeFile",
           "version": null,
+          "family_name": "ESRI",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306211,6 +306437,7 @@
           "puid": "fmt/277",
           "format_name": "ESRI Arc/View Shapefile Index",
           "version": null,
+          "family_name": "ESRI",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306221,6 +306448,7 @@
           "puid": "fmt/989",
           "format_name": "ESRI ArcGlobe Document",
           "version": null,
+          "family_name": "ESRI",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306231,6 +306459,7 @@
           "puid": "fmt/916",
           "format_name": "ESRI ArcMap Document",
           "version": null,
+          "family_name": "ESRI",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306241,6 +306470,7 @@
           "puid": "fmt/988",
           "format_name": "ESRI ArcScene Document",
           "version": null,
+          "family_name": "ESRI",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306251,6 +306481,7 @@
           "puid": "fmt/1253",
           "format_name": "ESRI Code Page File",
           "version": null,
+          "family_name": "ESRI",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306261,12 +306492,17 @@
           "puid": "fmt/990",
           "format_name": "ESRI File Geodatabase",
           "version": null,
+          "family_name": "ESRI",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": -1,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -306274,6 +306510,7 @@
           "puid": "x-fmt/225",
           "format_name": "ESRI MapInfo Data File",
           "version": null,
+          "family_name": "ESRI",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -306284,6 +306521,7 @@
           "puid": "x-fmt/231",
           "format_name": "ESRI MapInfo Export File",
           "version": null,
+          "family_name": "ESRI",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -306294,6 +306532,7 @@
           "puid": "fmt/1366",
           "format_name": "ESRI Published Map Format",
           "version": null,
+          "family_name": "ESRI",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306304,6 +306543,7 @@
           "puid": "fmt/321",
           "format_name": "ESRI Shapefile Header Index",
           "version": null,
+          "family_name": "ESRI",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306314,6 +306554,7 @@
           "puid": "fmt/320",
           "format_name": "ESRI Shapefile Projection (Well-Known Text) Format",
           "version": null,
+          "family_name": "ESRI",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306324,6 +306565,7 @@
           "puid": "fmt/319",
           "format_name": "ESRI Spatial Index File",
           "version": null,
+          "family_name": "ESRI",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306334,6 +306576,7 @@
           "puid": "fmt/367",
           "format_name": "ESRI World File Format",
           "version": null,
+          "family_name": "ESRI",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306344,6 +306587,7 @@
           "puid": "fmt/60",
           "format_name": "Excel 95 Workbook (xls)",
           "version": "7",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306354,12 +306598,17 @@
           "puid": "fmt/101",
           "format_name": "Extensible Markup Language",
           "version": "1.0",
+          "family_name": "XML",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 36,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -306367,6 +306616,7 @@
           "puid": "x-fmt/110",
           "format_name": "Fixed Width Values Text File",
           "version": null,
+          "family_name": "Fixed Width Values",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -306377,6 +306627,7 @@
           "puid": "fmt/279",
           "format_name": "FLAC (Free Lossless Audio Codec)",
           "version": "1.2.1",
+          "family_name": "FLAC",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -306387,6 +306638,7 @@
           "puid": "fmt/155",
           "format_name": "Geographic Tagged Image File Format (GeoTIFF)",
           "version": null,
+          "family_name": "TIFF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -306397,12 +306649,17 @@
           "puid": "fmt/1047",
           "format_name": "Geography Markup Language",
           "version": "3.2",
+          "family_name": "GML",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 33,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -306410,12 +306667,17 @@
           "puid": "x-fmt/227",
           "format_name": "Geography Markup Language",
           "version": null,
+          "family_name": "GML",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 33,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -306423,6 +306685,7 @@
           "puid": "x-fmt/392",
           "format_name": "JP2 (JPEG 2000 part 1)",
           "version": null,
+          "family_name": "JPEG 2000",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -306433,6 +306696,7 @@
           "puid": "fmt/590",
           "format_name": "JPEG Extended Range",
           "version": null,
+          "family_name": "JPEG",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -306443,12 +306707,17 @@
           "puid": "fmt/42",
           "format_name": "JPEG File Interchange Format",
           "version": "1.00",
+          "family_name": "JPEG",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 17,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -306456,12 +306725,17 @@
           "puid": "fmt/43",
           "format_name": "JPEG File Interchange Format",
           "version": "1.01",
+          "family_name": "JPEG",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 17,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -306469,12 +306743,17 @@
           "puid": "fmt/44",
           "format_name": "JPEG File Interchange Format",
           "version": "1.02",
+          "family_name": "JPEG",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 28,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -306482,6 +306761,7 @@
           "puid": "fmt/150",
           "format_name": "JPEG-LS",
           "version": null,
+          "family_name": "JPEG",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -306492,6 +306772,7 @@
           "puid": "fmt/463",
           "format_name": "JPM (JPEG 2000 part 6)",
           "version": null,
+          "family_name": "JPEG 2000",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -306502,6 +306783,7 @@
           "puid": "fmt/151",
           "format_name": "JPX (JPEG 2000 part 2)",
           "version": null,
+          "family_name": "JPEG 2000",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -306512,6 +306794,7 @@
           "puid": "fmt/817",
           "format_name": "JSON Data Interchange Format",
           "version": null,
+          "family_name": "JSON Data Interchange",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -306522,12 +306805,17 @@
           "puid": "fmt/149",
           "format_name": "JTIP (JPEG Tiled Image Pyramid)",
           "version": null,
+          "family_name": "JPEG",
           "policy_statuses": [
             "Open"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": -8,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -306535,6 +306823,7 @@
           "puid": "x-fmt/14",
           "format_name": "Macintosh Text File",
           "version": null,
+          "family_name": "Text encoding",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -306545,6 +306834,7 @@
           "puid": "fmt/487",
           "format_name": "Macro Enabled Microsoft Powerpoint",
           "version": "2007 Onwards",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306555,6 +306845,7 @@
           "puid": "fmt/523",
           "format_name": "Macro enabled Microsoft Word Document OOXML",
           "version": "2007 Onwards",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306565,6 +306856,7 @@
           "puid": "fmt/1256",
           "format_name": "MapInfo Workspace File",
           "version": null,
+          "family_name": "MapInfo",
           "policy_statuses": [
             "Legacy"
           ],
@@ -306575,6 +306867,7 @@
           "puid": "fmt/1149",
           "format_name": "Markdown",
           "version": null,
+          "family_name": "Tekst (Algemeen)",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -306585,12 +306878,17 @@
           "puid": "fmt/200",
           "format_name": "Material Exchange Format",
           "version": "Operational Pattern 1a",
+          "family_name": "MXF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 23,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -306598,12 +306896,17 @@
           "puid": "fmt/783",
           "format_name": "Material Exchange Format",
           "version": "Operational Pattern 1b",
+          "family_name": "MXF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 23,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -306611,12 +306914,17 @@
           "puid": "fmt/784",
           "format_name": "Material Exchange Format",
           "version": "Operational Pattern 1c",
+          "family_name": "MXF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 23,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -306624,12 +306932,17 @@
           "puid": "fmt/785",
           "format_name": "Material Exchange Format",
           "version": "Operational Pattern 2a",
+          "family_name": "MXF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 23,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -306637,12 +306950,17 @@
           "puid": "fmt/786",
           "format_name": "Material Exchange Format",
           "version": "Operational Pattern 2b",
+          "family_name": "MXF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 23,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -306650,12 +306968,17 @@
           "puid": "fmt/787",
           "format_name": "Material Exchange Format",
           "version": "Operational Pattern 2c",
+          "family_name": "MXF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 23,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -306663,12 +306986,17 @@
           "puid": "fmt/788",
           "format_name": "Material Exchange Format",
           "version": "Operational Pattern 3a",
+          "family_name": "MXF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 23,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -306676,12 +307004,17 @@
           "puid": "fmt/789",
           "format_name": "Material Exchange Format",
           "version": "Operational Pattern 3b",
+          "family_name": "MXF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 23,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -306689,12 +307022,17 @@
           "puid": "fmt/790",
           "format_name": "Material Exchange Format",
           "version": "Operational Pattern 3c",
+          "family_name": "MXF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 23,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -306702,12 +307040,17 @@
           "puid": "fmt/791",
           "format_name": "Material Exchange Format",
           "version": "Operational Pattern OP-ATOM",
+          "family_name": "MXF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 23,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -306715,6 +307058,7 @@
           "puid": "fmt/806",
           "format_name": "MATLAB Mat File",
           "version": "Level 5",
+          "family_name": "MATLAB",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -306725,6 +307069,7 @@
           "puid": "fmt/828",
           "format_name": "MATLAB Mat File",
           "version": "Level 7.3",
+          "family_name": "MATLAB",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -306735,6 +307080,7 @@
           "puid": "fmt/275",
           "format_name": "Microsoft Access Database File",
           "version": "2007",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Legacy"
           ],
@@ -306745,6 +307091,7 @@
           "puid": "x-fmt/238",
           "format_name": "Microsoft Access Database File",
           "version": "95",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306755,6 +307102,7 @@
           "puid": "x-fmt/239",
           "format_name": "Microsoft Access Database File",
           "version": "97",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Legacy"
           ],
@@ -306765,6 +307113,7 @@
           "puid": "x-fmt/240",
           "format_name": "Microsoft Access Database File",
           "version": "2000",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Legacy"
           ],
@@ -306775,6 +307124,7 @@
           "puid": "x-fmt/241",
           "format_name": "Microsoft Access Database File",
           "version": "2002",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Legacy"
           ],
@@ -306785,6 +307135,7 @@
           "puid": "x-fmt/66",
           "format_name": "Microsoft Access Database File",
           "version": "2.0",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Legacy"
           ],
@@ -306795,6 +307146,7 @@
           "puid": "fmt/1258",
           "format_name": "Microsoft Access Workgroup Information File",
           "version": null,
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Legacy"
           ],
@@ -306805,6 +307157,7 @@
           "puid": "fmt/881",
           "format_name": "Microsoft Document Imaging File Format",
           "version": null,
+          "family_name": "TIFF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -306815,6 +307168,7 @@
           "puid": "fmt/55",
           "format_name": "Microsoft Excel 2.x Worksheet (xls)",
           "version": "2",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306825,6 +307179,7 @@
           "puid": "fmt/62",
           "format_name": "Microsoft Excel 2000-2003 Workbook (xls)",
           "version": "8X",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306835,6 +307190,7 @@
           "puid": "fmt/56",
           "format_name": "Microsoft Excel 3.0 Worksheet (xls)",
           "version": "3",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306845,6 +307201,7 @@
           "puid": "fmt/58",
           "format_name": "Microsoft Excel 4.0 Workbook (xls)",
           "version": "4W",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306855,6 +307212,7 @@
           "puid": "fmt/57",
           "format_name": "Microsoft Excel 4.0 Worksheet (xls)",
           "version": "4S",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306865,6 +307223,7 @@
           "puid": "fmt/59",
           "format_name": "Microsoft Excel 5.0/95 Workbook (xls)",
           "version": "5/95",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306875,6 +307234,7 @@
           "puid": "fmt/61",
           "format_name": "Microsoft Excel 97-2003 Workbook (xls)",
           "version": "8 & 8X",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306885,6 +307245,7 @@
           "puid": "x-fmt/124",
           "format_name": "Microsoft Excel Add-In",
           "version": null,
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306895,12 +307256,17 @@
           "puid": "x-fmt/23",
           "format_name": "Microsoft Excel Backup",
           "version": null,
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 2,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -306908,6 +307274,7 @@
           "puid": "fmt/553",
           "format_name": "Microsoft Excel Chart",
           "version": "2.x",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306918,6 +307285,7 @@
           "puid": "fmt/554",
           "format_name": "Microsoft Excel Chart",
           "version": "3.0",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306928,6 +307296,7 @@
           "puid": "x-fmt/126",
           "format_name": "Microsoft Excel Chart",
           "version": "4.0",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -306938,12 +307307,17 @@
           "puid": "fmt/172",
           "format_name": "Microsoft Excel for Macintosh",
           "version": "3.0",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 3,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -306951,12 +307325,17 @@
           "puid": "fmt/173",
           "format_name": "Microsoft Excel for Macintosh",
           "version": "4.0",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 5,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -306964,12 +307343,17 @@
           "puid": "fmt/174",
           "format_name": "Microsoft Excel for Macintosh",
           "version": "98",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 17,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -306977,12 +307361,17 @@
           "puid": "fmt/175",
           "format_name": "Microsoft Excel for Macintosh",
           "version": "2001",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 17,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -306990,12 +307379,17 @@
           "puid": "fmt/176",
           "format_name": "Microsoft Excel for Macintosh",
           "version": "2002",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 17,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -307003,12 +307397,17 @@
           "puid": "fmt/177",
           "format_name": "Microsoft Excel for Macintosh",
           "version": "2004",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 13,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -307016,6 +307415,7 @@
           "puid": "fmt/178",
           "format_name": "Microsoft Excel for Macintosh",
           "version": "X",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307026,6 +307426,7 @@
           "puid": "fmt/214",
           "format_name": "Microsoft Excel for Windows",
           "version": "2007 onwards",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307036,6 +307437,7 @@
           "puid": "fmt/555",
           "format_name": "Microsoft Excel Macro",
           "version": "2.x",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307046,6 +307448,7 @@
           "puid": "fmt/556",
           "format_name": "Microsoft Excel Macro",
           "version": "3.0",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307056,6 +307459,7 @@
           "puid": "x-fmt/123",
           "format_name": "Microsoft Excel Macro",
           "version": "4.0",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307066,12 +307470,17 @@
           "puid": "fmt/445",
           "format_name": "Microsoft Excel Macro-Enabled",
           "version": "2007",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 14,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -307079,6 +307488,7 @@
           "puid": "fmt/628",
           "format_name": "Microsoft Excel Macro-Enabled Add-In",
           "version": "2007",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307089,6 +307499,7 @@
           "puid": "fmt/627",
           "format_name": "Microsoft Excel Macro-Enabled Template",
           "version": "2007",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307099,6 +307510,7 @@
           "puid": "fmt/595",
           "format_name": "Microsoft Excel Non-XML Binary Workbook",
           "version": "2007 onwards",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307109,6 +307521,7 @@
           "puid": "x-fmt/46",
           "format_name": "Microsoft Excel ODBC Query",
           "version": null,
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307119,6 +307532,7 @@
           "puid": "x-fmt/74",
           "format_name": "Microsoft Excel OLAP Query",
           "version": null,
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307129,6 +307543,7 @@
           "puid": "x-fmt/97",
           "format_name": "Microsoft Excel OLE DB Query",
           "version": null,
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307139,12 +307554,17 @@
           "puid": "fmt/598",
           "format_name": "Microsoft Excel Template",
           "version": "2007 onwards",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 24,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -307152,12 +307572,17 @@
           "puid": "x-fmt/17",
           "format_name": "Microsoft Excel Template",
           "version": "97-2003",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 24,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -307165,6 +307590,7 @@
           "puid": "x-fmt/125",
           "format_name": "Microsoft Excel Toolbar",
           "version": null,
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307175,6 +307601,7 @@
           "puid": "x-fmt/58",
           "format_name": "Microsoft Excel Web Query",
           "version": null,
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307185,12 +307612,17 @@
           "puid": "x-fmt/128",
           "format_name": "Microsoft Excel Workspace File",
           "version": null,
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 7,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -307198,12 +307630,17 @@
           "puid": "fmt/359",
           "format_name": "Microsoft Front Page Binary Tree Index",
           "version": null,
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": -9,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -307211,6 +307648,7 @@
           "puid": "fmt/288",
           "format_name": "Microsoft Front Page Server Extension Configuration",
           "version": null,
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307221,6 +307659,7 @@
           "puid": "fmt/218",
           "format_name": "Microsoft FrontPage",
           "version": null,
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307231,6 +307670,7 @@
           "puid": "fmt/237",
           "format_name": "Microsoft Office Binder File for Windows",
           "version": "95",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307241,6 +307681,7 @@
           "puid": "fmt/240",
           "format_name": "Microsoft Office Binder File for Windows",
           "version": "97-2000",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307251,6 +307692,7 @@
           "puid": "fmt/238",
           "format_name": "Microsoft Office Binder Template for Windows",
           "version": "95",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307261,6 +307703,7 @@
           "puid": "fmt/241",
           "format_name": "Microsoft Office Binder Template for Windows",
           "version": "97-2003",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307271,6 +307714,7 @@
           "puid": "fmt/239",
           "format_name": "Microsoft Office Binder Wizard for Windows",
           "version": "95",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307281,6 +307725,7 @@
           "puid": "fmt/242",
           "format_name": "Microsoft Office Binder Wizard for Windows",
           "version": "97-2003",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307291,6 +307736,7 @@
           "puid": "fmt/494",
           "format_name": "Microsoft Office Encrypted Document",
           "version": "2007 Onwards",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307301,6 +307747,7 @@
           "puid": "fmt/189",
           "format_name": "Microsoft Office Open XML",
           "version": "2007 onwards",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307311,6 +307758,7 @@
           "puid": "fmt/473",
           "format_name": "Microsoft Office Owner File",
           "version": null,
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307321,6 +307769,7 @@
           "puid": "fmt/524",
           "format_name": "Microsoft Office Theme",
           "version": null,
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307331,12 +307780,17 @@
           "puid": "fmt/637",
           "format_name": "Microsoft OneNote",
           "version": null,
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 10,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -307344,6 +307798,7 @@
           "puid": "fmt/987",
           "format_name": "Microsoft OneNote Package File",
           "version": null,
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307354,6 +307809,7 @@
           "puid": "x-fmt/73",
           "format_name": "Microsoft Outlook Address Book",
           "version": null,
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307364,6 +307820,7 @@
           "puid": "x-fmt/430",
           "format_name": "Microsoft Outlook Email Message",
           "version": "97-2003",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307374,6 +307831,7 @@
           "puid": "x-fmt/75",
           "format_name": "Microsoft Outlook Personal Address Book",
           "version": null,
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307384,6 +307842,7 @@
           "puid": "x-fmt/250",
           "format_name": "Microsoft Outlook Personal Folders",
           "version": null,
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307394,6 +307853,7 @@
           "puid": "x-fmt/248",
           "format_name": "Microsoft Outlook Personal Folders (ANSI)",
           "version": "1997-2002",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307404,6 +307864,7 @@
           "puid": "x-fmt/249",
           "format_name": "Microsoft Outlook Personal Folders (Unicode)",
           "version": "2003-2007",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307414,6 +307875,7 @@
           "puid": "x-fmt/86",
           "format_name": "Microsoft Powerpoint Add-In",
           "version": null,
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307424,6 +307886,7 @@
           "puid": "x-fmt/84",
           "format_name": "Microsoft Powerpoint Design Template",
           "version": null,
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307434,6 +307897,7 @@
           "puid": "fmt/179",
           "format_name": "Microsoft PowerPoint for Macintosh",
           "version": "4.0",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307444,6 +307908,7 @@
           "puid": "fmt/180",
           "format_name": "Microsoft PowerPoint for Macintosh",
           "version": "98",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307454,12 +307919,17 @@
           "puid": "fmt/181",
           "format_name": "Microsoft PowerPoint for Macintosh",
           "version": "2001",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": -1,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -307467,6 +307937,7 @@
           "puid": "fmt/182",
           "format_name": "Microsoft PowerPoint for Macintosh",
           "version": "X",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307477,6 +307948,7 @@
           "puid": "fmt/215",
           "format_name": "Microsoft Powerpoint for Windows",
           "version": "2007 onwards",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307487,6 +307959,7 @@
           "puid": "x-fmt/177",
           "format_name": "Microsoft PowerPoint Graphics File",
           "version": null,
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307497,6 +307970,7 @@
           "puid": "fmt/633",
           "format_name": "Microsoft PowerPoint Macro-Enabled Add-In",
           "version": "2007",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307507,6 +307981,7 @@
           "puid": "fmt/630",
           "format_name": "Microsoft PowerPoint Macro-Enabled Show",
           "version": "2007",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307517,6 +307992,7 @@
           "puid": "fmt/636",
           "format_name": "Microsoft PowerPoint Macro-Enabled Slide",
           "version": "2007",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307527,6 +308003,7 @@
           "puid": "fmt/632",
           "format_name": "Microsoft PowerPoint Macro-Enabled Template",
           "version": "2007",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307537,6 +308014,7 @@
           "puid": "x-fmt/216",
           "format_name": "Microsoft Powerpoint Packaged Presentation",
           "version": null,
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307547,12 +308025,17 @@
           "puid": "fmt/125",
           "format_name": "Microsoft Powerpoint Presentation",
           "version": "95",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 4,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -307560,12 +308043,17 @@
           "puid": "fmt/126",
           "format_name": "Microsoft Powerpoint Presentation",
           "version": "97-2003",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 20,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -307573,12 +308061,17 @@
           "puid": "x-fmt/88",
           "format_name": "Microsoft PowerPoint Presentation",
           "version": "4.x",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 1,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -307586,6 +308079,7 @@
           "puid": "x-fmt/87",
           "format_name": "Microsoft Powerpoint Presentation Show",
           "version": "97-2003",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307596,6 +308090,7 @@
           "puid": "fmt/629",
           "format_name": "Microsoft PowerPoint Show",
           "version": "2007",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307606,12 +308101,17 @@
           "puid": "fmt/631",
           "format_name": "Microsoft PowerPoint Template",
           "version": "2007",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 22,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -307619,12 +308119,17 @@
           "puid": "fmt/440",
           "format_name": "Microsoft Project",
           "version": "2007",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": -1,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -307632,12 +308137,17 @@
           "puid": "fmt/725",
           "format_name": "Microsoft Project",
           "version": "2010",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": -1,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -307645,12 +308155,17 @@
           "puid": "x-fmt/243",
           "format_name": "Microsoft Project",
           "version": "4.0",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": -1,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -307658,12 +308173,17 @@
           "puid": "x-fmt/244",
           "format_name": "Microsoft Project",
           "version": "95",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": -1,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -307671,12 +308191,17 @@
           "puid": "x-fmt/245",
           "format_name": "Microsoft Project",
           "version": "98",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": -1,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -307684,6 +308209,7 @@
           "puid": "x-fmt/246",
           "format_name": "Microsoft Project",
           "version": "2000",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307694,12 +308220,17 @@
           "puid": "x-fmt/247",
           "format_name": "Microsoft Project",
           "version": "2000-2003",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": -1,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -307707,6 +308238,7 @@
           "puid": "fmt/342",
           "format_name": "Microsoft Project Export File",
           "version": "4.0",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307717,6 +308249,7 @@
           "puid": "fmt/343",
           "format_name": "Microsoft Project Export File",
           "version": "3.0",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307727,6 +308260,7 @@
           "puid": "x-fmt/232",
           "format_name": "Microsoft Project Export File",
           "version": "1.0",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307737,12 +308271,17 @@
           "puid": "x-fmt/252",
           "format_name": "Microsoft Publisher",
           "version": "2.0",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": -8,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -307750,12 +308289,17 @@
           "puid": "x-fmt/253",
           "format_name": "Microsoft Publisher",
           "version": "95",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": -8,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -307763,12 +308307,17 @@
           "puid": "x-fmt/254",
           "format_name": "Microsoft Publisher",
           "version": "97",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": -8,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -307776,12 +308325,17 @@
           "puid": "x-fmt/255",
           "format_name": "Microsoft Publisher",
           "version": "98",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": -8,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -307789,12 +308343,17 @@
           "puid": "x-fmt/256",
           "format_name": "Microsoft Publisher",
           "version": "2000",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": -8,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -307802,12 +308361,17 @@
           "puid": "x-fmt/257",
           "format_name": "Microsoft Publisher",
           "version": "2002",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": -8,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -307815,6 +308379,7 @@
           "puid": "fmt/1303",
           "format_name": "Microsoft Shell Scrap Object File",
           "version": null,
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307825,6 +308390,7 @@
           "puid": "fmt/442",
           "format_name": "Microsoft Visio (generic)",
           "version": null,
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307835,12 +308401,17 @@
           "puid": "fmt/443",
           "format_name": "Microsoft Visio Drawing",
           "version": "2003-2010",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": -2,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -307848,12 +308419,17 @@
           "puid": "fmt/924",
           "format_name": "Microsoft Visio Drawing",
           "version": "2013",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 18,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -307861,12 +308437,17 @@
           "puid": "x-fmt/113",
           "format_name": "Microsoft Visio Drawing",
           "version": "5.0",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": -6,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -307874,12 +308455,17 @@
           "puid": "x-fmt/258",
           "format_name": "Microsoft Visio Drawing",
           "version": "2000-2002",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": -2,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -307887,12 +308473,17 @@
           "puid": "x-fmt/259",
           "format_name": "Microsoft Visio Drawing",
           "version": "2002",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": -2,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -307900,6 +308491,7 @@
           "puid": "fmt/927",
           "format_name": "Microsoft Visio Macro-Enabled Drawing",
           "version": "2013",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307910,6 +308502,7 @@
           "puid": "fmt/928",
           "format_name": "Microsoft Visio Macro-Enabled Stencil",
           "version": "2013",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307920,6 +308513,7 @@
           "puid": "fmt/929",
           "format_name": "Microsoft Visio Macro-Enabled Template",
           "version": "2013",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307930,6 +308524,7 @@
           "puid": "fmt/925",
           "format_name": "Microsoft Visio Stencil",
           "version": "2013",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307940,6 +308535,7 @@
           "puid": "fmt/926",
           "format_name": "Microsoft Visio Template",
           "version": "2013",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307950,6 +308546,7 @@
           "puid": "fmt/216",
           "format_name": "Microsoft Visio XML Drawing",
           "version": "2003-2010",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307960,6 +308557,7 @@
           "puid": "fmt/609",
           "format_name": "Microsoft Word (Generic)",
           "version": "6.0-2003",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307970,12 +308568,17 @@
           "puid": "fmt/39",
           "format_name": "Microsoft Word Document",
           "version": "6.0/95",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 9,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -307983,6 +308586,7 @@
           "puid": "fmt/40",
           "format_name": "Microsoft Word Document",
           "version": "97-2003",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -307993,6 +308597,7 @@
           "puid": "fmt/754",
           "format_name": "Microsoft Word Document (Password Protected)",
           "version": "97-2003",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -308003,6 +308608,7 @@
           "puid": "x-fmt/45",
           "format_name": "Microsoft Word Document Template",
           "version": "97-2003",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -308013,6 +308619,7 @@
           "puid": "fmt/755",
           "format_name": "Microsoft Word Document Template (Password Protected)",
           "version": "97-2003",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -308023,6 +308630,7 @@
           "puid": "fmt/346",
           "format_name": "Microsoft Word for Macintosh Document",
           "version": "1.0",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -308033,6 +308641,7 @@
           "puid": "x-fmt/1",
           "format_name": "Microsoft Word for Macintosh Document",
           "version": "3.0",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -308043,6 +308652,7 @@
           "puid": "x-fmt/129",
           "format_name": "Microsoft Word for Macintosh Document",
           "version": "X",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -308053,6 +308663,7 @@
           "puid": "x-fmt/2",
           "format_name": "Microsoft Word for Macintosh Document",
           "version": "6.0",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -308063,6 +308674,7 @@
           "puid": "x-fmt/64",
           "format_name": "Microsoft Word for Macintosh Document",
           "version": "4.0",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -308073,6 +308685,7 @@
           "puid": "x-fmt/65",
           "format_name": "Microsoft Word for Macintosh Document",
           "version": "5.0",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -308083,6 +308696,7 @@
           "puid": "x-fmt/273",
           "format_name": "Microsoft Word for MS-DOS Document",
           "version": "3.0",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -308093,6 +308707,7 @@
           "puid": "x-fmt/274",
           "format_name": "Microsoft Word for MS-DOS Document",
           "version": "1.x - 4.0",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -308103,6 +308718,7 @@
           "puid": "x-fmt/275",
           "format_name": "Microsoft Word for MS-DOS Document",
           "version": "5.0 - 5.4",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -308113,6 +308729,7 @@
           "puid": "x-fmt/276",
           "format_name": "Microsoft Word for MS-DOS Document",
           "version": "5.5",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -308123,6 +308740,7 @@
           "puid": "fmt/412",
           "format_name": "Microsoft Word for Windows",
           "version": "2007 onwards",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -308133,6 +308751,7 @@
           "puid": "fmt/37",
           "format_name": "Microsoft Word for Windows Document",
           "version": "1.0",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -308143,12 +308762,17 @@
           "puid": "fmt/38",
           "format_name": "Microsoft Word for Windows Document",
           "version": "2.0",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 5,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -308156,6 +308780,7 @@
           "puid": "x-fmt/204",
           "format_name": "Microsoft Word for Windows Macro",
           "version": null,
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -308166,12 +308791,17 @@
           "puid": "fmt/599",
           "format_name": "Microsoft Word Macro-Enabled Document Template",
           "version": "2007 onwards",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 13,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -308179,6 +308809,7 @@
           "puid": "fmt/597",
           "format_name": "Microsoft Word Template",
           "version": "2007 onwards",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -308189,6 +308820,7 @@
           "puid": "fmt/337",
           "format_name": "MJ2 (Motion JPEG 2000)",
           "version": null,
+          "family_name": "JPEG 2000",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -308199,6 +308831,7 @@
           "puid": "x-fmt/15",
           "format_name": "MS-DOS Text File",
           "version": null,
+          "family_name": "Text encoding",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -308209,6 +308842,7 @@
           "puid": "x-fmt/130",
           "format_name": "MS-DOS Text File with line breaks",
           "version": null,
+          "family_name": "Text encoding",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -308219,6 +308853,7 @@
           "puid": "fmt/1197",
           "format_name": "MyISAM Indexes File",
           "version": null,
+          "family_name": "MySQL",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -308229,6 +308864,7 @@
           "puid": "fmt/868",
           "format_name": "MySQL Table Definition Format",
           "version": null,
+          "family_name": "MySQL",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -308239,6 +308875,7 @@
           "puid": "fmt/283",
           "format_name": "netCDF-3 64-bit",
           "version": null,
+          "family_name": "NetCDF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -308249,6 +308886,7 @@
           "puid": "fmt/282",
           "format_name": "netCDF-3 Classic",
           "version": null,
+          "family_name": "NetCDF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -308259,6 +308897,7 @@
           "puid": "fmt/873",
           "format_name": "Notation3",
           "version": null,
+          "family_name": "RDF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -308269,6 +308908,7 @@
           "puid": "fmt/111",
           "format_name": "OLE2 Compound Document Format",
           "version": null,
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -308279,6 +308919,7 @@
           "puid": "x-fmt/3",
           "format_name": "Online Description Tool Format",
           "version": null,
+          "family_name": "Online Description Tool",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -308289,6 +308930,7 @@
           "puid": "fmt/129",
           "format_name": "OpenOffice Calc",
           "version": "1.0",
+          "family_name": "OpenOffice",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -308299,6 +308941,7 @@
           "puid": "fmt/127",
           "format_name": "OpenOffice Draw",
           "version": "1.0",
+          "family_name": "OpenOffice",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -308309,6 +308952,7 @@
           "puid": "fmt/130",
           "format_name": "OpenOffice Impress",
           "version": "1.0",
+          "family_name": "OpenOffice",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -308319,6 +308963,7 @@
           "puid": "fmt/128",
           "format_name": "OpenOffice Writer",
           "version": "1.0",
+          "family_name": "OpenOffice",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -308329,6 +308974,7 @@
           "puid": "fmt/839",
           "format_name": "Outlook Express Folder Database",
           "version": null,
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -308339,6 +308985,7 @@
           "puid": "fmt/838",
           "format_name": "Outlook Express Message Database",
           "version": null,
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -308349,12 +308996,17 @@
           "puid": "fmt/1129",
           "format_name": "PDF 2.0 - Portable Document Format",
           "version": "2.0",
+          "family_name": "PDF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 26,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -308362,6 +309014,7 @@
           "puid": "x-fmt/111",
           "format_name": "Plain Text File",
           "version": null,
+          "family_name": "Text encoding",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -308372,6 +309025,7 @@
           "puid": "fmt/41",
           "format_name": "Raw JPEG Stream",
           "version": null,
+          "family_name": "JPEG",
           "policy_statuses": [
             "Open"
           ],
@@ -308382,6 +309036,7 @@
           "puid": "fmt/875",
           "format_name": "RDF/XML",
           "version": null,
+          "family_name": "RDF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -308392,12 +309047,17 @@
           "puid": "fmt/91",
           "format_name": "Scalable Vector Graphics",
           "version": "1.0",
+          "family_name": "SVG",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 37,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -308405,12 +309065,17 @@
           "puid": "fmt/92",
           "format_name": "Scalable Vector Graphics",
           "version": "1.1",
+          "family_name": "SVG",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 37,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -308418,6 +309083,7 @@
           "puid": "x-fmt/109",
           "format_name": "Scalable Vector Graphics Compressed",
           "version": null,
+          "family_name": "SVG",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -308428,12 +309094,17 @@
           "puid": "fmt/413",
           "format_name": "Scalable Vector Graphics Tiny",
           "version": "1.2",
+          "family_name": "SVG",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 37,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -308441,6 +309112,7 @@
           "puid": "fmt/1196",
           "format_name": "SIARD (Software-Independent Archiving of Relational Databases)",
           "version": "2.1",
+          "family_name": "SIARD",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -308451,6 +309123,7 @@
           "puid": "fmt/161",
           "format_name": "SIARD (Software-Independent Archiving of Relational Databases)",
           "version": "1.0",
+          "family_name": "SIARD",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -308461,6 +309134,7 @@
           "puid": "fmt/995",
           "format_name": "SIARD (Software-Independent Archiving of Relational Databases)",
           "version": "2.0",
+          "family_name": "SIARD",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -308471,6 +309145,7 @@
           "puid": "fmt/638",
           "format_name": "SPSS Data File",
           "version": null,
+          "family_name": "SPSS",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -308481,6 +309156,7 @@
           "puid": "fmt/274",
           "format_name": "SPSS Output File (spv)",
           "version": null,
+          "family_name": "SPSS",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -308491,6 +309167,7 @@
           "puid": "fmt/997",
           "format_name": "SPSS Portable Data Format",
           "version": null,
+          "family_name": "SPSS",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -308501,6 +309178,7 @@
           "puid": "fmt/1029",
           "format_name": "Stata Data (DTA) Format",
           "version": "104",
+          "family_name": "Stata Data (DTA)",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -308511,6 +309189,7 @@
           "puid": "fmt/1030",
           "format_name": "Stata Data (DTA) Format",
           "version": "105",
+          "family_name": "Stata Data (DTA)",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -308521,6 +309200,7 @@
           "puid": "fmt/1031",
           "format_name": "Stata Data (DTA) Format",
           "version": "110",
+          "family_name": "Stata Data (DTA)",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -308531,6 +309211,7 @@
           "puid": "fmt/1032",
           "format_name": "Stata Data (DTA) Format",
           "version": "111",
+          "family_name": "Stata Data (DTA)",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -308541,6 +309222,7 @@
           "puid": "fmt/1033",
           "format_name": "Stata Data (DTA) Format",
           "version": "113",
+          "family_name": "Stata Data (DTA)",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -308551,6 +309233,7 @@
           "puid": "fmt/1034",
           "format_name": "Stata Data (DTA) Format",
           "version": "114",
+          "family_name": "Stata Data (DTA)",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -308561,6 +309244,7 @@
           "puid": "fmt/1035",
           "format_name": "Stata Data (DTA) Format",
           "version": "115",
+          "family_name": "Stata Data (DTA)",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -308571,6 +309255,7 @@
           "puid": "fmt/1036",
           "format_name": "Stata Data (DTA) Format",
           "version": "117",
+          "family_name": "Stata Data (DTA)",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -308581,6 +309266,7 @@
           "puid": "fmt/1037",
           "format_name": "Stata Data (DTA) Format",
           "version": "118",
+          "family_name": "Stata Data (DTA)",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -308591,12 +309277,17 @@
           "puid": "x-fmt/13",
           "format_name": "Tab-separated Values",
           "version": null,
+          "family_name": "Tekst (Algemeen)",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 15,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -308604,6 +309295,7 @@
           "puid": "fmt/10",
           "format_name": "Tagged Image File Format",
           "version": "6",
+          "family_name": "TIFF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -308614,6 +309306,7 @@
           "puid": "fmt/353",
           "format_name": "Tagged Image File Format",
           "version": null,
+          "family_name": "TIFF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -308624,6 +309317,7 @@
           "puid": "fmt/7",
           "format_name": "Tagged Image File Format",
           "version": "3",
+          "family_name": "TIFF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -308634,6 +309328,7 @@
           "puid": "fmt/8",
           "format_name": "Tagged Image File Format",
           "version": "4",
+          "family_name": "TIFF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -308644,6 +309339,7 @@
           "puid": "fmt/9",
           "format_name": "Tagged Image File Format",
           "version": "5",
+          "family_name": "TIFF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -308654,12 +309350,17 @@
           "puid": "fmt/154",
           "format_name": "Tagged Image File Format for Electronic Photography (TIFF/EP)",
           "version": null,
+          "family_name": "TIFF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 30,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -308667,12 +309368,17 @@
           "puid": "fmt/153",
           "format_name": "Tagged Image File Format for Image Technology (TIFF/IT)",
           "version": null,
+          "family_name": "TIFF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 28,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -308680,12 +309386,17 @@
           "puid": "fmt/156",
           "format_name": "Tagged Image File Format for Internet Fax (TIFF-FX)",
           "version": null,
+          "family_name": "TIFF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": -5,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -308693,6 +309404,7 @@
           "puid": "fmt/874",
           "format_name": "Turtle",
           "version": null,
+          "family_name": "RDF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -308703,6 +309415,7 @@
           "puid": "fmt/1211",
           "format_name": "Wavefront Material Template Library",
           "version": null,
+          "family_name": "Wavefront",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -308713,6 +309426,7 @@
           "puid": "fmt/1210",
           "format_name": "Wavefront OBJ File",
           "version": null,
+          "family_name": "Wavefront",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -308723,6 +309437,7 @@
           "puid": "fmt/1255",
           "format_name": "Windows Address Book",
           "version": null,
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -308733,6 +309448,7 @@
           "puid": "fmt/579",
           "format_name": "X3D",
           "version": "3.0",
+          "family_name": "X3D",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -308743,6 +309459,7 @@
           "puid": "fmt/580",
           "format_name": "X3D",
           "version": "3.1",
+          "family_name": "X3D",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -308753,6 +309470,7 @@
           "puid": "fmt/581",
           "format_name": "X3D",
           "version": "3.2",
+          "family_name": "X3D",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -308763,6 +309481,7 @@
           "puid": "fmt/582",
           "format_name": "X3D",
           "version": "3.3",
+          "family_name": "X3D",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -308834,6 +309553,7 @@
           "puid": "fmt/276",
           "format_name": "Acrobat PDF 1.7 - Portable Document Format",
           "version": "1.7",
+          "family_name": "PDF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -308842,6 +309562,10 @@
           ],
           "nara_risk": {
             "numeric_risk_rating": 24,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -308849,12 +309573,17 @@
           "puid": "fmt/354",
           "format_name": "Acrobat PDF/A - Portable Document Format",
           "version": "1b",
+          "family_name": "PDF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 37,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -308862,12 +309591,17 @@
           "puid": "fmt/476",
           "format_name": "Acrobat PDF/A - Portable Document Format",
           "version": "2a",
+          "family_name": "PDF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 37,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -308875,12 +309609,17 @@
           "puid": "fmt/95",
           "format_name": "Acrobat PDF/A - Portable Document Format",
           "version": "1a",
+          "family_name": "PDF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 36,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -308888,6 +309627,7 @@
           "puid": "fmt/410",
           "format_name": "Internet Archive",
           "version": "1.1",
+          "family_name": "Web ARChive",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -308898,6 +309638,7 @@
           "puid": "x-fmt/219",
           "format_name": "Internet Archive",
           "version": "1.0",
+          "family_name": "Web ARChive",
           "policy_statuses": [
             "Legacy"
           ],
@@ -308908,12 +309649,17 @@
           "puid": "fmt/1281",
           "format_name": "WARC",
           "version": "1.1",
+          "family_name": "Web ARChive",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 32,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -308921,12 +309667,17 @@
           "puid": "fmt/1355",
           "format_name": "WARC",
           "version": "1.0",
+          "family_name": "Web ARChive",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 24,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -308934,6 +309685,7 @@
           "puid": "fmt/289",
           "format_name": "WARC",
           "version": null,
+          "family_name": "Web ARChive",
           "policy_statuses": [
             "Legacy"
           ],
@@ -309300,12 +310052,17 @@
           "puid": "fmt/276",
           "format_name": "Acrobat PDF 1.7 - Portable Document Format",
           "version": "1.7",
+          "family_name": "PDF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 24,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -309313,12 +310070,17 @@
           "puid": "fmt/354",
           "format_name": "Acrobat PDF/A - Portable Document Format",
           "version": "1b",
+          "family_name": "PDF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 37,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -309326,12 +310088,17 @@
           "puid": "fmt/476",
           "format_name": "Acrobat PDF/A - Portable Document Format",
           "version": "2a",
+          "family_name": "PDF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 37,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -309339,12 +310106,17 @@
           "puid": "fmt/477",
           "format_name": "Acrobat PDF/A - Portable Document Format",
           "version": "2b",
+          "family_name": "PDF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 36,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -309352,12 +310124,17 @@
           "puid": "fmt/478",
           "format_name": "Acrobat PDF/A - Portable Document Format",
           "version": "2u",
+          "family_name": "PDF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 36,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -309365,12 +310142,17 @@
           "puid": "fmt/479",
           "format_name": "Acrobat PDF/A - Portable Document Format",
           "version": "3a",
+          "family_name": "PDF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 36,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -309378,12 +310160,17 @@
           "puid": "fmt/480",
           "format_name": "Acrobat PDF/A - Portable Document Format",
           "version": "3b",
+          "family_name": "PDF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 36,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -309391,12 +310178,17 @@
           "puid": "fmt/481",
           "format_name": "Acrobat PDF/A - Portable Document Format",
           "version": "3u",
+          "family_name": "PDF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 36,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -309404,12 +310196,17 @@
           "puid": "fmt/95",
           "format_name": "Acrobat PDF/A - Portable Document Format",
           "version": "1a",
+          "family_name": "PDF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 36,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -309417,12 +310214,17 @@
           "puid": "fmt/5",
           "format_name": "Audio/Video Interleaved Format",
           "version": null,
+          "family_name": "Windows Media",
           "policy_statuses": [
             "Open"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 21,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -309430,6 +310232,7 @@
           "puid": "fmt/1",
           "format_name": "Broadcast WAVE",
           "version": "0 Generic",
+          "family_name": "WAVE",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -309440,6 +310243,7 @@
           "puid": "fmt/2",
           "format_name": "Broadcast WAVE",
           "version": "1 Generic",
+          "family_name": "WAVE",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -309450,6 +310254,7 @@
           "puid": "fmt/527",
           "format_name": "Broadcast WAVE",
           "version": "2 Generic",
+          "family_name": "WAVE",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -309460,12 +310265,17 @@
           "puid": "x-fmt/18",
           "format_name": "Comma Separated Values",
           "version": null,
+          "family_name": "Comma Separated Values formaatfamilie",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 26,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -309473,6 +310283,7 @@
           "puid": "x-fmt/392",
           "format_name": "JP2 (JPEG 2000 part 1)",
           "version": null,
+          "family_name": "JPEG 2000",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -309483,12 +310294,17 @@
           "puid": "fmt/42",
           "format_name": "JPEG File Interchange Format",
           "version": "1.00",
+          "family_name": "JPEG",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 17,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -309496,12 +310312,17 @@
           "puid": "fmt/43",
           "format_name": "JPEG File Interchange Format",
           "version": "1.01",
+          "family_name": "JPEG",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 17,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -309509,12 +310330,17 @@
           "puid": "fmt/44",
           "format_name": "JPEG File Interchange Format",
           "version": "1.02",
+          "family_name": "JPEG",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 28,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -309522,6 +310348,7 @@
           "puid": "fmt/151",
           "format_name": "JPX (JPEG 2000 part 2)",
           "version": null,
+          "family_name": "JPEG 2000",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -309532,12 +310359,17 @@
           "puid": "fmt/200",
           "format_name": "Material Exchange Format",
           "version": "Operational Pattern 1a",
+          "family_name": "MXF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 23,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -309545,12 +310377,17 @@
           "puid": "fmt/783",
           "format_name": "Material Exchange Format",
           "version": "Operational Pattern 1b",
+          "family_name": "MXF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 23,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -309558,12 +310395,17 @@
           "puid": "fmt/784",
           "format_name": "Material Exchange Format",
           "version": "Operational Pattern 1c",
+          "family_name": "MXF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 23,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -309571,12 +310413,17 @@
           "puid": "fmt/786",
           "format_name": "Material Exchange Format",
           "version": "Operational Pattern 2b",
+          "family_name": "MXF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 23,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -309584,12 +310431,17 @@
           "puid": "fmt/787",
           "format_name": "Material Exchange Format",
           "version": "Operational Pattern 2c",
+          "family_name": "MXF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 23,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -309597,12 +310449,17 @@
           "puid": "fmt/788",
           "format_name": "Material Exchange Format",
           "version": "Operational Pattern 3a",
+          "family_name": "MXF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 23,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -309610,12 +310467,17 @@
           "puid": "fmt/789",
           "format_name": "Material Exchange Format",
           "version": "Operational Pattern 3b",
+          "family_name": "MXF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 23,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -309623,12 +310485,17 @@
           "puid": "fmt/790",
           "format_name": "Material Exchange Format",
           "version": "Operational Pattern 3c",
+          "family_name": "MXF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 23,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -309636,6 +310503,7 @@
           "puid": "fmt/569",
           "format_name": "Matroska",
           "version": "1-4",
+          "family_name": "EBML",
           "policy_statuses": [
             "Open"
           ],
@@ -309646,6 +310514,7 @@
           "puid": "fmt/720",
           "format_name": "MBOX",
           "version": null,
+          "family_name": "Productiviteit (Algemeen)",
           "policy_statuses": [
             "Open"
           ],
@@ -309656,6 +310525,7 @@
           "puid": "fmt/275",
           "format_name": "Microsoft Access Database File",
           "version": "2007",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Open"
           ],
@@ -309666,6 +310536,7 @@
           "puid": "x-fmt/240",
           "format_name": "Microsoft Access Database File",
           "version": "2000",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Open"
           ],
@@ -309676,6 +310547,7 @@
           "puid": "x-fmt/241",
           "format_name": "Microsoft Access Database File",
           "version": "2002",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Open"
           ],
@@ -309686,6 +310558,7 @@
           "puid": "fmt/61",
           "format_name": "Microsoft Excel 97-2003 Workbook (xls)",
           "version": "8 & 8X",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Open"
           ],
@@ -309696,6 +310569,7 @@
           "puid": "fmt/214",
           "format_name": "Microsoft Excel for Windows",
           "version": "2007 onwards",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -309706,6 +310580,7 @@
           "puid": "x-fmt/430",
           "format_name": "Microsoft Outlook Email Message",
           "version": "97-2003",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Open"
           ],
@@ -309716,6 +310591,7 @@
           "puid": "x-fmt/250",
           "format_name": "Microsoft Outlook Personal Folders",
           "version": null,
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Open"
           ],
@@ -309726,6 +310602,7 @@
           "puid": "x-fmt/248",
           "format_name": "Microsoft Outlook Personal Folders (ANSI)",
           "version": "1997-2002",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Open"
           ],
@@ -309736,6 +310613,7 @@
           "puid": "x-fmt/249",
           "format_name": "Microsoft Outlook Personal Folders (Unicode)",
           "version": "2003-2007",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Open"
           ],
@@ -309746,6 +310624,7 @@
           "puid": "fmt/215",
           "format_name": "Microsoft Powerpoint for Windows",
           "version": "2007 onwards",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -309756,12 +310635,17 @@
           "puid": "fmt/126",
           "format_name": "Microsoft Powerpoint Presentation",
           "version": "97-2003",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Open"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 20,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -309769,6 +310653,7 @@
           "puid": "fmt/40",
           "format_name": "Microsoft Word Document",
           "version": "97-2003",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Open"
           ],
@@ -309779,6 +310664,7 @@
           "puid": "fmt/412",
           "format_name": "Microsoft Word for Windows",
           "version": "2007 onwards",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -309789,6 +310675,7 @@
           "puid": "fmt/950",
           "format_name": "MIME Email",
           "version": "1.0",
+          "family_name": "MIME Email",
           "policy_statuses": [
             "Open"
           ],
@@ -309799,6 +310686,7 @@
           "puid": "fmt/134",
           "format_name": "MPEG 1/2 Audio Layer 3",
           "version": null,
+          "family_name": "MPEG-1 Audio",
           "policy_statuses": [
             "Open"
           ],
@@ -309809,12 +310697,17 @@
           "puid": "fmt/199",
           "format_name": "MPEG-4 Media File",
           "version": null,
+          "family_name": "MP4",
           "policy_statuses": [
             "Open"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 20,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -309822,6 +310715,7 @@
           "puid": "fmt/140",
           "format_name": "OpenDocument Database Format",
           "version": "1.0",
+          "family_name": "ODF (OpenDocument Format)",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -309832,6 +310726,7 @@
           "puid": "fmt/424",
           "format_name": "OpenDocument Database Format",
           "version": "1.2",
+          "family_name": "ODF (OpenDocument Format)",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -309842,6 +310737,7 @@
           "puid": "fmt/444",
           "format_name": "OpenDocument Database Format",
           "version": "1.1",
+          "family_name": "ODF (OpenDocument Format)",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -309852,12 +310748,17 @@
           "puid": "fmt/138",
           "format_name": "OpenDocument Presentation",
           "version": "1.0",
+          "family_name": "ODF (OpenDocument Format)",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 32,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -309865,12 +310766,17 @@
           "puid": "fmt/292",
           "format_name": "OpenDocument Presentation",
           "version": "1.1",
+          "family_name": "ODF (OpenDocument Format)",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 32,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -309878,12 +310784,17 @@
           "puid": "fmt/293",
           "format_name": "OpenDocument Presentation",
           "version": "1.2",
+          "family_name": "ODF (OpenDocument Format)",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 32,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -309891,12 +310802,17 @@
           "puid": "fmt/137",
           "format_name": "OpenDocument Spreadsheet",
           "version": "1.0",
+          "family_name": "ODF (OpenDocument Format)",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 30,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -309904,12 +310820,17 @@
           "puid": "fmt/294",
           "format_name": "OpenDocument Spreadsheet",
           "version": "1.1",
+          "family_name": "ODF (OpenDocument Format)",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 30,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -309917,12 +310838,17 @@
           "puid": "fmt/295",
           "format_name": "OpenDocument Spreadsheet",
           "version": "1.2",
+          "family_name": "ODF (OpenDocument Format)",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 30,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -309930,12 +310856,17 @@
           "puid": "fmt/136",
           "format_name": "OpenDocument Text",
           "version": "1.0",
+          "family_name": "ODF (OpenDocument Format)",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 30,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -309943,12 +310874,17 @@
           "puid": "fmt/290",
           "format_name": "OpenDocument Text",
           "version": "1.1",
+          "family_name": "ODF (OpenDocument Format)",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 30,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -309956,12 +310892,17 @@
           "puid": "fmt/291",
           "format_name": "OpenDocument Text",
           "version": "1.2",
+          "family_name": "ODF (OpenDocument Format)",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 30,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -309969,12 +310910,17 @@
           "puid": "fmt/11",
           "format_name": "Portable Network Graphics",
           "version": "1.0",
+          "family_name": "PNG",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 31,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -309982,12 +310928,17 @@
           "puid": "fmt/12",
           "format_name": "Portable Network Graphics",
           "version": "1.1",
+          "family_name": "PNG",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 31,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -309995,12 +310946,17 @@
           "puid": "fmt/13",
           "format_name": "Portable Network Graphics",
           "version": "1.2",
+          "family_name": "PNG",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 33,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -310008,12 +310964,17 @@
           "puid": "fmt/91",
           "format_name": "Scalable Vector Graphics",
           "version": "1.0",
+          "family_name": "SVG",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 37,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -310021,12 +310982,17 @@
           "puid": "fmt/92",
           "format_name": "Scalable Vector Graphics",
           "version": "1.1",
+          "family_name": "SVG",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 37,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -310034,12 +311000,17 @@
           "puid": "fmt/413",
           "format_name": "Scalable Vector Graphics Tiny",
           "version": "1.2",
+          "family_name": "SVG",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 37,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -310047,6 +311018,7 @@
           "puid": "fmt/1196",
           "format_name": "SIARD (Software-Independent Archiving of Relational Databases)",
           "version": "2.1",
+          "family_name": "SIARD",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -310057,6 +311029,7 @@
           "puid": "fmt/161",
           "format_name": "SIARD (Software-Independent Archiving of Relational Databases)",
           "version": "1.0",
+          "family_name": "SIARD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -310067,6 +311040,7 @@
           "puid": "fmt/995",
           "format_name": "SIARD (Software-Independent Archiving of Relational Databases)",
           "version": "2.0",
+          "family_name": "SIARD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -310077,6 +311051,7 @@
           "puid": "fmt/206",
           "format_name": "Structured Query Language Data",
           "version": null,
+          "family_name": "SQL",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -310087,6 +311062,7 @@
           "puid": "fmt/10",
           "format_name": "Tagged Image File Format",
           "version": "6",
+          "family_name": "TIFF",
           "policy_statuses": [
             "Open"
           ],
@@ -310097,12 +311073,17 @@
           "puid": "fmt/1281",
           "format_name": "WARC",
           "version": "1.1",
+          "family_name": "Web ARChive",
           "policy_statuses": [
             "Open"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 32,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -310110,12 +311091,17 @@
           "puid": "fmt/1355",
           "format_name": "WARC",
           "version": "1.0",
+          "family_name": "Web ARChive",
           "policy_statuses": [
             "Open"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 24,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -310123,6 +311109,7 @@
           "puid": "fmt/141",
           "format_name": "Waveform Audio (PCMWAVEFORMAT)",
           "version": null,
+          "family_name": "WAVE",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -310133,6 +311120,7 @@
           "puid": "fmt/142",
           "format_name": "Waveform Audio (WAVEFORMATEX)",
           "version": null,
+          "family_name": "WAVE",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -310341,6 +311329,7 @@
           "puid": "fmt/797",
           "format_name": "Apple ProRes",
           "version": null,
+          "family_name": "Apple Codec",
           "policy_statuses": [],
           "knowledge_levels": [
             "In opslag"
@@ -310351,6 +311340,7 @@
           "puid": "fmt/1",
           "format_name": "Broadcast WAVE",
           "version": "0 Generic",
+          "family_name": "WAVE",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -310363,6 +311353,7 @@
           "puid": "fmt/2",
           "format_name": "Broadcast WAVE",
           "version": "1 Generic",
+          "family_name": "WAVE",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -310375,6 +311366,7 @@
           "puid": "fmt/527",
           "format_name": "Broadcast WAVE",
           "version": "2 Generic",
+          "family_name": "WAVE",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -310387,6 +311379,7 @@
           "puid": "fmt/193",
           "format_name": "Digital Moving Picture Exchange Bitmap",
           "version": "1.0",
+          "family_name": "Digital Moving Picture Exchange Bitmap",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -310399,6 +311392,7 @@
           "puid": "x-fmt/392",
           "format_name": "JP2 (JPEG 2000 part 1)",
           "version": null,
+          "family_name": "JPEG 2000",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -310411,6 +311405,7 @@
           "puid": "fmt/42",
           "format_name": "JPEG File Interchange Format",
           "version": "1.00",
+          "family_name": "JPEG",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -310419,6 +311414,10 @@
           ],
           "nara_risk": {
             "numeric_risk_rating": 17,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -310426,6 +311425,7 @@
           "puid": "fmt/43",
           "format_name": "JPEG File Interchange Format",
           "version": "1.01",
+          "family_name": "JPEG",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -310434,6 +311434,10 @@
           ],
           "nara_risk": {
             "numeric_risk_rating": 17,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -310441,6 +311445,7 @@
           "puid": "fmt/44",
           "format_name": "JPEG File Interchange Format",
           "version": "1.02",
+          "family_name": "JPEG",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -310449,6 +311454,10 @@
           ],
           "nara_risk": {
             "numeric_risk_rating": 28,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -310456,6 +311465,7 @@
           "puid": "fmt/200",
           "format_name": "Material Exchange Format",
           "version": "Operational Pattern 1a",
+          "family_name": "MXF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -310464,6 +311474,10 @@
           ],
           "nara_risk": {
             "numeric_risk_rating": 23,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -310471,6 +311485,7 @@
           "puid": "fmt/199",
           "format_name": "MPEG-4 Media File",
           "version": null,
+          "family_name": "MP4",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -310479,6 +311494,10 @@
           ],
           "nara_risk": {
             "numeric_risk_rating": 20,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -310486,12 +311505,17 @@
           "puid": "x-fmt/384",
           "format_name": "Quicktime",
           "version": null,
+          "family_name": "Quicktime Movie",
           "policy_statuses": [],
           "knowledge_levels": [
             "In opslag"
           ],
           "nara_risk": {
             "numeric_risk_rating": 23,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -310499,6 +311523,7 @@
           "puid": "fmt/353",
           "format_name": "Tagged Image File Format",
           "version": null,
+          "family_name": "TIFF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -313597,6 +314622,7 @@
           "puid": "fmt/484",
           "format_name": "7Zip format",
           "version": null,
+          "family_name": "7Zip",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -313607,12 +314633,17 @@
           "puid": "fmt/14",
           "format_name": "Acrobat PDF 1.0 - Portable Document Format",
           "version": "1.0",
+          "family_name": "PDF",
           "policy_statuses": [
             "Legacy"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 10,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -313620,12 +314651,17 @@
           "puid": "fmt/15",
           "format_name": "Acrobat PDF 1.1 - Portable Document Format",
           "version": "1.1",
+          "family_name": "PDF",
           "policy_statuses": [
             "Legacy"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 10,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -313633,12 +314669,17 @@
           "puid": "fmt/16",
           "format_name": "Acrobat PDF 1.2 - Portable Document Format",
           "version": "1.2",
+          "family_name": "PDF",
           "policy_statuses": [
             "Legacy"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 10,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -313646,12 +314687,17 @@
           "puid": "fmt/17",
           "format_name": "Acrobat PDF 1.3 - Portable Document Format",
           "version": "1.3",
+          "family_name": "PDF",
           "policy_statuses": [
             "Legacy"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 18,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -313659,12 +314705,17 @@
           "puid": "fmt/18",
           "format_name": "Acrobat PDF 1.4 - Portable Document Format",
           "version": "1.4",
+          "family_name": "PDF",
           "policy_statuses": [
             "Legacy"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 16,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -313672,12 +314723,17 @@
           "puid": "fmt/19",
           "format_name": "Acrobat PDF 1.5 - Portable Document Format",
           "version": "1.5",
+          "family_name": "PDF",
           "policy_statuses": [
             "Legacy"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 16,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -313685,12 +314741,17 @@
           "puid": "fmt/20",
           "format_name": "Acrobat PDF 1.6 - Portable Document Format",
           "version": "1.6",
+          "family_name": "PDF",
           "policy_statuses": [
             "Legacy"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 14,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -313698,12 +314759,17 @@
           "puid": "fmt/276",
           "format_name": "Acrobat PDF 1.7 - Portable Document Format",
           "version": "1.7",
+          "family_name": "PDF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 24,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -313711,12 +314777,17 @@
           "puid": "fmt/476",
           "format_name": "Acrobat PDF/A - Portable Document Format",
           "version": "2a",
+          "family_name": "PDF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 37,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -313724,12 +314795,17 @@
           "puid": "fmt/95",
           "format_name": "Acrobat PDF/A - Portable Document Format",
           "version": "1a",
+          "family_name": "PDF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 36,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -313737,6 +314813,7 @@
           "puid": "fmt/935",
           "format_name": "Animated Portable Network Graphics",
           "version": null,
+          "family_name": "PNG",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -313747,6 +314824,7 @@
           "puid": "fmt/1395",
           "format_name": "AutoCAD Drawing",
           "version": "2018/2019/2020/2021",
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -313757,6 +314835,7 @@
           "puid": "fmt/25",
           "format_name": "AutoCAD Drawing",
           "version": "2.0",
+          "family_name": "AutoCAD",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -313767,6 +314846,7 @@
           "puid": "fmt/2",
           "format_name": "Broadcast WAVE",
           "version": "1 Generic",
+          "family_name": "WAVE",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -313777,12 +314857,17 @@
           "puid": "x-fmt/18",
           "format_name": "Comma Separated Values",
           "version": null,
+          "family_name": "Comma Separated Values formaatfamilie",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 26,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -313790,6 +314875,7 @@
           "puid": "fmt/532",
           "format_name": "Drawing Interchange File Format (ASCII)",
           "version": "2013/2014/2015/2016/2017",
+          "family_name": "DXF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -313800,12 +314886,17 @@
           "puid": "fmt/63",
           "format_name": "Drawing Interchange File Format (ASCII)",
           "version": "Generic",
+          "family_name": "DXF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 25,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -313813,6 +314904,7 @@
           "puid": "x-fmt/226",
           "format_name": "ESRI Arc/Info Export File",
           "version": null,
+          "family_name": "ESRI",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -313823,12 +314915,17 @@
           "puid": "fmt/990",
           "format_name": "ESRI File Geodatabase",
           "version": null,
+          "family_name": "ESRI",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": -1,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -313836,6 +314933,7 @@
           "puid": "fmt/60",
           "format_name": "Excel 95 Workbook (xls)",
           "version": "7",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Legacy"
           ],
@@ -313846,12 +314944,17 @@
           "puid": "fmt/102",
           "format_name": "Extensible Hypertext Markup Language",
           "version": "1.0",
+          "family_name": "HTML",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 27,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -313859,12 +314962,17 @@
           "puid": "fmt/101",
           "format_name": "Extensible Markup Language",
           "version": "1.0",
+          "family_name": "XML",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 36,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -313872,6 +314980,7 @@
           "puid": "x-fmt/281",
           "format_name": "Extensible Stylesheet Language",
           "version": null,
+          "family_name": "XSL",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -313882,6 +314991,7 @@
           "puid": "fmt/155",
           "format_name": "Geographic Tagged Image File Format (GeoTIFF)",
           "version": null,
+          "family_name": "TIFF",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -313892,12 +315002,17 @@
           "puid": "x-fmt/227",
           "format_name": "Geography Markup Language",
           "version": null,
+          "family_name": "GML",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 33,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -313905,6 +315020,7 @@
           "puid": "fmt/4",
           "format_name": "Graphics Interchange Format",
           "version": "89a",
+          "family_name": "GIF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -313915,12 +315031,17 @@
           "puid": "fmt/44",
           "format_name": "JPEG File Interchange Format",
           "version": "1.02",
+          "family_name": "JPEG",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 28,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -313928,12 +315049,17 @@
           "puid": "fmt/724",
           "format_name": "Keyhole Markup Language (Container)",
           "version": null,
+          "family_name": "KML",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 30,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -313941,12 +315067,17 @@
           "puid": "fmt/244",
           "format_name": "Keyhole Markup Language (XML)",
           "version": null,
+          "family_name": "KML",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 35,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -313954,6 +315085,7 @@
           "puid": "fmt/275",
           "format_name": "Microsoft Access Database File",
           "version": "2007",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -313964,6 +315096,7 @@
           "puid": "x-fmt/239",
           "format_name": "Microsoft Access Database File",
           "version": "97",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Legacy"
           ],
@@ -313974,12 +315107,17 @@
           "puid": "x-fmt/17",
           "format_name": "Microsoft Excel Template",
           "version": "97-2003",
+          "family_name": "Microsoft Office",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 24,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -313987,6 +315125,7 @@
           "puid": "fmt/337",
           "format_name": "MJ2 (Motion JPEG 2000)",
           "version": null,
+          "family_name": "JPEG 2000",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -313997,6 +315136,7 @@
           "puid": "fmt/134",
           "format_name": "MPEG 1/2 Audio Layer 3",
           "version": null,
+          "family_name": "MPEG-1 Audio",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -314007,6 +315147,7 @@
           "puid": "x-fmt/279",
           "format_name": "MPEG 1/2 Audio Layer 3 Streaming",
           "version": null,
+          "family_name": "Multimedia afspeellijsten m3u",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -314017,6 +315158,7 @@
           "puid": "fmt/347",
           "format_name": "MPEG 1/2 Audio Layer I",
           "version": null,
+          "family_name": "MPEG-1 Audio",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -314027,6 +315169,7 @@
           "puid": "fmt/198",
           "format_name": "MPEG Audio Stream Layer II",
           "version": null,
+          "family_name": "MPEG-1 Audio",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -314037,12 +315180,17 @@
           "puid": "fmt/649",
           "format_name": "MPEG-1 Elementary Stream",
           "version": null,
+          "family_name": "MPEG",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 28,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -314050,6 +315198,7 @@
           "puid": "fmt/640",
           "format_name": "MPEG-2 Elementary Stream",
           "version": null,
+          "family_name": "MPEG",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -314060,12 +315209,17 @@
           "puid": "x-fmt/386",
           "format_name": "MPEG-2 Program Stream",
           "version": null,
+          "family_name": "MPEG",
           "policy_statuses": [
             "Geaccepteerd"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 26,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -314073,6 +315227,7 @@
           "puid": "fmt/585",
           "format_name": "MPEG-2 Transport Stream",
           "version": null,
+          "family_name": "MPEG Transport",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -314083,12 +315238,17 @@
           "puid": "fmt/199",
           "format_name": "MPEG-4 Media File",
           "version": null,
+          "family_name": "MP4",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 20,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Moderate Risk"
           }
         },
@@ -314096,6 +315256,7 @@
           "puid": "x-fmt/409",
           "format_name": "MS-DOS Executable",
           "version": null,
+          "family_name": "Microsoft Executable",
           "policy_statuses": [
             "Legacy"
           ],
@@ -314106,6 +315267,7 @@
           "puid": "x-fmt/15",
           "format_name": "MS-DOS Text File",
           "version": null,
+          "family_name": "Text encoding",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -314116,6 +315278,7 @@
           "puid": "fmt/1197",
           "format_name": "MyISAM Indexes File",
           "version": null,
+          "family_name": "MySQL",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -314126,6 +315289,7 @@
           "puid": "fmt/868",
           "format_name": "MySQL Table Definition Format",
           "version": null,
+          "family_name": "MySQL",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -314136,6 +315300,7 @@
           "puid": "x-fmt/111",
           "format_name": "Plain Text File",
           "version": null,
+          "family_name": "Text encoding",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -314146,12 +315311,17 @@
           "puid": "fmt/11",
           "format_name": "Portable Network Graphics",
           "version": "1.0",
+          "family_name": "PNG",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 31,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -314159,12 +315329,17 @@
           "puid": "fmt/13",
           "format_name": "Portable Network Graphics",
           "version": "1.2",
+          "family_name": "PNG",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
           "knowledge_levels": [],
           "nara_risk": {
             "numeric_risk_rating": 33,
+            "numeric_risk_rating_range": {
+              "minimum": -52,
+              "maximum": 39
+            },
             "risk_level": "Low Risk"
           }
         },
@@ -314172,6 +315347,7 @@
           "puid": "fmt/1135",
           "format_name": "SQLite Database File Format",
           "version": "2",
+          "family_name": "SQLite",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -314182,6 +315358,7 @@
           "puid": "fmt/729",
           "format_name": "SQLite Database File Format",
           "version": "3",
+          "family_name": "SQLite",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -314192,6 +315369,7 @@
           "puid": "fmt/206",
           "format_name": "Structured Query Language Data",
           "version": null,
+          "family_name": "SQL",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -314202,6 +315380,7 @@
           "puid": "fmt/10",
           "format_name": "Tagged Image File Format",
           "version": "6",
+          "family_name": "TIFF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -314212,6 +315391,7 @@
           "puid": "fmt/353",
           "format_name": "Tagged Image File Format",
           "version": null,
+          "family_name": "TIFF",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -314222,6 +315402,7 @@
           "puid": "fmt/425",
           "format_name": "Video Object File (MPEG-2 subset)",
           "version": null,
+          "family_name": "MPEG",
           "policy_statuses": [
             "Geaccepteerd"
           ],
@@ -314232,6 +315413,7 @@
           "puid": "fmt/289",
           "format_name": "WARC",
           "version": null,
+          "family_name": "Web ARChive",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -314242,6 +315424,7 @@
           "puid": "fmt/132",
           "format_name": "Windows Media Audio",
           "version": null,
+          "family_name": "Windows Media",
           "policy_statuses": [
             "Legacy"
           ],
@@ -314252,6 +315435,7 @@
           "puid": "fmt/1424",
           "format_name": "WordPerfect Encrypted Document",
           "version": "4.2",
+          "family_name": "WordPerfect",
           "policy_statuses": [
             "Legacy"
           ],
@@ -314262,6 +315446,7 @@
           "puid": "x-fmt/394",
           "format_name": "WordPerfect for MS-DOS/Windows Document",
           "version": "5.1",
+          "family_name": "WordPerfect",
           "policy_statuses": [
             "Legacy"
           ],
@@ -314272,6 +315457,7 @@
           "puid": "x-fmt/280",
           "format_name": "XML Schema Definition",
           "version": null,
+          "family_name": "XSD",
           "policy_statuses": [
             "Voorkeursformaat"
           ],
@@ -314282,6 +315468,7 @@
           "puid": "x-fmt/263",
           "format_name": "ZIP Format",
           "version": null,
+          "family_name": "ZIP",
           "policy_statuses": [
             "Geaccepteerd"
           ],

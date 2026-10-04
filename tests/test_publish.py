@@ -115,6 +115,21 @@ class CatalogPublishingTests(unittest.TestCase):
 
         self.assertEqual(enriched["format_profiles"], profiles)
 
+    def test_source_family_and_application_area_override_pronom_type_mapping(self):
+        catalog = {"records": {"fmt/199": {"puid": "fmt/199", "formatName": "MPEG-4 Media File", "formatTypes": "Video"}}}
+        taxonomy = {
+            "schema_versie": 1,
+            "toepassingsgebieden": {"bewegend-beeld": "Bewegend beeld"},
+            "type_naar_toepassingsgebied": {"Video": ["bewegend-beeld"]},
+        }
+        profiles = {"fmt/199": {"source_classification": {"format_family": "MP4", "application_area": "AV Wrapper"}}}
+
+        enriched = publish.verrijk_pronom_catalogus(catalog, taxonomy, profiles)
+
+        self.assertEqual(enriched["records"]["fmt/199"]["browse_family"]["label"], "MP4")
+        self.assertEqual(enriched["records"]["fmt/199"]["browse_application_areas"], ["av-wrapper"])
+        self.assertEqual(enriched["browse_application_areas"]["av-wrapper"], "AV Wrapper")
+
     def test_format_profile_for_unknown_puid_is_rejected(self):
         catalog = {"records": {"fmt/1": {"formatTypes": "Video"}}}
         taxonomy = {

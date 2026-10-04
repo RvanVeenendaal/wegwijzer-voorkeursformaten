@@ -9,6 +9,8 @@ class FormatProfileParsingTests(unittest.TestCase):
         <h2><span>Beschrijving</span></h2>
         <table><tbody>
           <tr><th>Naam</th><td>WARC 1.0</td></tr>
+          <tr><th>Formaatfamilie</th><td>Web ARChive</td></tr>
+          <tr><th>Toepassingsgebied</th><td>Webarchivering</td></tr>
           <tr><th>Wikidata ID</th><td>Q7978505</td></tr>
           <tr><th>Library of Congress ID</th><td><i>geen</i></td></tr>
         </tbody></table>
@@ -37,6 +39,7 @@ class FormatProfileParsingTests(unittest.TestCase):
         self.assertEqual(profile["page_title"], "WARC 1.0")
         self.assertEqual(profile["revision_timestamp"], "2021-03-10T01:27:39Z")
         self.assertEqual(profile["identifiers"], {"wikidata": "Q7978505", "loc": None})
+        self.assertEqual(profile["source_classification"], {"format_family": "Web ARChive", "application_area": "Webarchivering"})
         self.assertEqual(profile["format_policy"][0], {"status": "Voorkeursformaat", "institutions": []})
         self.assertEqual(profile["format_policy"][1]["institutions"], ["Expertisegroep 3"])
         self.assertEqual(profile["knowledge_levels"][1]["institutions"], ["Archief X"])

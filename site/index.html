@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#173d38">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-ftNdSR28HqM4IC83XJsfoSzDDLGZrs0KOfL05lOUOE4='; style-src 'sha256-iEX0pmSmQdbXX1l9vAi+4Dpo0F9E4D68Tsq9qETpFVM='; connect-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'; object-src 'none'">
 <title>Bestandsformatencatalogus</title>
 <style>
   :root {
@@ -116,6 +118,26 @@
   .plot-swatch.risk-moderate { background: #c58a17; }
   .plot-swatch.risk-low { background: var(--teal); }
   .plot-swatch.risk-unknown { background: var(--blue); }
+  .institution-editor { display: grid; gap: .9rem; }
+  .editor-step-nav { display: flex; flex-wrap: wrap; gap: .4rem; margin: .7rem 0; }
+  .editor-step-nav button { min-height: 38px; padding: .4rem .65rem; border: 1px solid var(--line); border-radius: 4px; background: #fff; color: var(--muted); cursor: pointer; }
+  .editor-step-nav button[aria-current="step"] { border-color: var(--teal); background: var(--teal-pale); color: var(--forest); font-weight: 650; }
+  .institution-editor h3 { margin: 0 0 .5rem; }
+  .institution-editor-choice { display: flex; flex-wrap: wrap; gap: .35rem .9rem; margin: .6rem 0; padding: .7rem; border: 1px solid var(--line); }
+  .institution-editor-choice label { display: inline-flex; align-items: center; gap: .35rem; }
+  .institution-family-tag { display: inline-flex; align-items: center; gap: .5rem; padding: .4rem 0; border-bottom: 1px solid var(--line); }
+  .editor-format-meta { grid-column: 1 / -1; color: var(--muted); font-size: .82rem; }
+  .institution-editor-fields { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: .65rem .85rem; }
+  .institution-editor-field { display: grid; gap: .2rem; min-width: 0; color: var(--muted); font-size: .84rem; }
+  .institution-editor-field input, .institution-editor-field textarea, .institution-editor-field select { width: 100%; min-width: 0; padding: .5rem .6rem; border: 1px solid #aabbb6; border-radius: 4px; background: #fff; color: var(--ink); }
+  .institution-editor-field textarea { min-height: 5rem; resize: vertical; }
+  .institution-editor-row { display: grid; grid-template-columns: minmax(175px, 1.4fr) repeat(2, minmax(145px, .8fr)) minmax(150px, 1fr) auto; align-items: end; gap: .5rem; padding: .55rem 0; border-bottom: 1px solid var(--line); }
+  .importance-editor-row { display: grid; grid-template-columns: minmax(150px, 1.2fr) repeat(5, minmax(105px, .7fr)) auto; align-items: end; gap: .5rem; padding: .55rem 0; border-bottom: 1px solid var(--line); }
+  .editor-actions { display: flex; flex-wrap: wrap; gap: .55rem; margin-top: .7rem; }
+  .editor-actions button, .editor-actions-button, .editor-remove { min-height: 38px; padding: .45rem .7rem; border: 1px solid #aabbb6; border-radius: 4px; background: #fff; color: var(--ink); cursor: pointer; }
+  .editor-actions button[type="submit"] { border-color: var(--teal); background: var(--teal); color: #fff; }
+  .editor-remove { color: var(--coral); }
+  .editor-error { color: #9b3527; font-weight: 600; }
   .factor-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: .4rem .7rem; }
   .factor-list details { border-bottom: 1px solid var(--line); padding: .4rem 0; }
   .factor-list summary { display: flex; justify-content: space-between; gap: .8rem; cursor: pointer; }
@@ -141,6 +163,7 @@
     .detail { padding: .9rem; }
     .detail dl { grid-template-columns: 1fr; gap: .1rem; }
     .detail dd { margin-bottom: .45rem; }
+    .institution-editor-row, .importance-editor-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     footer { padding: .9rem 1rem 1.5rem; }
   }
   @media (max-width: 390px) {
@@ -219,6 +242,7 @@
       <div class="section-heading">
         <h2 id="institution-heading">Instellingen</h2>
         <p id="institution-summary"></p>
+        <button type="button" id="new-institution-profile">Nieuw profiel</button>
       </div>
       <div class="table-wrap">
         <table>
@@ -228,6 +252,46 @@
       </div>
     </div>
     <section id="institution-detail" class="detail" hidden aria-live="polite"></section>
+    <section id="institution-editor" class="detail" hidden aria-labelledby="institution-editor-heading">
+      <div class="detail-top"><div><h2 id="institution-editor-heading">Nieuw instellingsprofiel</h2></div>
+        <button class="close-detail" type="button" id="cancel-institution-editor" aria-label="Annuleer nieuw profiel">×</button></div>
+      <nav class="editor-step-nav" aria-label="Stappen instellingsprofiel">
+        <button type="button" data-editor-jump="0" aria-current="step">Instelling</button>
+        <button type="button" data-editor-jump="1">1 · Families</button>
+        <button type="button" data-editor-jump="2">2 · Belang</button>
+        <button type="button" data-editor-jump="3">3 · Beleidskeuzes</button>
+        <button type="button" data-editor-jump="4">4 · Per formaat</button>
+      </nav>
+      <form id="institution-profile-form" class="institution-editor" novalidate>
+        <section class="editor-step" data-editor-step="0"><h3>Instellingsprofiel</h3><div class="institution-editor-fields">
+          <label class="institution-editor-field">Naam instelling<input name="name" type="text" required></label>
+          <label class="institution-editor-field">Bestands-ID<input name="id" type="text" pattern="[a-z0-9]+(-[a-z0-9]+)*" required></label>
+          <label class="institution-editor-field">Plaats<input name="location" type="text"></label>
+          <label class="institution-editor-field">ISIL-code<input name="isil" type="text"></label>
+          <label class="institution-editor-field">Website<input name="website_url" type="url"></label>
+          <label class="institution-editor-field">Bronpagina<input name="source_url" type="url"></label>
+          <label class="institution-editor-field">Omschrijving<textarea name="description"></textarea></label>
+        </div></section>
+        <section class="editor-step" data-editor-step="1" hidden><h3>1. Selecteer families en koppel formaten</h3>
+          <div class="institution-editor-row"><label class="institution-editor-field">Formaatfamilie<input id="institution-family-input" type="text" list="institution-family-options" autocomplete="off"></label><button class="editor-actions-button" type="button" id="add-institution-family">Toevoegen</button></div>
+          <datalist id="institution-family-options"></datalist><div id="institution-selected-families"></div>
+          <h4>Formaten aan families koppelen</h4><div id="institution-family-format-rows"></div>
+          <datalist id="institution-format-options"></datalist><button class="editor-actions-button" type="button" id="add-institution-format">Formaat toevoegen</button>
+        </section>
+        <section class="editor-step" data-editor-step="2" hidden><h3>2. Bepaal het belang per familie</h3><div id="institution-importance-rows"></div><div id="institution-editor-plot-preview"></div>
+        </section>
+        <section class="editor-step" data-editor-step="3" hidden><h3>3. Kies beleids- en kennisniveaus</h3>
+          <fieldset class="institution-editor-choice"><legend>Formaatbeleid dat de instelling gebruikt</legend><div id="institution-policy-options"></div></fieldset>
+          <fieldset class="institution-editor-choice"><legend>Kennisniveaus die de instelling gebruikt</legend><div id="institution-knowledge-options"></div></fieldset>
+        </section>
+        <section class="editor-step" data-editor-step="4" hidden><h3>4. Kwalificeer formaten</h3>
+          <div id="institution-format-rows"></div>
+        </section>
+        <p id="institution-editor-error" class="editor-error" role="alert" hidden></p>
+        <p id="institution-editor-status" class="muted" role="status" aria-live="polite"></p>
+        <div class="editor-actions"><button type="button" id="institution-previous">Vorige</button><span id="institution-step-label" aria-live="polite"></span><button type="button" id="institution-next">Volgende</button><button type="submit" id="institution-download" hidden>JSON downloaden</button><button type="button" id="cancel-institution-editor-text">Annuleren</button></div>
+      </form>
+    </section>
   </section>
   <section id="detail" class="detail" hidden aria-live="polite"></section>
 </main>
@@ -237,6 +301,11 @@
 let CATALOG = null;
 const state = { query: "", type: "", page: 0, pageSize: 50, area: null, family: null, active: null, activeInstitution: null, view: "areas" };
 const $ = (id) => document.getElementById(id);
+let institutionEditorStep = 0;
+const institutionEditorFamilies = new Set();
+const POLICY_CHOICES = ["Voorkeursformaat", "Geaccepteerd", "Legacy", "Open"];
+const KNOWLEDGE_CHOICES = ["Gekend", "Geidentificeerd", "In opslag"];
+const IMPORTANCE_CHOICES = ["Laag", "Midden", "Hoog"];
 const esc = (value) => String(value ?? "").replace(/[&<>"']/g, (char) =>
   ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[char]));
 const safeUrl = (value) => typeof value === "string" && /^https?:\/\//i.test(value) ? value : null;
@@ -672,6 +741,418 @@ function institutionRiskPlot(institution) {
     </svg>`;
 }
 
+function institutionEditorMessage(message, isError = true) {
+  const error = $("institution-editor-error");
+  const status = $("institution-editor-status");
+  error.hidden = !isError || !message;
+  error.textContent = isError ? message : "";
+  status.textContent = isError ? "" : (message || "");
+}
+
+function institutionSlug(value) {
+  return String(value || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+}
+
+function selectedEditorFamilies() {
+  return [...institutionEditorFamilies];
+}
+
+function selectedEditorChoices(name) {
+  return [...document.querySelectorAll(`input[name="${name}"]:checked`)].map((input) => input.value);
+}
+
+function collectEditorImportance() {
+  return [...$("institution-importance-rows").querySelectorAll("[data-importance-family]")].map((row) => {
+    const values = Object.fromEntries([...row.querySelectorAll("[data-importance-field]")]
+      .map((input) => [input.dataset.importanceField, input.value]));
+    return [row.dataset.importanceFamily, values];
+  });
+}
+
+function renderEditorFamilies() {
+  const families = selectedEditorFamilies();
+  $("institution-selected-families").innerHTML = families.length
+    ? families.map((family) => `<div class="institution-family-tag"><span>${esc(family)}</span><button class="editor-remove" type="button" data-remove-family="${esc(family)}">Verwijderen</button></div>`).join("")
+    : `<p class="muted">Nog geen formaatfamilies geselecteerd.</p>`;
+  $("institution-selected-families").querySelectorAll("button[data-remove-family]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const savedImportance = new Map(collectEditorImportance());
+      const removedFamily = button.dataset.removeFamily;
+      institutionEditorFamilies.delete(removedFamily);
+      $("institution-family-format-rows").querySelectorAll("[data-editor-format-row]").forEach((row) => {
+        if (row.querySelector("[data-format-family]").value === removedFamily) row.remove();
+      });
+      renderEditorFamilies();
+      renderEditorImportanceRows(savedImportance);
+      renderEditorPlotPreview();
+      institutionEditorMessage("");
+    });
+  });
+}
+
+function renderEditorImportanceRows(saved = new Map(collectEditorImportance())) {
+  $("institution-importance-rows").innerHTML = selectedEditorFamilies().map((family) => {
+    const values = saved.get(family) || {};
+    const importanceField = (key, label) => `<label class="institution-editor-field">${label}<select data-importance-field="${key}" required><option value="">Kies</option>${IMPORTANCE_CHOICES.map((choice) => `<option value="${choice}"${values[key] === choice ? " selected" : ""}>${choice}</option>`).join("")}</select></label>`;
+    return `<div class="importance-editor-row" data-importance-family="${esc(family)}"><strong>${esc(family)}</strong>
+      <label class="institution-editor-field">Belangscore (0–12)<input data-importance-field="importance_score" type="number" min="0" max="12" step="1" value="${esc(values.importance_score || "")}" required></label>
+      ${importanceField("importance_users", "Gebruikers")}${importanceField("importance_archive", "Archief")}${importanceField("importance_systems", "Systemen")}${importanceField("importance_strategy", "Strategie")}</div>`;
+  }).join("");
+  $("institution-importance-rows").querySelectorAll("input, select").forEach((input) => {
+    input.addEventListener("input", renderEditorPlotPreview);
+    input.addEventListener("change", renderEditorPlotPreview);
+  });
+  renderEditorPlotPreview();
+}
+
+function renderEditorPlotPreview() {
+  const importance = collectEditorImportance().map(([family, values]) => ({
+    family_name: family,
+    importance_score: Number(values.importance_score),
+  })).filter((item) => Number.isFinite(item.importance_score));
+  const formats = [...$("institution-family-format-rows").querySelectorAll("[data-editor-format-row]")].flatMap((row) => {
+    const puid = row.querySelector("[data-format-puid]").value.trim();
+    const record = CATALOG.records[puid];
+    const family = row.querySelector("[data-format-family]").value;
+    const risk = CATALOG.format_profiles?.[puid]?.nara_risk;
+    return record && family && risk ? [{ puid, format_name: record.formatName || puid, family_name: family, nara_risk: risk }] : [];
+  });
+  const preview = $("institution-editor-plot-preview");
+  if (preview) preview.innerHTML = institutionRiskPlot({
+    name: "Geselecteerde formaatfamilies",
+    formats,
+    family_importance: importance,
+  });
+}
+
+function editorCheckboxMarkup(name, options) {
+  return options.map((option) => `<label><input type="checkbox" name="${name}" value="${esc(option)}">${esc(option)}</label>`).join("");
+}
+
+function editorSelectMarkup(name, options) {
+  return `<select data-format-field="${name}"><option value="">Geen standpunt</option>${options.map((option) => `<option value="${esc(option)}">${esc(option)}</option>`).join("")}</select>`;
+}
+
+function updateEditorFormatSelects() {
+  for (const [field, scheme, options] of [
+    ["policy_statuses", "policy_scheme", POLICY_CHOICES],
+    ["knowledge_levels", "knowledge_scheme", KNOWLEDGE_CHOICES],
+  ]) {
+    const allowed = new Set(selectedEditorChoices(scheme));
+    document.querySelectorAll(`[data-format-field="${field}"]`).forEach((select) => {
+      const previous = select.value;
+      select.innerHTML = `<option value="">Geen standpunt</option>${options.filter((option) => allowed.has(option)).map((option) => `<option value="${esc(option)}">${esc(option)}</option>`).join("")}`;
+      if (allowed.has(previous)) select.value = previous;
+    });
+  }
+}
+
+function updateEditorFormatPreview(row) {
+  const puid = row.querySelector("[data-format-puid]").value.trim();
+  const record = CATALOG.records[puid];
+  const family = row.querySelector("[data-format-family]").value;
+  const preview = row.querySelector(".editor-format-meta");
+  if (!record) {
+    preview.textContent = puid ? "Onbekende PUID" : "Kies een PRONOM-record";
+    return;
+  }
+  preview.textContent = `${record.formatName || puid}${record.version ? ` · ${record.version}` : ""} · instellingsfamilie: ${family || "kies familie"}`;
+}
+
+function addEditorFormatRow(initial = {}) {
+  const row = document.createElement("div");
+  row.className = "institution-editor-row";
+  row.dataset.editorFormatRow = "true";
+  row.innerHTML = `<label class="institution-editor-field">Formaatfamilie<select data-format-family required>${selectedEditorFamilies().map((family) => `<option value="${esc(family)}"${initial.family_name === family ? " selected" : ""}>${esc(family)}</option>`).join("")}</select></label>
+    <label class="institution-editor-field">PRONOM-PUID<input data-format-puid type="text" list="institution-format-options" value="${esc(initial.puid || "")}" autocomplete="off" required></label>
+    <button class="editor-remove" type="button" aria-label="Verwijder formaat">Verwijderen</button><span class="editor-format-meta"></span>`;
+  $("institution-family-format-rows").append(row);
+  row.querySelector("[data-format-family]").addEventListener("change", () => {
+    updateEditorFormatPreview(row);
+    renderEditorPlotPreview();
+  });
+  const puidInput = row.querySelector("[data-format-puid]");
+  puidInput.addEventListener("input", () => { updateEditorFormatPreview(row); renderEditorPlotPreview(); });
+  puidInput.addEventListener("change", () => { updateEditorFormatPreview(row); renderEditorPlotPreview(); });
+  row.querySelector(".editor-remove").addEventListener("click", () => { row.remove(); renderEditorPlotPreview(); });
+  updateEditorFormatPreview(row);
+}
+
+function renderEditorQualificationRows() {
+  const previous = new Map([...$("institution-format-rows").querySelectorAll("[data-editor-format-row]")].map((row) => [
+    row.dataset.puid,
+    {
+      policy: row.querySelector('[data-format-field="policy_statuses"]').value,
+      knowledge: row.querySelector('[data-format-field="knowledge_levels"]').value,
+    },
+  ]));
+  const selections = [...$("institution-family-format-rows").querySelectorAll("[data-editor-format-row]")];
+  $("institution-format-rows").innerHTML = selections.map((selection) => {
+    const puid = selection.querySelector("[data-format-puid]").value.trim();
+    const record = CATALOG.records[puid];
+    const family = selection.querySelector("[data-format-family]").value;
+    const old = previous.get(puid) || {};
+    return `<div class="institution-editor-row" data-editor-format-row data-puid="${esc(puid)}" data-family="${esc(family)}">
+      <strong>${esc(puid)} · ${esc(record?.formatName || puid)} · ${esc(family)}</strong>
+      ${editorSelectMarkup("policy_statuses", selectedEditorChoices("policy_scheme"))}
+      ${editorSelectMarkup("knowledge_levels", selectedEditorChoices("knowledge_scheme"))}</div>`;
+  }).join("");
+  for (const row of $("institution-format-rows").querySelectorAll("[data-editor-format-row]")) {
+    const old = previous.get(row.dataset.puid) || {};
+    row.querySelector('[data-format-field="policy_statuses"]').value = old.policy || "";
+    row.querySelector('[data-format-field="knowledge_levels"]').value = old.knowledge || "";
+  }
+}
+
+function validateInstitutionEditorStep(step) {
+  const form = $("institution-profile-form");
+  if (step === 0) {
+    const name = form.elements.namedItem("name").value.trim();
+    const id = form.elements.namedItem("id").value.trim();
+    if (!name || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id)) return "Vul een naam in; het bestands-ID wordt automatisch gemaakt.";
+    if (CATALOG.institution_profiles.some((item) => item.id === id)) return "Dit instelling-ID bestaat al in de catalogus.";
+  }
+  if (step === 1) {
+    if (!selectedEditorFamilies().length) return "Selecteer minstens één formaatfamilie.";
+    const rows = [...$("institution-family-format-rows").querySelectorAll("[data-editor-format-row]")];
+    if (!rows.length) return "Koppel minstens één formaat aan een formaatfamilie.";
+    const seenPUIDs = new Set();
+    for (const row of rows) {
+      const puid = row.querySelector("[data-format-puid]").value.trim();
+      if (!CATALOG.records[puid]) return `PUID ${puid || "(leeg)"} is onbekend.`;
+      if (seenPUIDs.has(puid)) return `PUID ${puid} staat meer dan één keer in de lijst.`;
+      seenPUIDs.add(puid);
+      if (!selectedEditorFamilies().includes(row.querySelector("[data-format-family]").value)) {
+        return `Koppel ${puid} aan één van de geselecteerde families.`;
+      }
+    }
+  }
+  if (step === 2) {
+    const rows = [...$("institution-importance-rows").querySelectorAll("[data-importance-family]")];
+    if (!rows.length) return "Selecteer eerst formaatfamilies.";
+    if (rows.some((row) => [...row.querySelectorAll("[data-importance-field]")].some((input) => !input.value))) {
+      return "Vul de belangscore en alle vier belangdimensies per familie in.";
+    }
+  }
+  if (step === 3 && !selectedEditorChoices("policy_scheme").length && !selectedEditorChoices("knowledge_scheme").length) {
+    return "Kies minstens één beleidsstatus of kennisniveau.";
+  }
+  if (step === 4) {
+    const rows = [...$("institution-format-rows").querySelectorAll("[data-editor-format-row]")];
+    if (!rows.length) return "Voeg minstens één formaat toe.";
+    for (const row of rows) {
+      if (selectedEditorChoices("policy_scheme").length && !row.querySelector('[data-format-field="policy_statuses"]').value) {
+        return `Kies het formaatbeleid voor ${row.dataset.puid}.`;
+      }
+      if (selectedEditorChoices("knowledge_scheme").length && !row.querySelector('[data-format-field="knowledge_levels"]').value) {
+        return `Kies het kennisniveau voor ${row.dataset.puid}.`;
+      }
+    }
+  }
+  return null;
+}
+
+function showInstitutionEditorStep(step) {
+  institutionEditorStep = Math.max(0, Math.min(4, step));
+  document.querySelectorAll("[data-editor-step]").forEach((panel) => {
+    panel.hidden = Number(panel.dataset.editorStep) !== institutionEditorStep;
+  });
+  document.querySelectorAll("[data-editor-jump]").forEach((button) => {
+    if (Number(button.dataset.editorJump) === institutionEditorStep) button.setAttribute("aria-current", "step");
+    else button.removeAttribute("aria-current");
+  });
+  $("institution-previous").disabled = institutionEditorStep === 0;
+  $("institution-next").hidden = institutionEditorStep === 4;
+  $("institution-download").hidden = institutionEditorStep !== 4;
+  $("institution-step-label").textContent = `Stap ${institutionEditorStep + 1} van 5`;
+  institutionEditorMessage("");
+}
+
+function moveInstitutionEditorTo(targetStep) {
+  if (targetStep > institutionEditorStep) {
+    for (let step = institutionEditorStep; step < targetStep; step += 1) {
+      const error = validateInstitutionEditorStep(step);
+      if (error) {
+        institutionEditorMessage(error);
+        return;
+      }
+    }
+  }
+  showInstitutionEditorStep(targetStep);
+  if (targetStep === 2) renderEditorPlotPreview();
+  if (targetStep === 4) renderEditorQualificationRows();
+}
+
+function collectInstitutionEditorDocument() {
+  const form = $("institution-profile-form");
+  const value = (name) => form.elements.namedItem(name).value.trim();
+  const formats = [...$("institution-format-rows").querySelectorAll("[data-editor-format-row]")].map((row) => {
+    const puid = row.dataset.puid;
+    const policy = row.querySelector('[data-format-field="policy_statuses"]').value;
+    const knowledge = row.querySelector('[data-format-field="knowledge_levels"]').value;
+    return {
+      puid,
+      family_name: row.dataset.family,
+      policy_statuses: policy ? [policy] : [],
+      knowledge_levels: knowledge ? [knowledge] : [],
+    };
+  });
+  const familyImportance = [...$("institution-importance-rows").querySelectorAll("[data-importance-family]")].map((row) => {
+    const get = (field) => row.querySelector(`[data-importance-field="${field}"]`).value;
+    return {
+      family_name: row.dataset.importanceFamily,
+      importance_score: Number(get("importance_score")),
+      importance_users: get("importance_users"),
+      importance_archive: get("importance_archive"),
+      importance_systems: get("importance_systems"),
+      importance_strategy: get("importance_strategy"),
+    };
+  });
+  return {
+    schema_version: 1,
+    id: value("id"),
+    name: value("name"),
+    description: value("description") || null,
+    location: value("location") || null,
+    isil: value("isil") || null,
+    website_url: value("website_url") || null,
+    source_url: value("source_url") || null,
+    revision_timestamp: new Date().toISOString(),
+    overview_sources: {
+      institutions_overview: "https://www.wegwijzervoorkeursformaten.nl/index.php/Overzicht_instellingen",
+      preferred_formats_overview: "https://www.wegwijzervoorkeursformaten.nl/index.php/Overzicht_voorkeursformaten",
+    },
+    policy_scheme: selectedEditorChoices("policy_scheme"),
+    knowledge_scheme: selectedEditorChoices("knowledge_scheme"),
+    formats,
+    family_importance: familyImportance,
+  };
+}
+
+function openInstitutionEditor() {
+  state.view = "institutions";
+  state.activeInstitution = null;
+  $("institution-index").hidden = true;
+  $("institution-detail").hidden = true;
+  $("institution-editor").hidden = false;
+  $("institution-profile-form").reset();
+  $("institution-family-format-rows").innerHTML = "";
+  $("institution-format-rows").innerHTML = "";
+  institutionEditorFamilies.clear();
+  renderEditorFamilies();
+  renderEditorImportanceRows();
+  renderEditorVocabulary();
+  institutionEditorMessage("");
+  showInstitutionEditorStep(0);
+  const url = new URL(location.href);
+  url.searchParams.delete("instelling");
+  url.searchParams.delete("puid");
+  url.hash = "institution-editor";
+  history.replaceState(null, "", url);
+}
+
+function closeInstitutionEditor() {
+  $("institution-editor").hidden = true;
+  $("institution-index").hidden = false;
+  $("institution-detail").hidden = true;
+  const url = new URL(location.href);
+  url.hash = "";
+  url.searchParams.delete("nieuw-instelling");
+  history.replaceState(null, "", url);
+  renderInstitutionView();
+}
+
+function renderEditorVocabulary() {
+  $("institution-policy-options").innerHTML = editorCheckboxMarkup("policy_scheme", POLICY_CHOICES);
+  $("institution-knowledge-options").innerHTML = editorCheckboxMarkup("knowledge_scheme", KNOWLEDGE_CHOICES);
+  document.querySelectorAll('input[name="policy_scheme"], input[name="knowledge_scheme"]').forEach((input) => {
+    input.addEventListener("change", updateEditorFormatSelects);
+  });
+  updateEditorFormatSelects();
+}
+
+function initializeInstitutionEditor() {
+  const families = [...new Set((CATALOG.institution_profiles || []).flatMap((institution) => [
+    ...(institution.family_importance || []).map((item) => item.family_name),
+    ...(institution.formats || []).map((item) => item.family_name),
+  ]).filter(Boolean))].sort((a, b) => a.localeCompare(b));
+  $("institution-family-options").innerHTML = families.map((family) => `<option value="${esc(family)}"></option>`).join("");
+  $("institution-format-options").innerHTML = records()
+    .sort((a, b) => (a.record.formatName || a.puid).localeCompare(b.record.formatName || b.puid))
+    .map(({ puid, record }) => {
+      const formatLabel = [record.formatName || puid, record.version, familyOf(record).label].filter(Boolean).join(" · ");
+      return `<option value="${esc(puid)}" label="${esc(formatLabel)}"></option>`;
+    }).join("");
+
+  const form = $("institution-profile-form");
+  const nameInput = form.elements.namedItem("name");
+  const idInput = form.elements.namedItem("id");
+  idInput.readOnly = true;
+  idInput.value = "";
+  nameInput.addEventListener("input", () => { idInput.value = institutionSlug(nameInput.value); });
+
+  $("new-institution-profile").addEventListener("click", openInstitutionEditor);
+  $("cancel-institution-editor").addEventListener("click", closeInstitutionEditor);
+  $("cancel-institution-editor-text").addEventListener("click", closeInstitutionEditor);
+  $("institution-previous").addEventListener("click", () => moveInstitutionEditorTo(institutionEditorStep - 1));
+  $("institution-next").addEventListener("click", () => moveInstitutionEditorTo(institutionEditorStep + 1));
+  document.querySelectorAll("[data-editor-jump]").forEach((button) => {
+    button.addEventListener("click", () => moveInstitutionEditorTo(Number(button.dataset.editorJump)));
+  });
+
+  $("add-institution-family").addEventListener("click", () => {
+    const input = $("institution-family-input");
+    const family = input.value.trim();
+    if (!family) {
+      institutionEditorMessage("Vul een naam voor de formaatfamilie in.");
+      return;
+    }
+    if (!institutionEditorFamilies.has(family)) {
+      const saved = new Map(collectEditorImportance());
+      institutionEditorFamilies.add(family);
+      renderEditorFamilies();
+      renderEditorImportanceRows(saved);
+    }
+    input.value = "";
+    institutionEditorMessage("");
+  });
+  $("institution-family-input").addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      $("add-institution-family").click();
+    }
+  });
+  $("add-institution-format").addEventListener("click", () => {
+    if (!selectedEditorFamilies().length) {
+      institutionEditorMessage("Selecteer eerst formaatfamilies bij stap 1.");
+      return;
+    }
+    addEditorFormatRow();
+    institutionEditorMessage("");
+  });
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    for (let step = 0; step <= 4; step += 1) {
+      const error = validateInstitutionEditorStep(step);
+      if (error) {
+        showInstitutionEditorStep(step);
+        institutionEditorMessage(error);
+        return;
+      }
+    }
+    const profileDocument = collectInstitutionEditorDocument();
+    const blob = new Blob([`${JSON.stringify(profileDocument, null, 2)}\n`], { type: "application/json" });
+    const downloadUrl = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = downloadUrl;
+    link.download = `${profileDocument.id}.json`;
+    link.click();
+    URL.revokeObjectURL(downloadUrl);
+    institutionEditorMessage(`JSON-bestand ${profileDocument.id}.json gedownload.`, false);
+  });
+}
+
 function renderInstitutionView() {
   const institutions = CATALOG.institution_profiles || [];
   const institution = institutions.find((item) => item.id === state.activeInstitution);
@@ -717,6 +1198,7 @@ function renderInstitutionView() {
       <dt>Website</dt><dd>${websiteUrl ? `<a href="${esc(websiteUrl)}" target="_blank" rel="noopener">${esc(websiteUrl)}</a>` : "Niet opgegeven"}</dd>
       <dt>Bronpagina</dt><dd>${sourceUrl ? `<a href="${esc(sourceUrl)}" target="_blank" rel="noopener">Open oorspronkelijke instellingspagina</a>` : "Niet gekoppeld"}</dd>
       <dt>Overzichten</dt><dd>${institutionsOverviewUrl ? `<a href="${esc(institutionsOverviewUrl)}" target="_blank" rel="noopener">Instellingen</a>` : ""}${institutionsOverviewUrl && preferredOverviewUrl ? " · " : ""}${preferredOverviewUrl ? `<a href="${esc(preferredOverviewUrl)}" target="_blank" rel="noopener">Voorkeursformaten</a>` : ""}</dd></dl></section>
+    ${(institution.policy_scheme?.length || institution.knowledge_scheme?.length) ? `<section><h3>Beleidskader</h3><p>Formaatbeleid: ${esc(institution.policy_scheme.join(", ") || "Niet vastgelegd")}</p><p>Kennisniveaus: ${esc(institution.knowledge_scheme.join(", ") || "Niet vastgelegd")}</p></section>` : ""}
     <section><h3>Belang en NARA-risico</h3>${riskPlot}</section>
     ${familyImportance.length ? `<section><h3>Belang per formaatfamilie</h3><div class="table-wrap"><table><thead><tr><th>Formaatfamilie</th><th>Belangscore</th><th>Gebruikers</th><th>Archief</th><th>Systemen</th><th>Strategie</th></tr></thead><tbody>${familyImportance.map((item) => `<tr><td>${esc(item.family_name)}</td><td>${esc(item.importance_score ?? "—")}</td><td>${esc(item.importance_users || "—")}</td><td>${esc(item.importance_archive || "—")}</td><td>${esc(item.importance_systems || "—")}</td><td>${esc(item.importance_strategy || "—")}</td></tr>`).join("")}</tbody></table></div></section>` : ""}
     <section><h3>Formaatbeleid en kennisniveaus</h3>${formats.length ? `<div class="table-wrap"><table><thead><tr><th>PUID</th><th>Formaat</th><th>Versie</th><th>Formaatbeleid</th><th>Kennisniveau</th><th>NARA-risico</th></tr></thead><tbody>${formatRows}</tbody></table></div>` : `<p class="muted">Geen formaatbeleid of kennisniveaus gekoppeld aan PRONOM-records in deze catalogus.</p>`}</section>`;
@@ -780,6 +1262,7 @@ async function init() {
     }).join("");
     $("release-top").innerHTML = `<strong>PRONOM ${esc(CATALOG.release_tag)}</strong>${CATALOG.aantal.toLocaleString("nl-NL")} records · ${esc(CATALOG.opgehaald_op?.slice(0, 10) || "")}`;
     $("footer").innerHTML = `Brondata: PRONOM ${esc(CATALOG.release_tag)} · ${CATALOG.aantal.toLocaleString("nl-NL")} records · ${CATALOG.browse_unassigned_count.toLocaleString("nl-NL")} niet ingedeeld · <a href="pronom-catalog.json">Catalogus JSON</a>${safeUrl(CATALOG.release_url) ? ` · <a href="${esc(CATALOG.release_url)}" target="_blank" rel="noopener">PRONOM-release</a>` : ""}`;
+    initializeInstitutionEditor();
     $("zoek").addEventListener("input", (event) => {
       state.query = event.target.value.toLocaleLowerCase().trim();
       state.page = 0;

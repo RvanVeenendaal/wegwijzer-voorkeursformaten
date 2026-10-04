@@ -127,12 +127,18 @@ def _table_key_value_rows(table, field_name):
 def parse_format_page(html, title, revision_timestamp):
     tables = _tables_by_section(html)
     identifiers = {"wikidata": None, "loc": None}
+    source_classification = {"format_family": None, "application_area": None}
     for table in tables:
         if table["section"] != "Beschrijving":
             continue
         for label, cell in _table_key_value_rows(table, "Naam"):
-            key = IDENTIFIER_FIELDS.get(label.casefold())
+            field = label.casefold()
             value = cell["text"]
+            if field == "formaatfamilie":
+                source_classification["format_family"] = value or None
+            elif field == "toepassingsgebied":
+                source_classification["application_area"] = value or None
+            key = IDENTIFIER_FIELDS.get(label.casefold())
             if key and value.casefold() not in {"", "geen", "n.v.t.", "nvt", "-"}:
                 identifiers[key] = value
 
@@ -176,6 +182,7 @@ def parse_format_page(html, title, revision_timestamp):
         "page_title": title,
         "revision_timestamp": revision_timestamp,
         "identifiers": identifiers,
+        "source_classification": source_classification,
         "format_policy": policy,
         "knowledge_levels": knowledge,
         "durability": durability,
@@ -190,7 +197,7 @@ def _api_json(params, timeout=45):
             with urlopen(request, timeout=timeout) as response:
                 return json.load(response)
         except (HTTPError, URLError, TimeoutError, ConnectionError):
-            if attempt == 5:
+            if attempt == 3:
                 raise
             time.sleep(min(2**attempt, 15))
 

@@ -48,6 +48,12 @@ def build_institution_profiles(institution_documents, format_profiles, catalog_r
         seen_ids.add(institution_id)
         if not isinstance(document.get("formats", []), list):
             raise ValueError(f"formats moet een lijst zijn voor instelling: {name}")
+        policy_scheme = document.get("policy_scheme", [])
+        knowledge_scheme = document.get("knowledge_scheme", [])
+        if not isinstance(policy_scheme, list) or set(policy_scheme) - POLICY_STATUSES:
+            raise ValueError(f"Ongeldig beleidskader voor instelling: {name}")
+        if not isinstance(knowledge_scheme, list) or set(knowledge_scheme) - KNOWLEDGE_LEVELS:
+            raise ValueError(f"Ongeldig kennisniveaukader voor instelling: {name}")
         formats = []
         seen_puids = set()
         for entry in document.get("formats", []):
@@ -90,6 +96,8 @@ def build_institution_profiles(institution_documents, format_profiles, catalog_r
             "source_url": document.get("source_url"),
             "revision_timestamp": document.get("revision_timestamp"),
             "overview_sources": document.get("overview_sources", {}),
+            "policy_scheme": policy_scheme,
+            "knowledge_scheme": knowledge_scheme,
             "family_importance": document.get("family_importance", []),
             "formats": formats,
             "preferred_count": sum("Voorkeursformaat" in item["policy_statuses"] for item in formats),
@@ -105,6 +113,7 @@ def verrijk_pronom_catalogus(catalogus, taxonomy, format_profiles=None, institut
     application_areas = taxonomy.get("toepassingsgebieden")
     if not isinstance(application_areas, dict) or not application_areas:
         raise ValueError("pronom_taxonomy.yaml moet toepassingsgebieden met labels bevatten")
+    application_areas = dict(application_areas)
 
     mappings = taxonomy.get("type_naar_toepassingsgebied", {})
     overrides = taxonomy.get("familie_overrides", {})
@@ -127,10 +136,14 @@ def verrijk_pronom_catalogus(catalogus, taxonomy, format_profiles=None, institut
     for record in catalogus.get("records", {}).values():
         naam = record.get("formatName") or record.get("puid") or "Onbekend formaat"
         override = overrides.get(naam, {})
+        source_classification = format_profiles.get(record.get("puid"), {}).get("source_classification", {})
+        source_family = source_classification.get("format_family")
+        source_area = source_classification.get("application_area")
         familie_bron = record.get("formatFamilies")
-        familie_label = override.get("label") or familie_bron or naam
+        familie_label = source_family or override.get("label") or familie_bron or naam
+        familie_id = override.get("id") if not source_family else None
         record["browse_family"] = {
-            "id": override.get("id") or re.sub(r"[^a-z0-9]+", "-", familie_label.casefold()).strip("-"),
+            "id": familie_id or re.sub(r"[^a-z0-9]+", "-", familie_label.casefold()).strip("-"),
             "label": familie_label,
         }
 
@@ -140,7 +153,19 @@ def verrijk_pronom_catalogus(catalogus, taxonomy, format_profiles=None, institut
             if item.strip()
         ]
         gebieden = override.get("toepassingsgebieden")
-        if gebieden is None:
+        if source_area:
+            brongebied_id = next(
+                (area_id for area_id, label in application_areas.items() if label.casefold() == source_area.casefold()),
+                None,
+            )
+            if brongebied_id is None:
+                brongebied_id = re.sub(r"[^a-z0-9]+", "-", source_area.casefold()).strip("-")
+                if brongebied_id in application_areas and application_areas[brongebied_id] != source_area:
+                    brongebied_id = f"wegwijzer-{brongebied_id}"
+                application_areas[brongebied_id] = source_area
+                bekende_gebieden.add(brongebied_id)
+            gebieden = [brongebied_id]
+        elif gebieden is None:
             gebieden = sorted({
                 gebied
                 for source_type in source_types

@@ -39,6 +39,7 @@ projectpagina is beschikbaar op
 - `scripts/nara_matrix.py` vervangt legacy-scores door de totalen uit de gedownloade NARA-CSV en gebruikt uitsluitend expliciete regels uit de kruistabel. Onbekende PUID's en NARA-ID's worden geweigerd.
 - `scripts/publish.py` verrijkt PRONOM-records en groepeert formatstatussen per instelling in `site/pronom-catalog.json`.
 - `site/index.html` biedt zoeken, filteren op PRONOM-type, navigeren via toepassingsgebied en formaatfamilie, en detailpagina's voor formaten en instellingen.
+- In de instellingenweergave maakt **Nieuw profiel** een instellings-JSON via het Wegwijzer-stappenplan. Download het bestand en plaats het als `data/institutions/<id>.json`; de statische site kan bestanden niet rechtstreeks naar GitHub opslaan.
 
 Records zonder bruikbare PRONOM-type-indeling blijven zichtbaar onder **Niet ingedeeld**. Dit is een expliciete restgroep, geen toepassingsgebied. Een toepassingsgebied is bovendien geen voorkeurs- of preserveringsadvies: de site toont de broncatalogus en herleidbare metadata. Externe broninformatie wordt niet gekopieerd naar de catalogus.
 

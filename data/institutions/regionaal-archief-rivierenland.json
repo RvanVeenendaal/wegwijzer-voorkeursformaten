@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "regionaal-archief-rivierenland",
+  "name": "Regionaal Archief Rivierenland",
+  "description": null,
+  "location": null,
+  "isil": null,
+  "website_url": null,
+  "source_url": "https://www.wegwijzervoorkeursformaten.nl/index.php/Gebruiker:Regionaal_Archief_Rivierenland",
+  "revision_timestamp": "2021-03-29T07:41:52Z",
+  "overview_sources": {
+    "institutions_overview": "https://www.wegwijzervoorkeursformaten.nl/index.php/Overzicht_instellingen",
+    "preferred_formats_overview": "https://www.wegwijzervoorkeursformaten.nl/index.php/Overzicht_voorkeursformaten"
+  },
+  "formats": [],
+  "family_importance": [
+    {
+      "family_name": "Web ARChive",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    }
+  ]
+}

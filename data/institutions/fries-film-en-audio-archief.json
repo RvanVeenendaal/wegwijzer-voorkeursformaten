@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "id": "fries-film-en-audio-archief",
+  "name": "Fries Film en Audio Archief",
+  "description": null,
+  "location": null,
+  "isil": null,
+  "website_url": null,
+  "source_url": "https://www.wegwijzervoorkeursformaten.nl/index.php/Gebruiker:Fries_Film_en_Audio_Archief",
+  "revision_timestamp": "2021-05-12T08:19:36Z",
+  "overview_sources": {
+    "institutions_overview": "https://www.wegwijzervoorkeursformaten.nl/index.php/Overzicht_instellingen",
+    "preferred_formats_overview": "https://www.wegwijzervoorkeursformaten.nl/index.php/Overzicht_voorkeursformaten"
+  },
+  "formats": [],
+  "family_importance": []
+}

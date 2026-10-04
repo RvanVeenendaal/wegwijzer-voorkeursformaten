@@ -1,0 +1,1258 @@
+{
+  "schema_version": 1,
+  "id": "robinvanderwiel",
+  "name": "RobinvanderWiel",
+  "description": null,
+  "location": null,
+  "isil": null,
+  "website_url": null,
+  "source_url": "https://www.wegwijzervoorkeursformaten.nl/index.php/Gebruiker:RobinvanderWiel",
+  "revision_timestamp": "2025-09-12T12:49:20Z",
+  "overview_sources": {
+    "institutions_overview": "https://www.wegwijzervoorkeursformaten.nl/index.php/Overzicht_instellingen",
+    "preferred_formats_overview": "https://www.wegwijzervoorkeursformaten.nl/index.php/Overzicht_voorkeursformaten"
+  },
+  "formats": [],
+  "family_importance": [
+    {
+      "family_name": "3GPP",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "AFX AutoFX",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "AMI",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "ART",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Adobe Capture",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Adobe Illustrator",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Advanced System Format (ASF)",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Apple Icon Image",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Arts & Letters",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "BPG",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "CALS",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "COKE",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Canon",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Capture One",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Cartesian Perceptual Compression",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Casio QV CAM",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Chasys Draw",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "CompuServe RLE",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Computer Graphics Metafile",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Corel Graphics Suites",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Cyber Paint",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "DICOM",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Digital Negative Format (DNG)",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "DirectDraw",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "DjVu",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Dr. Halo",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "EBML",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "EazyDraw",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "EggPaint",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "EnCase",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Exif",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "FLIF",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Farbfeld",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "FlashPix",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Flux",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Frame Vector",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Freehand",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Funpaint",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "G9B",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "GEM Metafile",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "GEM Raster",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "GIF",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "GX2",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Gimp",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "GoDot",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Graphic Workshop",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Gunpaint",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Guymager",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "HEIF",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Icon file",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Inset Systems",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "IntelliDraw",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Intergraph",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Interleaved Bitmap",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "JIF",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "JPEG",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "JPEG 2000",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Koala Micro Illustrator",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Kodak Photo CD",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Krita",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "LEADTools",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Leonardo",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "LibVips",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "MP4",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "MPEG Transport",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "MXF",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "MacDraw",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "MacPaint",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Macintosh PICT Image",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Magick",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Micrografx",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Microsoft Expression Media",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Microsoft Paint",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Microsoft Picture It!",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Microsoft Visual Studio",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Microsost PhotoDraw",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "MrSID",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "NAPLPS",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Nero CoverDesigner",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Netpbm",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Nokia Picture Message",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Nullsoft Streaming",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "OMF Interchange",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "OS/2 Bitmap",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "OpenEXR",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "OpenRaster",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "PC Paint",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "PC Paintbrush",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "PGF",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "PNG",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "PTM",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Pablo Paint",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Paint Shop Pro",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "PaintShop",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Painter RIFF",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Palm",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Photoshop",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Picture Publisher",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "PixArt Bitmap",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Portfolio Graphics",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "PostScript",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "PowerGraphics",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Prism Paint",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Psion PIC",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "PtGui",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Ptex",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "QuickDraw",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Quicktime Movie",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "RGBE",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "RIFF",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Raw File",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Raw Image",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Real",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Rocky Interlace Picture",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "SDSC Image Tool",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "SFW",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "SGI",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "STAD PAC",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "SVG",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "SXG",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Scanstudio",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Scitex",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Serif DrawPlus",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Serif PhotoPlus",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Simple Vector Format",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Sony PictureGear Studio",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Spectrum 512",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Spooky Sprites",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "SpritePad",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Still Picture Interchange File Format",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "StratGraphics",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Sun Raster",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "TGIF",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "TIFF",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "TUNDRA",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Taquart Interlace Picture",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "TheDraw",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Truevision TGA",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "VDC BitMap",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "VICAR",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Viacom New Media Graphics",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Vista",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "WMF",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "WebP",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Windows Bitmap",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Windows Metafile",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Wireless Application Protocol Bitmap Format",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "X-Windows",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "XIFF",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "XL-Paint",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "XLD4",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Xar Image",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "ZSoft PCX",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Zoner Callisto",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Zoomify",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    }
+  ]
+}

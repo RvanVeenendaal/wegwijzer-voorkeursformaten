@@ -1,0 +1,204 @@
+{
+  "schema_version": 1,
+  "id": "nederlands-instituut-voor-beeld-en-geluid",
+  "name": "Nederlands Instituut voor Beeld en Geluid",
+  "description": null,
+  "location": "Hilversum",
+  "isil": null,
+  "website_url": "https://www.beeldengeluid.nl/kennis/kennisthemas/preservering",
+  "source_url": "https://www.wegwijzervoorkeursformaten.nl/index.php/Gebruiker:Nederlands_Instituut_voor_Beeld_en_Geluid",
+  "revision_timestamp": "2021-03-15T11:30:55Z",
+  "overview_sources": {
+    "institutions_overview": "https://www.wegwijzervoorkeursformaten.nl/index.php/Overzicht_instellingen",
+    "preferred_formats_overview": "https://www.wegwijzervoorkeursformaten.nl/index.php/Overzicht_voorkeursformaten"
+  },
+  "formats": [
+    {
+      "puid": "fmt/797",
+      "policy_statuses": [],
+      "knowledge_levels": [
+        "In opslag"
+      ]
+    },
+    {
+      "puid": "fmt/1",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": [
+        "Gekend"
+      ]
+    },
+    {
+      "puid": "fmt/2",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": [
+        "Gekend"
+      ]
+    },
+    {
+      "puid": "fmt/527",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": [
+        "Gekend"
+      ]
+    },
+    {
+      "puid": "fmt/193",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": [
+        "Gekend"
+      ]
+    },
+    {
+      "puid": "x-fmt/392",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": [
+        "In opslag"
+      ]
+    },
+    {
+      "puid": "fmt/42",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": [
+        "In opslag"
+      ]
+    },
+    {
+      "puid": "fmt/43",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": [
+        "In opslag"
+      ]
+    },
+    {
+      "puid": "fmt/44",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": [
+        "In opslag"
+      ]
+    },
+    {
+      "puid": "fmt/200",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": [
+        "Gekend"
+      ]
+    },
+    {
+      "puid": "fmt/199",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": [
+        "Gekend"
+      ]
+    },
+    {
+      "puid": "x-fmt/384",
+      "policy_statuses": [],
+      "knowledge_levels": [
+        "In opslag"
+      ]
+    },
+    {
+      "puid": "fmt/353",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": [
+        "Gekend"
+      ]
+    }
+  ],
+  "family_importance": [
+    {
+      "family_name": "Apple Codec",
+      "importance_score": 7,
+      "importance_users": "Midden",
+      "importance_archive": "Hoog",
+      "importance_systems": "Laag",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Bewegend beeld (Algemeen)",
+      "importance_score": 7,
+      "importance_users": "Midden",
+      "importance_archive": "Hoog",
+      "importance_systems": "Laag",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Digital Moving Picture Exchange Bitmap",
+      "importance_score": 7,
+      "importance_users": "Laag",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "JPEG",
+      "importance_score": 5,
+      "importance_users": "Midden",
+      "importance_archive": "Hoog",
+      "importance_systems": "Laag",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "JPEG 2000",
+      "importance_score": 4,
+      "importance_users": "Laag",
+      "importance_archive": "Midden",
+      "importance_systems": "Laag",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "MPEG",
+      "importance_score": 9,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Laag",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "MXF",
+      "importance_score": 10,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "TIFF",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "WAVE",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    }
+  ]
+}

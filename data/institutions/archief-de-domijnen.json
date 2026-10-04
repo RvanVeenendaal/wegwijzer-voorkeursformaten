@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "id": "archief-de-domijnen",
+  "name": "Archief De Domijnen",
+  "description": null,
+  "location": null,
+  "isil": null,
+  "website_url": null,
+  "source_url": "https://www.wegwijzervoorkeursformaten.nl/index.php/Gebruiker:Archief_De_Domijnen",
+  "revision_timestamp": "2021-04-16T08:00:42Z",
+  "overview_sources": {
+    "institutions_overview": "https://www.wegwijzervoorkeursformaten.nl/index.php/Overzicht_instellingen",
+    "preferred_formats_overview": "https://www.wegwijzervoorkeursformaten.nl/index.php/Overzicht_voorkeursformaten"
+  },
+  "formats": [],
+  "family_importance": []
+}

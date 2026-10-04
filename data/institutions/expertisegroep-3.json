@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "id": "expertisegroep-3",
+  "name": "Expertisegroep 3",
+  "description": "Dit is de Instellingspagina van de Expertisegroep Voorkeursformaten. Deze Instellingspagina wordt gebruikt voor test- en demonstratiedoeleinden en vertegenwoordigt zodoende niet de beleidskeuzes van de Expertisegroep Voorkeursformaten.",
+  "location": null,
+  "isil": null,
+  "website_url": null,
+  "source_url": "https://www.wegwijzervoorkeursformaten.nl/index.php/Gebruiker:Expertisegroep_3",
+  "revision_timestamp": "2021-05-04T10:19:51Z",
+  "overview_sources": {
+    "institutions_overview": "https://www.wegwijzervoorkeursformaten.nl/index.php/Overzicht_instellingen",
+    "preferred_formats_overview": "https://www.wegwijzervoorkeursformaten.nl/index.php/Overzicht_voorkeursformaten"
+  },
+  "formats": [
+    {
+      "puid": "fmt/276",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": [
+        "Gekend"
+      ]
+    },
+    {
+      "puid": "fmt/354",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/476",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/95",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/410",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/219",
+      "policy_statuses": [
+        "Legacy"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/1281",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/1355",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/289",
+      "policy_statuses": [
+        "Legacy"
+      ],
+      "knowledge_levels": []
+    }
+  ],
+  "family_importance": [
+    {
+      "family_name": "TIFF",
+      "importance_score": 7,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Midden",
+      "importance_strategy": "Laag"
+    },
+    {
+      "family_name": "Web ARChive",
+      "importance_score": 8,
+      "importance_users": "Hoog",
+      "importance_archive": "Midden",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Midden"
+    }
+  ]
+}

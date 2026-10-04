@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "id": "eye-filmmuseum",
+  "name": "EYE Filmmuseum",
+  "description": "EYE Filmmuseum is het nationale filminstituut en het enige museum voor filmerfgoed en filmkunst in Nederland. EYE is in 2010 ontstaan uit een fusie van de toenmalige Stichting Nederlands Filmmuseum (behoud, beheer en beschikbaarstelling van filmerfgoed), de Filmbank ­(beheer en promotie van experimentele films), het Nederlands Instituut voor Filmeducatie (landelijke filmeducatie) en Holland Film (internationale promotie van de Nederlandse film).",
+  "location": "Amsterdam",
+  "isil": null,
+  "website_url": "https://www.eyefilm.nl",
+  "source_url": "https://www.wegwijzervoorkeursformaten.nl/index.php/Gebruiker:EYE_Filmmuseum",
+  "revision_timestamp": "2021-03-19T08:23:00Z",
+  "overview_sources": {
+    "institutions_overview": "https://www.wegwijzervoorkeursformaten.nl/index.php/Overzicht_instellingen",
+    "preferred_formats_overview": "https://www.wegwijzervoorkeursformaten.nl/index.php/Overzicht_voorkeursformaten"
+  },
+  "formats": [],
+  "family_importance": []
+}

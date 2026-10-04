@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "sydarkivera",
+  "name": "Sydarkivera",
+  "description": null,
+  "location": null,
+  "isil": null,
+  "website_url": null,
+  "source_url": "https://www.wegwijzervoorkeursformaten.nl/index.php/Gebruiker:Sydarkivera",
+  "revision_timestamp": "2022-10-20T13:30:17Z",
+  "overview_sources": {
+    "institutions_overview": "https://www.wegwijzervoorkeursformaten.nl/index.php/Overzicht_instellingen",
+    "preferred_formats_overview": "https://www.wegwijzervoorkeursformaten.nl/index.php/Overzicht_voorkeursformaten"
+  },
+  "formats": [],
+  "family_importance": [
+    {
+      "family_name": "Apple Safari",
+      "importance_score": 4,
+      "importance_users": "Laag",
+      "importance_archive": "Hoog",
+      "importance_systems": "Midden",
+      "importance_strategy": "Laag"
+    },
+    {
+      "family_name": "CDX",
+      "importance_score": 7,
+      "importance_users": "Laag",
+      "importance_archive": "Hoog",
+      "importance_systems": "Midden",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "HTML",
+      "importance_score": 2,
+      "importance_users": "Laag",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Laag"
+    },
+    {
+      "family_name": "Internet Explorer",
+      "importance_score": 6,
+      "importance_users": "Midden",
+      "importance_archive": "Hoog",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Twitter",
+      "importance_score": 4,
+      "importance_users": "Laag",
+      "importance_archive": "Midden",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Laag"
+    },
+    {
+      "family_name": "Web ARChive",
+      "importance_score": 7,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Midden",
+      "importance_strategy": "Laag"
+    }
+  ]
+}

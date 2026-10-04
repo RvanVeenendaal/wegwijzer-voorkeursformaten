@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "id": "waterlands-archief",
+  "name": "Waterlands Archief",
+  "description": null,
+  "location": null,
+  "isil": null,
+  "website_url": null,
+  "source_url": "https://www.wegwijzervoorkeursformaten.nl/index.php/Gebruiker:Waterlands_Archief",
+  "revision_timestamp": "2021-04-23T06:37:49Z",
+  "overview_sources": {
+    "institutions_overview": "https://www.wegwijzervoorkeursformaten.nl/index.php/Overzicht_instellingen",
+    "preferred_formats_overview": "https://www.wegwijzervoorkeursformaten.nl/index.php/Overzicht_voorkeursformaten"
+  },
+  "formats": [],
+  "family_importance": [
+    {
+      "family_name": "4X Movie",
+      "importance_score": 6,
+      "importance_users": "Midden",
+      "importance_archive": "Hoog",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "AVCHD",
+      "importance_score": 6,
+      "importance_users": "Midden",
+      "importance_archive": "Hoog",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Animator",
+      "importance_score": 6,
+      "importance_users": "Midden",
+      "importance_archive": "Hoog",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Apple Codec",
+      "importance_score": 6,
+      "importance_users": "Midden",
+      "importance_archive": "Hoog",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Bewegend beeld (Algemeen)",
+      "importance_score": 6,
+      "importance_users": "Midden",
+      "importance_archive": "Hoog",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Digital Moving Picture Exchange Bitmap",
+      "importance_score": 6,
+      "importance_users": "Midden",
+      "importance_archive": "Hoog",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "EBML",
+      "importance_score": 6,
+      "importance_users": "Midden",
+      "importance_archive": "Hoog",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "FFMPEG",
+      "importance_score": 6,
+      "importance_users": "Midden",
+      "importance_archive": "Hoog",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "IMovie",
+      "importance_score": 6,
+      "importance_users": "Midden",
+      "importance_archive": "Hoog",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "MXF",
+      "importance_score": 6,
+      "importance_users": "Midden",
+      "importance_archive": "Hoog",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Muvee",
+      "importance_score": 6,
+      "importance_users": "Midden",
+      "importance_archive": "Hoog",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "NUT",
+      "importance_score": 6,
+      "importance_users": "Midden",
+      "importance_archive": "Hoog",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Redcode",
+      "importance_score": 6,
+      "importance_users": "Midden",
+      "importance_archive": "Hoog",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "SFW",
+      "importance_score": 6,
+      "importance_users": "Midden",
+      "importance_archive": "Hoog",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "VICAR",
+      "importance_score": 6,
+      "importance_users": "Midden",
+      "importance_archive": "Hoog",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "WMF",
+      "importance_score": 6,
+      "importance_users": "Midden",
+      "importance_archive": "Hoog",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Windows Movie Maker",
+      "importance_score": 6,
+      "importance_users": "Midden",
+      "importance_archive": "Hoog",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    }
+  ]
+}

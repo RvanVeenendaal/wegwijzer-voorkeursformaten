@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "erfgoed-leiden-en-omstreken",
+  "name": "Erfgoed Leiden en Omstreken",
+  "description": null,
+  "location": null,
+  "isil": null,
+  "website_url": null,
+  "source_url": "https://www.wegwijzervoorkeursformaten.nl/index.php/Gebruiker:Erfgoed_Leiden_en_Omstreken",
+  "revision_timestamp": "2021-06-17T07:25:17Z",
+  "overview_sources": {
+    "institutions_overview": "https://www.wegwijzervoorkeursformaten.nl/index.php/Overzicht_instellingen",
+    "preferred_formats_overview": "https://www.wegwijzervoorkeursformaten.nl/index.php/Overzicht_voorkeursformaten"
+  },
+  "formats": [],
+  "family_importance": [
+    {
+      "family_name": "JPEG 2000",
+      "importance_score": 8,
+      "importance_users": "Hoog",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Hoog"
+    }
+  ]
+}

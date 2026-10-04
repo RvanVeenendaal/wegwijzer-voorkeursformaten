@@ -1,0 +1,186 @@
+{
+  "schema_version": 1,
+  "id": "regionaal-archief-alkmaar",
+  "name": "Regionaal Archief Alkmaar",
+  "description": null,
+  "location": null,
+  "isil": null,
+  "website_url": null,
+  "source_url": "https://www.wegwijzervoorkeursformaten.nl/index.php/Gebruiker:Regionaal_Archief_Alkmaar",
+  "revision_timestamp": "2021-06-09T13:22:55Z",
+  "overview_sources": {
+    "institutions_overview": "https://www.wegwijzervoorkeursformaten.nl/index.php/Overzicht_instellingen",
+    "preferred_formats_overview": "https://www.wegwijzervoorkeursformaten.nl/index.php/Overzicht_voorkeursformaten"
+  },
+  "formats": [],
+  "family_importance": [
+    {
+      "family_name": "DXF",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Hoog",
+      "importance_systems": "Laag",
+      "importance_strategy": "Laag"
+    },
+    {
+      "family_name": "GIF",
+      "importance_score": 1,
+      "importance_users": "Midden",
+      "importance_archive": "Laag",
+      "importance_systems": "Laag",
+      "importance_strategy": "Laag"
+    },
+    {
+      "family_name": "GML",
+      "importance_score": 7,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Laag",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "HTML",
+      "importance_score": 3,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Laag",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "JPEG",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "JPEG 2000",
+      "importance_score": 7,
+      "importance_users": "Laag",
+      "importance_archive": "Midden",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "MPEG",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "MXF",
+      "importance_score": 6,
+      "importance_users": "Midden",
+      "importance_archive": "Hoog",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "ODF (OpenDocument Format)",
+      "importance_score": 0,
+      "importance_users": "Laag",
+      "importance_archive": "Laag",
+      "importance_systems": "Laag",
+      "importance_strategy": "Laag"
+    },
+    {
+      "family_name": "PDF",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "PNG",
+      "importance_score": 0,
+      "importance_users": "Laag",
+      "importance_archive": "Laag",
+      "importance_systems": "Laag",
+      "importance_strategy": "Laag"
+    },
+    {
+      "family_name": "RAR Archive",
+      "importance_score": 0,
+      "importance_users": "Laag",
+      "importance_archive": "Laag",
+      "importance_systems": "Laag",
+      "importance_strategy": "Laag"
+    },
+    {
+      "family_name": "SIARD",
+      "importance_score": 2,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Laag",
+      "importance_strategy": "Laag"
+    },
+    {
+      "family_name": "SQL",
+      "importance_score": 1,
+      "importance_users": "Midden",
+      "importance_archive": "Laag",
+      "importance_systems": "Laag",
+      "importance_strategy": "Laag"
+    },
+    {
+      "family_name": "SVG",
+      "importance_score": 1,
+      "importance_users": "Laag",
+      "importance_archive": "Midden",
+      "importance_systems": "Laag",
+      "importance_strategy": "Laag"
+    },
+    {
+      "family_name": "TIFF",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "VCF",
+      "importance_score": 2,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Laag",
+      "importance_strategy": "Laag"
+    },
+    {
+      "family_name": "WAVE",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Windows Bitmap",
+      "importance_score": 3,
+      "importance_users": "Hoog",
+      "importance_archive": "Laag",
+      "importance_systems": "Laag",
+      "importance_strategy": "Laag"
+    },
+    {
+      "family_name": "XML",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "ZIP",
+      "importance_score": 0,
+      "importance_users": "Laag",
+      "importance_archive": "Laag",
+      "importance_systems": "Laag",
+      "importance_strategy": "Laag"
+    }
+  ]
+}

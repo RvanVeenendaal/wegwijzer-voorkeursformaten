@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "id": "noord-hollands-archief",
+  "name": "Noord-Hollands Archief",
+  "description": null,
+  "location": null,
+  "isil": null,
+  "website_url": null,
+  "source_url": "https://www.wegwijzervoorkeursformaten.nl/index.php/Gebruiker:Noord-Hollands_Archief",
+  "revision_timestamp": "2021-04-19T07:38:24Z",
+  "overview_sources": {
+    "institutions_overview": "https://www.wegwijzervoorkeursformaten.nl/index.php/Overzicht_instellingen",
+    "preferred_formats_overview": "https://www.wegwijzervoorkeursformaten.nl/index.php/Overzicht_voorkeursformaten"
+  },
+  "formats": [],
+  "family_importance": []
+}

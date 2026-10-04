@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "id": "het-nieuwe-instituut",
+  "name": "Het Nieuwe Instituut",
+  "description": null,
+  "location": null,
+  "isil": null,
+  "website_url": null,
+  "source_url": "https://www.wegwijzervoorkeursformaten.nl/index.php/Gebruiker:Het_Nieuwe_Instituut",
+  "revision_timestamp": "2021-04-12T12:17:23Z",
+  "overview_sources": {
+    "institutions_overview": "https://www.wegwijzervoorkeursformaten.nl/index.php/Overzicht_instellingen",
+    "preferred_formats_overview": "https://www.wegwijzervoorkeursformaten.nl/index.php/Overzicht_voorkeursformaten"
+  },
+  "formats": [],
+  "family_importance": []
+}

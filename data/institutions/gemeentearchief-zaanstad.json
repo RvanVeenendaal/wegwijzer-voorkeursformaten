@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "id": "gemeentearchief-zaanstad",
+  "name": "Gemeentearchief Zaanstad",
+  "description": null,
+  "location": null,
+  "isil": null,
+  "website_url": null,
+  "source_url": "https://www.wegwijzervoorkeursformaten.nl/index.php/Gebruiker:Gemeentearchief_Zaanstad",
+  "revision_timestamp": "2021-03-25T13:41:04Z",
+  "overview_sources": {
+    "institutions_overview": "https://www.wegwijzervoorkeursformaten.nl/index.php/Overzicht_instellingen",
+    "preferred_formats_overview": "https://www.wegwijzervoorkeursformaten.nl/index.php/Overzicht_voorkeursformaten"
+  },
+  "formats": [],
+  "family_importance": []
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "het-flevolands-archief",
+  "name": "Het Flevolands Archief",
+  "description": null,
+  "location": null,
+  "isil": null,
+  "website_url": null,
+  "source_url": "https://www.wegwijzervoorkeursformaten.nl/index.php/Gebruiker:Het_Flevolands_Archief",
+  "revision_timestamp": "2021-08-16T09:05:08Z",
+  "overview_sources": {
+    "institutions_overview": "https://www.wegwijzervoorkeursformaten.nl/index.php/Overzicht_instellingen",
+    "preferred_formats_overview": "https://www.wegwijzervoorkeursformaten.nl/index.php/Overzicht_voorkeursformaten"
+  },
+  "formats": [],
+  "family_importance": [
+    {
+      "family_name": "JPEG",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "MPEG",
+      "importance_score": 8,
+      "importance_users": "Hoog",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "PDF",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "TIFF",
+      "importance_score": 1,
+      "importance_users": "Laag",
+      "importance_archive": "Midden",
+      "importance_systems": "Laag",
+      "importance_strategy": "Laag"
+    },
+    {
+      "family_name": "XML",
+      "importance_score": 6,
+      "importance_users": "Midden",
+      "importance_archive": "Hoog",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    }
+  ]
+}

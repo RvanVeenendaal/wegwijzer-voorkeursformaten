@@ -161,6 +161,7 @@
     <div class="view-switch" role="group" aria-label="Catalogusweergave">
       <button type="button" id="view-areas" aria-pressed="true">Toepassingsgebieden</button>
       <button type="button" id="view-all" aria-pressed="false">Alle records</button>
+      <button type="button" id="view-institutions" aria-pressed="false">Instellingen</button>
     </div>
   </section>
   <p id="status" class="status-line" aria-live="polite">Catalogus laden…</p>
@@ -197,13 +198,28 @@
       <button id="next" type="button">Volgende</button>
     </div>
   </section>
+  <section id="institution-view" hidden aria-labelledby="institution-heading">
+    <div id="institution-index">
+      <div class="section-heading">
+        <h2 id="institution-heading">Instellingen</h2>
+        <p id="institution-summary"></p>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Instelling</th><th>Plaats</th><th>ISIL</th><th>Formaten met beleid</th><th>Voorkeursformaten</th></tr></thead>
+          <tbody id="institutions-body"></tbody>
+        </table>
+      </div>
+    </div>
+    <section id="institution-detail" class="detail" hidden aria-live="polite"></section>
+  </section>
   <section id="detail" class="detail" hidden aria-live="polite"></section>
 </main>
 <footer id="footer"></footer>
 <script>
 "use strict";
 let CATALOG = null;
-const state = { query: "", type: "", page: 0, pageSize: 50, area: null, family: null, active: null, view: "areas" };
+const state = { query: "", type: "", page: 0, pageSize: 50, area: null, family: null, active: null, activeInstitution: null, view: "areas" };
 const $ = (id) => document.getElementById(id);
 const esc = (value) => String(value ?? "").replace(/[&<>"']/g, (char) =>
   ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[char]));
@@ -264,7 +280,7 @@ function filteredRecords() {
 }
 
 function setVisible(sectionId) {
-  for (const id of ["area-view", "family-view", "records-view"]) $(id).hidden = id !== sectionId;
+  for (const id of ["area-view", "family-view", "records-view", "institution-view"]) $(id).hidden = id !== sectionId;
 }
 
 function renderAreas() {
@@ -391,10 +407,21 @@ function detailList(items, renderItem) {
   return items?.length ? `<ul>${items.map(renderItem).join("")}</ul>` : `<p class="muted">Geen gegevens vastgelegd.</p>`;
 }
 
+function institutionLinks(names) {
+  if (!names?.length) return "Geen";
+  const institutionsByName = new Map((CATALOG.institution_profiles || []).map((institution) => [institution.name, institution]));
+  return names.map((name) => {
+    const institution = institutionsByName.get(name);
+    if (!institution) return esc(name);
+    const href = `?instelling=${encodeURIComponent(institution.id)}#institution-detail`;
+    return `<a href="${esc(href)}">${esc(name)}</a>`;
+  }).join(", ");
+}
+
 function institutionTable(items, heading) {
   if (!items?.length) return `<p class="muted">Geen ${esc(heading.toLowerCase())} opgenomen in deze catalogus.</p>`;
   return `<div class="table-wrap"><table><thead><tr><th>${esc(heading)}</th><th>Instellingen</th></tr></thead><tbody>${items.map((item) => `
-    <tr><td>${esc(item.status || item.niveau)}</td><td>${esc(item.instellingen?.join(", ") || "Geen")}</td></tr>`).join("")}</tbody></table></div>`;
+    <tr><td>${esc(item.status || item.niveau)}</td><td>${institutionLinks(item.instellingen)}</td></tr>`).join("")}</tbody></table></div>`;
 }
 
 function externalSourceList(items) {
@@ -543,10 +570,86 @@ function renderDetail() {
   });
 }
 
+function openInstitution(institutionId) {
+  state.view = "institutions";
+  state.activeInstitution = institutionId;
+  state.active = null;
+  const url = new URL(location.href);
+  url.searchParams.delete("puid");
+  url.searchParams.set("instelling", institutionId);
+  url.hash = "institution-detail";
+  history.replaceState(null, "", url);
+  render();
+  $("institution-detail").scrollIntoView({ behavior: "instant", block: "start" });
+}
+
+function renderInstitutionView() {
+  const institutions = CATALOG.institution_profiles || [];
+  const institution = institutions.find((item) => item.id === state.activeInstitution);
+  const detail = $("institution-detail");
+  $("institution-index").hidden = Boolean(institution);
+
+  if (!institution) {
+    detail.hidden = true;
+    detail.innerHTML = "";
+    const query = state.query;
+    const filtered = institutions.filter((item) =>
+      !query || [item.name, item.location, item.isil].filter(Boolean).join(" ").toLocaleLowerCase().includes(query)
+    );
+    $("institution-summary").textContent = `${filtered.length.toLocaleString("nl-NL")} instellingen · ${institutions.filter((item) => item.formats.length).length} met gekoppeld formaatbeleid`;
+    $("institutions-body").innerHTML = filtered.length ? filtered.map((item) => `
+      <tr><td><button class="open-record" type="button" data-institution="${esc(item.id)}">${esc(item.name)}</button></td>
+      <td>${esc(item.location || "—")}</td><td>${esc(item.isil || "—")}</td>
+      <td>${item.formats.length.toLocaleString("nl-NL")}</td><td>${item.preferred_count.toLocaleString("nl-NL")}</td></tr>`).join("")
+      : `<tr><td class="empty" colspan="5">Geen instellingen gevonden.</td></tr>`;
+    document.querySelectorAll("#institutions-body button[data-institution]").forEach((button) => {
+      button.addEventListener("click", () => openInstitution(button.dataset.institution));
+    });
+    return;
+  }
+
+  const websiteUrl = safeUrl(institution.website_url);
+  const sourceUrl = safeUrl(institution.source_url);
+  const institutionsOverviewUrl = safeUrl(institution.overview_sources?.institutions_overview);
+  const preferredOverviewUrl = safeUrl(institution.overview_sources?.preferred_formats_overview);
+  const formats = institution.formats || [];
+  const familyImportance = institution.family_importance || [];
+  const formatRows = formats.map((item) => `
+    <tr><td><button class="open-record" type="button" data-puid="${esc(item.puid)}">${esc(item.puid)}</button></td>
+    <td>${esc(item.format_name)}</td><td>${esc(item.version || "—")}</td>
+    <td>${esc(item.policy_statuses.join(", ") || "—")}</td><td>${esc(item.knowledge_levels.join(", ") || "—")}</td>
+    <td>${item.nara_risk ? `${esc(item.nara_risk.numeric_risk_rating ?? "Onbekend")} · ${esc(item.nara_risk.risk_level || "")}` : "—"}</td></tr>`).join("");
+  detail.innerHTML = `
+    <div class="detail-top"><div><h2>${esc(institution.name)}</h2><p class="detail-subtitle">Instellingspagina · ${formats.length.toLocaleString("nl-NL")} formaten met gekoppelde gegevens</p></div>
+      <button class="close-detail" type="button" aria-label="Terug naar instellingen">×</button></div>
+    <section><h3>Organisatieprofiel</h3><p>${esc(institution.description || "Geen omschrijving opgenomen in de bronpagina.")}</p>
+      <dl><dt>Plaats</dt><dd>${esc(institution.location || "Niet opgegeven")}</dd><dt>ISIL-code</dt><dd>${esc(institution.isil || "Niet opgegeven")}</dd>
+      <dt>Website</dt><dd>${websiteUrl ? `<a href="${esc(websiteUrl)}" target="_blank" rel="noopener">${esc(websiteUrl)}</a>` : "Niet opgegeven"}</dd>
+      <dt>Bronpagina</dt><dd>${sourceUrl ? `<a href="${esc(sourceUrl)}" target="_blank" rel="noopener">Open oorspronkelijke instellingspagina</a>` : "Niet gekoppeld"}</dd>
+      <dt>Overzichten</dt><dd>${institutionsOverviewUrl ? `<a href="${esc(institutionsOverviewUrl)}" target="_blank" rel="noopener">Instellingen</a>` : ""}${institutionsOverviewUrl && preferredOverviewUrl ? " · " : ""}${preferredOverviewUrl ? `<a href="${esc(preferredOverviewUrl)}" target="_blank" rel="noopener">Voorkeursformaten</a>` : ""}</dd></dl></section>
+    ${familyImportance.length ? `<section><h3>Belang per formaatfamilie</h3><div class="table-wrap"><table><thead><tr><th>Formaatfamilie</th><th>Belangscore</th><th>Gebruikers</th><th>Archief</th><th>Systemen</th><th>Strategie</th></tr></thead><tbody>${familyImportance.map((item) => `<tr><td>${esc(item.family_name)}</td><td>${esc(item.importance_score ?? "—")}</td><td>${esc(item.importance_users || "—")}</td><td>${esc(item.importance_archive || "—")}</td><td>${esc(item.importance_systems || "—")}</td><td>${esc(item.importance_strategy || "—")}</td></tr>`).join("")}</tbody></table></div></section>` : ""}
+    <section><h3>Formaatbeleid en kennisniveaus</h3>${formats.length ? `<div class="table-wrap"><table><thead><tr><th>PUID</th><th>Formaat</th><th>Versie</th><th>Formaatbeleid</th><th>Kennisniveau</th><th>NARA-risico</th></tr></thead><tbody>${formatRows}</tbody></table></div>` : `<p class="muted">Geen formaatbeleid of kennisniveaus gekoppeld aan PRONOM-records in deze catalogus.</p>`}</section>`;
+  detail.hidden = false;
+  detail.querySelector(".close-detail").addEventListener("click", () => {
+    state.activeInstitution = null;
+    const url = new URL(location.href);
+    url.searchParams.delete("instelling");
+    if (url.hash === "#institution-detail") url.hash = "";
+    history.replaceState(null, "", url);
+    render();
+  });
+  detail.querySelectorAll("button[data-puid]").forEach((button) => {
+    button.addEventListener("click", () => openDetail(button.dataset.puid));
+  });
+}
+
 function render() {
   const hasQuery = Boolean(state.query || state.type);
   const allRecords = state.view === "all";
-  if (allRecords || hasQuery) {
+  if (state.view === "institutions") {
+    setVisible("institution-view");
+    renderInstitutionView();
+  } else if (allRecords || hasQuery) {
     setVisible("records-view");
     renderTable();
   } else if (!state.area) {
@@ -560,10 +663,17 @@ function render() {
   }
   $("view-areas").setAttribute("aria-pressed", String(state.view === "areas"));
   $("view-all").setAttribute("aria-pressed", String(state.view === "all"));
-  const currentCount = state.query || state.type || state.view === "all" || state.area
-    ? filteredRecords().length
-    : records().length;
-  $("status").textContent = `${currentCount.toLocaleString("nl-NL")} resultaten · PRONOM ${CATALOG.release_tag}`;
+  $("view-institutions").setAttribute("aria-pressed", String(state.view === "institutions"));
+  $("filter-type").disabled = state.view === "institutions";
+  if (state.view === "institutions") {
+    const institutionCount = (CATALOG.institution_profiles || []).length;
+    $("status").textContent = `${institutionCount.toLocaleString("nl-NL")} instellingsprofielen · PRONOM ${CATALOG.release_tag}`;
+  } else {
+    const currentCount = state.query || state.type || state.view === "all" || state.area
+      ? filteredRecords().length
+      : records().length;
+    $("status").textContent = `${currentCount.toLocaleString("nl-NL")} resultaten · PRONOM ${CATALOG.release_tag}`;
+  }
   renderDetail();
 }
 
@@ -598,10 +708,15 @@ async function init() {
       state.view = "areas";
       state.area = null;
       state.family = null;
+      state.activeInstitution = null;
       state.query = "";
       state.type = "";
       $("zoek").value = "";
       $("filter-type").value = "";
+      const url = new URL(location.href);
+      url.searchParams.delete("instelling");
+      if (url.hash === "#institution-detail") url.hash = "";
+      history.replaceState(null, "", url);
       state.page = 0;
       render();
     });
@@ -609,14 +724,42 @@ async function init() {
       state.view = "all";
       state.area = null;
       state.family = null;
+      state.activeInstitution = null;
+      const url = new URL(location.href);
+      url.searchParams.delete("instelling");
+      if (url.hash === "#institution-detail") url.hash = "";
+      history.replaceState(null, "", url);
       state.page = 0;
+      render();
+    });
+    $("view-institutions").addEventListener("click", () => {
+      state.view = "institutions";
+      state.area = null;
+      state.family = null;
+      state.active = null;
+      state.activeInstitution = null;
+      state.query = "";
+      state.type = "";
+      $("zoek").value = "";
+      $("filter-type").value = "";
+      const url = new URL(location.href);
+      url.searchParams.delete("puid");
+      url.searchParams.delete("instelling");
+      url.hash = "";
+      history.replaceState(null, "", url);
       render();
     });
     $("previous").addEventListener("click", () => { state.page = Math.max(0, state.page - 1); render(); });
     $("next").addEventListener("click", () => { state.page += 1; render(); });
 
     renderAreas();
-    const requestedPuid = new URLSearchParams(location.search).get("puid");
+    const requestedParams = new URLSearchParams(location.search);
+    const requestedInstitution = requestedParams.get("instelling");
+    if (requestedInstitution && CATALOG.institution_profiles.some((item) => item.id === requestedInstitution)) {
+      state.view = "institutions";
+      state.activeInstitution = requestedInstitution;
+    }
+    const requestedPuid = requestedParams.get("puid");
     if (requestedPuid && CATALOG.records[requestedPuid]) state.active = requestedPuid;
     render();
   } catch (error) {

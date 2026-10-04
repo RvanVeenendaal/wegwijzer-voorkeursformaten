@@ -1,0 +1,1290 @@
+{
+  "schema_version": 1,
+  "id": "okv-den-ham-test2",
+  "name": "OKV Den Ham TEST2",
+  "description": null,
+  "location": "Den Ham",
+  "isil": null,
+  "website_url": null,
+  "source_url": "https://www.wegwijzervoorkeursformaten.nl/index.php/Gebruiker:OKV_Den_Ham_TEST2",
+  "revision_timestamp": "2021-03-29T19:29:23Z",
+  "overview_sources": {
+    "institutions_overview": "https://www.wegwijzervoorkeursformaten.nl/index.php/Overzicht_instellingen",
+    "preferred_formats_overview": "https://www.wegwijzervoorkeursformaten.nl/index.php/Overzicht_voorkeursformaten"
+  },
+  "formats": [],
+  "family_importance": [
+    {
+      "family_name": "4X Movie",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "AMI",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "ART",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "AVCHD",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Adobe Acrobat",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Adobe Capture",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Adobe Illustrator",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Afbeelding (Algemeen)",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Animator",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Apple Codec",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Apple iBook",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "BPG",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Bewegend beeld (Algemeen)",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Broad Band eBook",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "CALS",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "CD-ROM XA",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Cartesian Perceptual Compression",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Chasys Draw",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Computer Graphics Metafile",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Corel Graphics Suites",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "DICOM",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Digital Moving Picture Exchange Bitmap",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Digital Negative Format (DNG)",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "DirectDraw",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "DjVu",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Dr. Halo",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "EBML",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "EDOC",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "EPub",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "EazyDraw",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "EnCase",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Exif",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "FFMPEG",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "FLIF",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Farbfeld",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "FlashPix",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Flux",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Freehand",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "GEM Metafile",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "GEM Raster",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "GIF",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "GL Transmission Format",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Gimp",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Google Document",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Graphic Workshop",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Guymager",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "HEIF",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "HTML",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "IMovie",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Icon file",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Inset Systems",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "InstallShield",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "IntelliDraw",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Intergraph",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Internet Explorer",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "JIF",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "JPEG",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "JPEG 2000",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "JSON Data Interchange",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Kodak Photo CD",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Krita",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "LEADTools",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "LHA",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Leonardo",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "MIME Email",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "MIME HTML",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "MS DOS Compression",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "MXF",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "MacDraw",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "MacPaint",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Macintosh PICT Image",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Magick",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Micrografx",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Microsoft Expression Media",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Microsoft IIS",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Microsoft Management Console",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Microsoft Paint",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Microsoft Picture It!",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Microsoft Reader",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Microsoft Visual Studio",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Microsost PhotoDraw",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "MrSID",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Muvee",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "NUT",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Nero CoverDesigner",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "NetCDF",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Netpbm",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "OS/2 Bitmap",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "OpenEXR",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "OpenRaster",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "OpenXPS",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "PC Paint",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "PC Paintbrush",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "PDF",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "PEA",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "PGF",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "PNG",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "PTM",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Paint Shop Pro",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Painter RIFF",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Pcap",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Photoshop",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Picture Publisher",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "PocketMobi",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "PostScript",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "PtGui",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Pulse EKKO",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Quarter Inch Cartridge",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "QuickDraw",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "RGBE",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Raw Image",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Redcode",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Rich Text Format (RTF)",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Rocket Book",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "SDSC Image Tool",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "SFW",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "SGI",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "SGML",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "SVG",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "SafeGuard",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Scanstudio",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Scitex",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Scriptware",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Serif DrawPlus",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Shell Archive",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Simple Vector Format",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Snoop",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Sony PictureGear Studio",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Still Picture Interchange File Format",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "StratGraphics",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Stuffit",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "SubRip",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Sun Raster",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "TCR",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "TIFF",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "TeX",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Tekst (Algemeen)",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Text encoding",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Truevision TGA",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "VICAR",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Verity Collection",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Vista",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Visual Basic",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "WMF",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "WebP",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Windows Bitmap",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Windows Help",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Windows Metafile",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Windows Movie Maker",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "X-Windows",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "XML",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "XMP",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "XZ",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Xar Image",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "ZFO",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "ZPAQ",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "ZSoft PCX",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Zoner Callisto",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Zoomify",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    }
+  ]
+}

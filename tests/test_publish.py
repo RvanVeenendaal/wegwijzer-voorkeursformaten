@@ -1,6 +1,7 @@
 import json
 import unittest
 from pathlib import Path
+from tempfile import TemporaryDirectory
 
 import yaml
 
@@ -11,6 +12,21 @@ ROOT = Path(__file__).resolve().parent.parent
 
 
 class CatalogPublishingTests(unittest.TestCase):
+    def test_loads_one_top_level_json_document_per_institution(self):
+        with TemporaryDirectory() as temporary_directory:
+            directory = Path(temporary_directory)
+            (directory / "dans.json").write_text(
+                json.dumps({"schema_version": 1, "id": "dans", "name": "DANS", "formats": []}),
+                encoding="utf-8",
+            )
+            template_directory = directory / "template"
+            template_directory.mkdir()
+            (template_directory / "institution.json").write_text("{}", encoding="utf-8")
+
+            documents = publish.load_institution_documents(directory)
+
+        self.assertEqual([document["id"] for document in documents], ["dans"])
+
     def test_enriches_records_and_keeps_unassigned_records_separate(self):
         catalog = {
             "schema_versie": 1,
@@ -109,6 +125,58 @@ class CatalogPublishingTests(unittest.TestCase):
 
         with self.assertRaisesRegex(ValueError, "onbekende PUID's"):
             publish.verrijk_pronom_catalogus(catalog, taxonomy, {"fmt/2": {}})
+
+    def test_builds_institution_pages_from_source_metadata_and_format_profiles(self):
+        catalog_records = {"fmt/1": {"formatName": "Example Format", "version": "1.0"}}
+        profiles = {
+            "fmt/1": {
+                "nara_risk": {"numeric_risk_rating": 24, "risk_level": "Low Risk"},
+            }
+        }
+        institutions = [{
+            "id": "archief-x",
+            "name": "Archief X",
+            "source_url": "https://example.org/profile",
+            "formats": [{
+                "puid": "fmt/1",
+                "policy_statuses": ["Voorkeursformaat"],
+                "knowledge_levels": ["Gekend"],
+            }],
+        }]
+
+        pages = publish.build_institution_profiles(institutions, profiles, catalog_records)
+
+        self.assertEqual(len(pages), 1)
+        self.assertEqual(pages[0]["id"], "archief-x")
+        self.assertEqual(pages[0]["preferred_count"], 1)
+        self.assertEqual(pages[0]["formats"][0]["puid"], "fmt/1")
+        self.assertEqual(pages[0]["formats"][0]["policy_statuses"], ["Voorkeursformaat"])
+        self.assertEqual(pages[0]["formats"][0]["knowledge_levels"], ["Gekend"])
+        self.assertEqual(pages[0]["formats"][0]["nara_risk"]["numeric_risk_rating"], 24)
+
+    def test_institution_profile_rejects_unknown_puid(self):
+        institutions = [{"id": "archief-x", "name": "Archief X", "formats": [{"puid": "fmt/2"}]}]
+
+        with self.assertRaisesRegex(ValueError, "(?i)onbekende PUID"):
+            publish.build_institution_profiles(institutions, {}, {"fmt/1": {}})
+
+    def test_published_catalog_keeps_per_institution_documents(self):
+        catalog = {"records": {}}
+        taxonomy = {
+            "schema_versie": 1,
+            "toepassingsgebieden": {"tekst": "Tekst"},
+            "type_naar_toepassingsgebied": {},
+        }
+        institutions = [{
+            "id": "dans",
+            "name": "DANS",
+            "source_url": "https://example.org/dans",
+            "formats": [],
+        }]
+
+        enriched = publish.verrijk_pronom_catalogus(catalog, taxonomy, institution_documents=institutions)
+
+        self.assertEqual(enriched["institution_profiles"][0]["source_url"], "https://example.org/dans")
 
     def test_unknown_taxonomy_area_is_rejected(self):
         catalog = {"records": {"fmt/1": {"formatTypes": "Video"}}}

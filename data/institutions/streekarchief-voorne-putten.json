@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "id": "streekarchief-voorne-putten",
+  "name": "Streekarchief Voorne-Putten",
+  "description": null,
+  "location": null,
+  "isil": null,
+  "website_url": null,
+  "source_url": "https://www.wegwijzervoorkeursformaten.nl/index.php/Gebruiker:Streekarchief_Voorne-Putten",
+  "revision_timestamp": "2025-02-03T13:38:03Z",
+  "overview_sources": {
+    "institutions_overview": "https://www.wegwijzervoorkeursformaten.nl/index.php/Overzicht_instellingen",
+    "preferred_formats_overview": "https://www.wegwijzervoorkeursformaten.nl/index.php/Overzicht_voorkeursformaten"
+  },
+  "formats": [],
+  "family_importance": []
+}

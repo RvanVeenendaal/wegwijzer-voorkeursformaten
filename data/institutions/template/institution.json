@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "id": "voorbeeldinstelling",
+  "name": "Naam van instelling",
+  "description": null,
+  "location": null,
+  "isil": null,
+  "website_url": null,
+  "source_url": null,
+  "revision_timestamp": null,
+  "overview_sources": {},
+  "formats": [],
+  "family_importance": []
+}

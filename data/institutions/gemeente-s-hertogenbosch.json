@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "id": "gemeente-s-hertogenbosch",
+  "name": "Gemeente ’s-Hertogenbosch",
+  "description": null,
+  "location": null,
+  "isil": null,
+  "website_url": null,
+  "source_url": "https://www.wegwijzervoorkeursformaten.nl/index.php/Gebruiker:Gemeente_%E2%80%99s-Hertogenbosch",
+  "revision_timestamp": "2021-07-07T12:55:14Z",
+  "overview_sources": {
+    "institutions_overview": "https://www.wegwijzervoorkeursformaten.nl/index.php/Overzicht_instellingen",
+    "preferred_formats_overview": "https://www.wegwijzervoorkeursformaten.nl/index.php/Overzicht_voorkeursformaten"
+  },
+  "formats": [],
+  "family_importance": []
+}

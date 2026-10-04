@@ -1,0 +1,2812 @@
+{
+  "schema_version": 1,
+  "id": "dans",
+  "name": "DANS",
+  "description": "DANS is het nationale expertisecentrum en repository voor onderzoeksdata. We helpen onderzoekers hun data beschikbaar te maken voor hergebruik. Zo kunnen wetenschappers de data inzetten voor nieuw onderzoek en is gepubliceerd onderzoek controleerbaar en herhaalbaar. Met meer dan 150.000 datasets en zestig medewerkers behoort DANS tot de meest vooraanstaande repositories van Europa.",
+  "location": "Den Haag",
+  "isil": null,
+  "website_url": "https://dans.knaw.nl/nl",
+  "source_url": "https://www.wegwijzervoorkeursformaten.nl/index.php/Gebruiker:DANS",
+  "revision_timestamp": "2021-03-25T13:15:39Z",
+  "overview_sources": {
+    "institutions_overview": "https://www.wegwijzervoorkeursformaten.nl/index.php/Overzicht_instellingen",
+    "preferred_formats_overview": "https://www.wegwijzervoorkeursformaten.nl/index.php/Overzicht_voorkeursformaten"
+  },
+  "formats": [
+    {
+      "puid": "fmt/14",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/15",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/16",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/17",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/18",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/19",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/20",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/276",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/354",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/476",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/477",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/478",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/479",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/480",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/481",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/95",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/493",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/144",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/145",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/157",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/146",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/147",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/158",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/148",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/488",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/489",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/490",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/492",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/491",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/98",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/26",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/27",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/24",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/37",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/68",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/103",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/38",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/441",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/39",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/40",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/49",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/977",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/134",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/1395",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/21",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/22",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/23",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/24",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/25",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/26",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/27",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/28",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/29",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/30",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/31",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/32",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/33",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/34",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/35",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/36",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/434",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/531",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/455",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/50",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/51",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/112",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/155",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/54",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/1103",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/61",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/59",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/60",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/70",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/107",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/77",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/78",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/79",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/100",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/105",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/104",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/71",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/72",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/1257",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/127",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/63",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/69",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/1044",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/902",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/903",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/18",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/574",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/54",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/433",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/435",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/532",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/63",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/64",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/65",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/66",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/67",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/68",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/69",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/70",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/71",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/72",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/73",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/74",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/75",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/76",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/77",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/78",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/79",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/80",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/81",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/82",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/83",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/84",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/85",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/1389",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/1390",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/1391",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/1392",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/1393",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/1394",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/52",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/218",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/226",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/332",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/317",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/235",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/277",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/989",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/916",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/988",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/1253",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/990",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/225",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/231",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/1366",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/321",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/320",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/319",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/367",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/60",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/101",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/110",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/279",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/155",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/1047",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/227",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/392",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/590",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/42",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/43",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/44",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/150",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/463",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/151",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/817",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/149",
+      "policy_statuses": [
+        "Open"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/14",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/487",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/523",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/1256",
+      "policy_statuses": [
+        "Legacy"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/1149",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/200",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/783",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/784",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/785",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/786",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/787",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/788",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/789",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/790",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/791",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/806",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/828",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/275",
+      "policy_statuses": [
+        "Legacy"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/238",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/239",
+      "policy_statuses": [
+        "Legacy"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/240",
+      "policy_statuses": [
+        "Legacy"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/241",
+      "policy_statuses": [
+        "Legacy"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/66",
+      "policy_statuses": [
+        "Legacy"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/1258",
+      "policy_statuses": [
+        "Legacy"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/881",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/55",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/62",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/56",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/58",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/57",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/59",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/61",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/124",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/23",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/553",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/554",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/126",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/172",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/173",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/174",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/175",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/176",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/177",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/178",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/214",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/555",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/556",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/123",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/445",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/628",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/627",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/595",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/46",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/74",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/97",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/598",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/17",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/125",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/58",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/128",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/359",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/288",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/218",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/237",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/240",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/238",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/241",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/239",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/242",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/494",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/189",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/473",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/524",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/637",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/987",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/73",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/430",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/75",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/250",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/248",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/249",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/86",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/84",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/179",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/180",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/181",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/182",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/215",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/177",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/633",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/630",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/636",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/632",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/216",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/125",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/126",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/88",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/87",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/629",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/631",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/440",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/725",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/243",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/244",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/245",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/246",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/247",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/342",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/343",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/232",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/252",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/253",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/254",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/255",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/256",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/257",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/1303",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/442",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/443",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/924",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/113",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/258",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/259",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/927",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/928",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/929",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/925",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/926",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/216",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/609",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/39",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/40",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/754",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/45",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/755",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/346",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/1",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/129",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/2",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/64",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/65",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/273",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/274",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/275",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/276",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/412",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/37",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/38",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/204",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/599",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/597",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/337",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/15",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/130",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/1197",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/868",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/283",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/282",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/873",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/111",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/3",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/129",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/127",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/130",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/128",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/839",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/838",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/1129",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/111",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/41",
+      "policy_statuses": [
+        "Open"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/875",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/91",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/92",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/109",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/413",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/1196",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/161",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/995",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/638",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/274",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/997",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/1029",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/1030",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/1031",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/1032",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/1033",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/1034",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/1035",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/1036",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/1037",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "x-fmt/13",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/10",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/353",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/7",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/8",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/9",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/154",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/153",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/156",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/874",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/1211",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/1210",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/1255",
+      "policy_statuses": [
+        "Geaccepteerd"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/579",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/580",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/581",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    },
+    {
+      "puid": "fmt/582",
+      "policy_statuses": [
+        "Voorkeursformaat"
+      ],
+      "knowledge_levels": []
+    }
+  ],
+  "family_importance": [
+    {
+      "family_name": "AutoCAD",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "Blender",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "DICOM",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "DXF",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "ESRI",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "FLAC",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "GML",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "JPEG",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "JPEG 2000",
+      "importance_score": 0,
+      "importance_users": "Laag",
+      "importance_archive": "Laag",
+      "importance_systems": "Laag",
+      "importance_strategy": "Laag"
+    },
+    {
+      "family_name": "JSON Data Interchange",
+      "importance_score": 6,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "MATLAB",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "MXF",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "MapInfo",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Microsoft Office",
+      "importance_score": 8,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "MySQL",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "NetCDF",
+      "importance_score": 6,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "OpenOffice",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "PDF",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "RDF",
+      "importance_score": 10,
+      "importance_users": "Midden",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "SIARD",
+      "importance_score": 5,
+      "importance_users": "Laag",
+      "importance_archive": "Midden",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "SPSS",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "SVG",
+      "importance_score": 8,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Stata Data (DTA)",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "TIFF",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Tekst (Algemeen)",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "Wavefront",
+      "importance_score": 10,
+      "importance_users": "Midden",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    },
+    {
+      "family_name": "X3D",
+      "importance_score": 4,
+      "importance_users": "Midden",
+      "importance_archive": "Midden",
+      "importance_systems": "Midden",
+      "importance_strategy": "Midden"
+    },
+    {
+      "family_name": "XML",
+      "importance_score": 12,
+      "importance_users": "Hoog",
+      "importance_archive": "Hoog",
+      "importance_systems": "Hoog",
+      "importance_strategy": "Hoog"
+    }
+  ]
+}

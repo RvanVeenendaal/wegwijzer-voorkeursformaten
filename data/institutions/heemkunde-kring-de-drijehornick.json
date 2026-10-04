@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "id": "heemkunde-kring-de-drijehornick",
+  "name": "Heemkunde kring De Drijehornick",
+  "description": null,
+  "location": null,
+  "isil": null,
+  "website_url": null,
+  "source_url": "https://www.wegwijzervoorkeursformaten.nl/index.php/Gebruiker:Heemkunde_kring_De_Drijehornick",
+  "revision_timestamp": "2023-01-17T11:59:47Z",
+  "overview_sources": {
+    "institutions_overview": "https://www.wegwijzervoorkeursformaten.nl/index.php/Overzicht_instellingen",
+    "preferred_formats_overview": "https://www.wegwijzervoorkeursformaten.nl/index.php/Overzicht_voorkeursformaten"
+  },
+  "formats": [],
+  "family_importance": []
+}

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#173d38">
 <meta name="referrer" content="no-referrer">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-ftNdSR28HqM4IC83XJsfoSzDDLGZrs0KOfL05lOUOE4='; style-src 'sha256-iEX0pmSmQdbXX1l9vAi+4Dpo0F9E4D68Tsq9qETpFVM='; connect-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-eieni8ASvKhA2vq6dOK1ZgZBA/A4sTPIUTFRyFv/ZyA='; style-src 'sha256-FbzVKnB0bNpHZcapqTya8j5C/DRWfkB7vj2wl5xew5I='; connect-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'; object-src 'none'">
 <title>Bestandsformatencatalogus</title>
 <style>
   :root {
@@ -46,6 +46,7 @@
   .view-switch button { min-height: 41px; padding: .5rem .8rem; border: 0; border-right: 1px solid #aabbb6; background: var(--surface); color: var(--muted); cursor: pointer; }
   .view-switch button:last-child { border-right: 0; }
   .view-switch button[aria-pressed="true"] { background: var(--teal); color: #fff; }
+  .view-label-short { display: none; }
   .status-line { min-height: 1.3rem; margin: .75rem 0; color: var(--muted); font-size: .85rem; }
   .section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; margin: 1rem 0 .6rem; }
   .section-heading h2 { margin: 0; font: 400 1.35rem/1.25 Georgia, "Times New Roman", serif; }
@@ -156,7 +157,9 @@
     .toolbar { align-items: stretch; }
     .search-wrap { flex-basis: 100%; }
     .view-switch { width: 100%; }
-    .view-switch button { flex: 1; }
+    .view-switch button { flex: 1; min-width: 0; padding-inline: .35rem; }
+    .view-label-full { display: none; }
+    .view-label-short { display: inline; }
     .area-grid, .family-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .area-card, .family-card { min-height: 58px; padding: .55rem; font-size: .9rem; }
     .section-heading { align-items: start; flex-direction: column; gap: .15rem; }
@@ -198,7 +201,8 @@
       <option value="100">100 per pagina</option>
     </select>
     <div class="view-switch" role="group" aria-label="Catalogusweergave">
-      <button type="button" id="view-areas" aria-pressed="true">Toepassingsgebieden</button>
+      <button type="button" id="view-areas" aria-label="Toepassingsgebieden" aria-pressed="true"><span class="view-label-full">Toepassingsgebieden</span><span class="view-label-short" aria-hidden="true">Gebieden</span></button>
+      <button type="button" id="view-families" aria-label="Formaatfamilies" aria-pressed="false"><span class="view-label-full">Formaatfamilies</span><span class="view-label-short" aria-hidden="true">Families</span></button>
       <button type="button" id="view-all" aria-pressed="false">Alle records</button>
       <button type="button" id="view-institutions" aria-pressed="false">Instellingen</button>
     </div>
@@ -227,7 +231,7 @@
     </div>
     <div class="table-wrap">
       <table>
-        <thead><tr><th>PUID</th><th>Formaat</th><th>Versie / profiel</th><th>Type / familie</th><th>Signatures</th><th>Bijgewerkt</th></tr></thead>
+        <thead><tr id="records-header"></tr></thead>
         <tbody id="records-body"></tbody>
       </table>
     </div>
@@ -356,6 +360,7 @@ function matches({ puid, record }) {
 function filteredRecords() {
   return records().filter(({ puid, record }) => {
     if (!matches({ puid, record })) return false;
+    if (state.view === "families" && state.family && familyOf(record).id !== state.family) return false;
     if (state.view !== "areas" || !state.area) return true;
     const areas = record.browse_application_areas || [];
     if (state.area === "niet-ingedeeld") return areas.length === 0;
@@ -411,10 +416,12 @@ function renderBreadcrumbs(targetId, includeFamily = false) {
 }
 
 function renderFamilies() {
-  const areaRecords = records().filter(({ record }) => {
-    const areas = record.browse_application_areas || [];
-    return state.area === "niet-ingedeeld" ? areas.length === 0 : areas.includes(state.area);
-  });
+  const areaRecords = state.view === "areas" && state.area
+    ? records().filter(({ record }) => {
+      const areas = record.browse_application_areas || [];
+      return state.area === "niet-ingedeeld" ? areas.length === 0 : areas.includes(state.area);
+    })
+    : records();
   const families = new Map();
   for (const { record } of areaRecords) {
     const family = familyOf(record);
@@ -427,11 +434,23 @@ function renderFamilies() {
     <li><button class="family-card" type="button" data-family="${esc(id)}">
       <strong>${esc(item.label)}</strong><small>${item.count.toLocaleString("nl-NL")}</small>
     </button></li>`).join("") || `<li class="empty">Geen formaatfamilies in dit toepassingsgebied.</li>`;
-  $("family-heading").textContent = areaLabel(state.area);
+  $("family-heading").textContent = state.view === "families" ? "Formaatfamilies" : areaLabel(state.area);
   $("family-summary").textContent = `${areaRecords.length.toLocaleString("nl-NL")} records · ${entries.length} formaatfamilies`;
-  renderBreadcrumbs("breadcrumbs");
+  if (state.view === "families") {
+    $("breadcrumbs").innerHTML = `<button type="button" data-area-home>Toepassingsgebieden</button><span>›</span><span>Alle formaatfamilies</span>`;
+    $("breadcrumbs").querySelector("[data-area-home]").addEventListener("click", () => {
+      state.view = "areas";
+      state.family = null;
+      state.page = 0;
+      render();
+    });
+  } else {
+    renderBreadcrumbs("breadcrumbs");
+  }
   document.querySelectorAll("#family-list button[data-family]").forEach((button) => button.addEventListener("click", () => {
     state.family = button.dataset.family;
+    state.area = null;
+    state.view = "families";
     state.page = 0;
     render();
   }));
@@ -443,6 +462,8 @@ function signatureSummary(record) {
 
 function renderTable() {
   const rows = filteredRecords();
+  const showApplicationAreas = state.view === "families";
+  $("records-header").innerHTML = `<th>PUID</th><th>Formaat</th><th>Versie / profiel</th><th>Type / familie</th>${showApplicationAreas ? "<th>Toepassingsgebieden</th>" : ""}<th>Signatures</th><th>Bijgewerkt</th>`;
   const pageCount = Math.max(1, Math.ceil(rows.length / state.pageSize));
   state.page = Math.min(state.page, pageCount - 1);
   const start = state.page * state.pageSize;
@@ -453,16 +474,27 @@ function renderTable() {
       <td><button class="open-record" type="button" data-puid="${esc(puid)}">${esc(record.formatName || "Onbekend formaat")}</button></td>
       <td>${esc(record.version || "—")}</td>
       <td>${esc([record.formatTypes, familyOf(record).label].filter(Boolean).join(" · ") || "—")}</td>
+      ${showApplicationAreas ? `<td>${esc((record.browse_application_areas || []).map(areaLabel).join(", ") || "Niet ingedeeld")}</td>` : ""}
       <td>${esc(signatureSummary(record))}</td>
       <td>${esc(record.lastUpdatedDate || "—")}</td>
-    </tr>`).join("") : `<tr><td class="empty" colspan="6">Geen PRONOM-records gevonden.</td></tr>`;
+    </tr>`).join("") : `<tr><td class="empty" colspan="${showApplicationAreas ? 7 : 6}">Geen PRONOM-records gevonden.</td></tr>`;
   $("record-count").textContent = `${rows.length.toLocaleString("nl-NL")} records`;
   $("paging").hidden = rows.length <= state.pageSize;
   $("page-label").textContent = `${start + 1}–${Math.min(start + state.pageSize, rows.length)} van ${rows.length.toLocaleString("nl-NL")} · pagina ${state.page + 1}/${pageCount}`;
   $("previous").disabled = state.page === 0;
   $("next").disabled = state.page >= pageCount - 1;
   document.querySelectorAll("#records-body button[data-puid]").forEach((button) => button.addEventListener("click", () => openDetail(button.dataset.puid)));
-  if (state.view === "areas" && state.area && state.family) {
+  if (state.view === "families" && state.family) {
+    const selectedFamilyRecord = records().find(({ record }) => familyOf(record).id === state.family)?.record;
+    const selectedFamilyLabel = selectedFamilyRecord ? familyOf(selectedFamilyRecord).label : state.family;
+    $("record-breadcrumbs").innerHTML = `<button type="button" data-family-home>Alle formaatfamilies</button><span>›</span><span>${esc(selectedFamilyLabel)}</span>`;
+    $("record-breadcrumbs").querySelector("[data-family-home]").addEventListener("click", () => {
+      state.family = null;
+      state.page = 0;
+      render();
+    });
+    $("records-heading").textContent = selectedFamilyLabel;
+  } else if (state.view === "areas" && state.area && state.family) {
     renderBreadcrumbs("record-breadcrumbs", true);
     $("records-heading").textContent = familyOf(rows[0]?.record || {}).label || state.family;
   } else {
@@ -1222,6 +1254,12 @@ function render() {
   if (state.view === "institutions") {
     setVisible("institution-view");
     renderInstitutionView();
+  } else if (state.view === "families" && !state.family && !hasQuery) {
+    setVisible("family-view");
+    renderFamilies();
+  } else if (state.view === "families" && state.family) {
+    setVisible("records-view");
+    renderTable();
   } else if (allRecords || hasQuery) {
     setVisible("records-view");
     renderTable();
@@ -1235,6 +1273,7 @@ function render() {
     renderTable();
   }
   $("view-areas").setAttribute("aria-pressed", String(state.view === "areas"));
+  $("view-families").setAttribute("aria-pressed", String(state.view === "families"));
   $("view-all").setAttribute("aria-pressed", String(state.view === "all"));
   $("view-institutions").setAttribute("aria-pressed", String(state.view === "institutions"));
   $("filter-type").disabled = state.view === "institutions";
@@ -1242,7 +1281,7 @@ function render() {
     const institutionCount = (CATALOG.institution_profiles || []).length;
     $("status").textContent = `${institutionCount.toLocaleString("nl-NL")} instellingsprofielen · PRONOM ${CATALOG.release_tag}`;
   } else {
-    const currentCount = state.query || state.type || state.view === "all" || state.area
+    const currentCount = state.query || state.type || state.view === "all" || state.area || state.family
       ? filteredRecords().length
       : records().length;
     $("status").textContent = `${currentCount.toLocaleString("nl-NL")} resultaten · PRONOM ${CATALOG.release_tag}`;
@@ -1290,6 +1329,24 @@ async function init() {
       const url = new URL(location.href);
       url.searchParams.delete("instelling");
       if (url.hash === "#institution-detail") url.hash = "";
+      history.replaceState(null, "", url);
+      state.page = 0;
+      render();
+    });
+    $("view-families").addEventListener("click", () => {
+      state.view = "families";
+      state.area = null;
+      state.family = null;
+      state.active = null;
+      state.activeInstitution = null;
+      state.query = "";
+      state.type = "";
+      $("zoek").value = "";
+      $("filter-type").value = "";
+      const url = new URL(location.href);
+      url.searchParams.delete("instelling");
+      url.searchParams.delete("puid");
+      url.hash = "";
       history.replaceState(null, "", url);
       state.page = 0;
       render();

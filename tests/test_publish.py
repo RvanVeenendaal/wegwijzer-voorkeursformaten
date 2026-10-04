@@ -84,7 +84,31 @@ class CatalogPublishingTests(unittest.TestCase):
         self.assertLessEqual(mapped_areas, known_areas)
         self.assertGreater(enriched["browse_unassigned_count"], 0)
         self.assertIn("webarchivering", mapped_areas)
-        self.assertNotIn("wegwijzer_profielen", enriched)
+        self.assertEqual(enriched["format_profiles"], {})
+
+    def test_format_profiles_are_joined_by_puid(self):
+        catalog = {"records": {"fmt/1": {"formatTypes": "Video"}}}
+        taxonomy = {
+            "schema_versie": 1,
+            "toepassingsgebieden": {"bewegend-beeld": "Bewegend beeld"},
+            "type_naar_toepassingsgebied": {"Video": ["bewegend-beeld"]},
+        }
+        profiles = {"fmt/1": {"format_policy": [{"status": "Open", "institutions": ["Archief X"]}]}}
+
+        enriched = publish.verrijk_pronom_catalogus(catalog, taxonomy, profiles)
+
+        self.assertEqual(enriched["format_profiles"], profiles)
+
+    def test_format_profile_for_unknown_puid_is_rejected(self):
+        catalog = {"records": {"fmt/1": {"formatTypes": "Video"}}}
+        taxonomy = {
+            "schema_versie": 1,
+            "toepassingsgebieden": {"bewegend-beeld": "Bewegend beeld"},
+            "type_naar_toepassingsgebied": {"Video": ["bewegend-beeld"]},
+        }
+
+        with self.assertRaisesRegex(ValueError, "onbekende PUID's"):
+            publish.verrijk_pronom_catalogus(catalog, taxonomy, {"fmt/2": {}})
 
     def test_unknown_taxonomy_area_is_rejected(self):
         catalog = {"records": {"fmt/1": {"formatTypes": "Video"}}}

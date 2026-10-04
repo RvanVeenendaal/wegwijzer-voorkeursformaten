@@ -96,8 +96,8 @@
   .profile-grid div { min-width: 0; }
   .profile-grid dt { color: var(--muted); font-size: .82rem; }
   .profile-grid dd { margin: .08rem 0 0; overflow-wrap: anywhere; }
-  .durability-total { display: flex; align-items: baseline; gap: .55rem; margin-bottom: .7rem; }
-  .durability-total strong { color: var(--teal); font: 400 1.7rem Georgia, "Times New Roman", serif; }
+  .risk-total { display: flex; align-items: baseline; gap: .55rem; margin-bottom: .7rem; }
+  .risk-total strong { color: var(--teal); font: 400 1.7rem Georgia, "Times New Roman", serif; }
   .factor-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: .4rem .7rem; }
   .factor-list details { border-bottom: 1px solid var(--line); padding: .4rem 0; }
   .factor-list summary { display: flex; justify-content: space-between; gap: .8rem; cursor: pointer; }
@@ -379,8 +379,10 @@ function openDetail(puid) {
   state.active = puid;
   const url = new URL(location.href);
   url.searchParams.set("puid", puid);
+  url.hash = "detail";
   history.replaceState(null, "", url);
   renderDetail();
+  $("detail").scrollIntoView({ behavior: "instant", block: "start" });
 }
 
 function detailList(items, renderItem) {
@@ -442,16 +444,36 @@ function renderDetail() {
       return `<li>${esc(item.identifierType)}: ${value}</li>`;
     },
   );
-  const profile = null;
-  const sourceIdentifiers = record.identifiers || [];
-  const profileIdentifiers = {
-    wikidata: sourceIdentifiers.find((item) => item.identifierType === "Wikidata QID Identifier")?.identifierText,
-    loc: sourceIdentifiers.find((item) => item.identifierType === "Library of Congress Format Description Identifier")?.identifierText,
-  };
-  const wikidataUrl = profileIdentifiers.wikidata ? identifierUrl("Wikidata QID Identifier", profileIdentifiers.wikidata) : null;
-  const locUrl = profileIdentifiers.loc ? identifierUrl("Library of Congress Format Description Identifier", profileIdentifiers.loc) : null;
-  const profileRows = "";
-  const durabilityHtml = "";
+  const formatProfile = CATALOG.format_profiles?.[puid];
+  const profileIdentifiers = formatProfile?.identifiers || {};
+  const pronomIdentifier = (type) => (record.identifiers || []).find((item) => item.identifierType === type)?.identifierText;
+  const wikidataId = profileIdentifiers.wikidata || pronomIdentifier("Wikidata QID Identifier");
+  const locId = profileIdentifiers.loc || pronomIdentifier("Library of Congress Format Description Identifier");
+  const profile = formatProfile ? {
+    bronpagina_url: null,
+    bron_bijgewerkt_op: formatProfile.revision_timestamp?.slice(0, 10),
+    identifiers: profileIdentifiers,
+    formaatfamilie: familyOf(record).label,
+    formaatbeleid: (formatProfile.format_policy || []).map((item) => ({ status: item.status, instellingen: item.institutions })),
+    kennisniveaus: (formatProfile.knowledge_levels || []).map((item) => ({ niveau: item.level, instellingen: item.institutions })),
+    nara_risk: formatProfile.nara_risk || null,
+  } : null;
+  const wikidataUrl = wikidataId ? identifierUrl("Wikidata QID Identifier", wikidataId) : null;
+  const locUrl = locId ? identifierUrl("Library of Congress Format Description Identifier", locId) : null;
+  const profileRows = [
+    ["Formaatfamilie", profile?.formaatfamilie || familyOf(record).label],
+    ["Toepassingsgebied", areaNames.join(", ") || "Niet ingedeeld"],
+    ["PRONOM ID", puid],
+    ["Wikidata ID", wikidataUrl ? `<a href="${esc(wikidataUrl)}" target="_blank" rel="noopener">${esc(wikidataId)}</a>` : "Niet gekoppeld"],
+    ["Library of Congress ID", locUrl ? `<a href="${esc(locUrl)}" target="_blank" rel="noopener">${esc(locId)}</a>` : "Niet gekoppeld"],
+  ].map(([label, value]) => `<div><dt>${esc(label)}</dt><dd>${typeof value === "string" && value.startsWith("<a ") ? value : esc(value)}</dd></div>`).join("");
+  const naraRisk = profile?.nara_risk;
+  const naraMatrixUrl = "https://github.com/usnationalarchives/digital-preservation/tree/master/Digital_Preservation_Risk_Matrix";
+  const naraRiskHtml = naraRisk ? `
+    <div class="risk-total"><strong>${esc(naraRisk.numeric_risk_rating ?? "Onbekend")}</strong><span>TOTAL Numeric Risk Rating · ${esc(naraRisk.risk_level || "risiconiveau onbekend")}</span></div>
+    <dl><dt>Methodiek NARA</dt><dd><a href="${esc(naraMatrixUrl)}" target="_blank" rel="noopener">NARA-risicomatrix</a> · matrix ${esc(naraRisk.matrix_date || "onbekende datum")}</dd><dt>NARA Format ID</dt><dd>${esc(naraRisk.nara_format_id)} · ${esc(naraRisk.format_name)}</dd><dt>Koppelbasis</dt><dd>${esc(naraRisk.match_basis)}${naraRisk.match_scope === "shared_family" ? " · gedeelde NARA-familierij" : ""}</dd><dt>Koppelbewijs</dt><dd>${esc(naraRisk.match_evidence)}</dd><dt>Bestandsextensies</dt><dd>${esc(naraRisk.file_extensions || "Niet opgegeven")}</dd></dl>
+    <div class="table-wrap"><table><thead><tr><th>Risicocategorie</th><th>TOTAL</th></tr></thead><tbody>${(naraRisk.category_totals || []).map((category) => `<tr><td>${esc(category.name)}</td><td>${esc(category.score ?? "Onbekend")}</td></tr>`).join("")}</tbody></table></div>`
+    : `<p class="muted">Geen eenduidige NARA-formatmatch; er is geen risicoscore ingevuld.</p>`;
   const wikidata = null;
   const wikidataSources = [];
   const coptr = null;
@@ -466,32 +488,34 @@ function renderDetail() {
     <section><h3>Beschrijving</h3><p>${esc(record.formatDescription || "Geen beschrijving vastgelegd.")}</p><dl class="profile-grid">${profileRows}</dl>${profile?.bronpagina_url ? `<p>Wegwijzerbron: <a href="${esc(profile.bronpagina_url)}" target="_blank" rel="noopener">Open oorspronkelijke detailpagina</a>${profile.bron_bijgewerkt_op ? ` · bijgewerkt ${esc(profile.bron_bijgewerkt_op)}` : ""}</p>` : ""}</section>
     <section><h3>Formaatbeleid</h3>${institutionTable(profile?.formaatbeleid, "Formaatbeleid")}</section>
     <section><h3>Kennisniveaus</h3>${institutionTable(profile?.kennisniveaus, "Kennisniveau")}</section>
-    <section><h3>Houdbaarheid</h3>${durabilityHtml}</section>
+    <section><h3>NARA-risicomatrix</h3>${naraRiskHtml}</section>
     <section><h3>Aanvullende gegevens (PRONOM)</h3><dl>${detailRows}</dl><p>Aliases: ${esc(record.formatAliases || "Geen")}</p><p>Bestandsextensies en externe signatures:</p>${external}</section>
     <section><h3>Aanvullende gegevens (Wikidata)</h3><p>Wikidata ID: ${wikidataUrl ? `<a href="${esc(wikidataUrl)}" target="_blank" rel="noopener">${esc(profileIdentifiers.wikidata)}</a>` : "Niet gekoppeld"}</p><p>Publicatiejaar: ${esc(wikidata?.publish_year?.join(", ") || "Geen gegevens")}</p><p>Ontwikkelaars: ${esc(wikidata?.developers?.join(", ") || "Geen gegevens")}</p><h4>Bronnen en uitgevers</h4>${externalSourceList(wikidataSources)}</section>
     <section><h3>Aanvullende gegevens (COPTR)</h3><div class="profile-grid"><div><h4>Input</h4>${coptrList(coptr?.input)}</div><div><h4>Output</h4>${coptrList(coptr?.output)}</div><div><h4>Lifecycle stages</h4>${coptrList(coptr?.lifecycle_stages)}</div></div></section>
     <section><h3>Signatures en relaties</h3><h4>Interne signatures (${(record.internalSignatures || []).length})</h4>${internal || `<p class="muted">Geen interne signatures vastgelegd.</p>`}<h4>Container signatures (${(record.containerSignatures || []).length})</h4>${containers || `<p class="muted">Geen container signatures vastgelegd.</p>`}<h4>Formaatrelaties</h4>${relationships}<h4>Andere identifiers</h4>${identifiers}</section>
     <section><h3>Bron</h3><p>PRONOM ${esc(CATALOG.release_tag)} · commit ${esc(CATALOG.source_commit)}</p><p>${releaseUrl ? `<a href="${esc(releaseUrl)}" target="_blank" rel="noopener">PRONOM-release</a>` : ""}${sourceUrl ? ` · <a href="${esc(sourceUrl)}" target="_blank" rel="noopener">Bronsignature op GitHub</a>` : ""} · <a href="${esc(pronomUrl(puid))}" target="_blank" rel="noopener">PRONOM-record</a></p></section>`;
-  const externalOnlySections = new Set(["Formaatbeleid", "Kennisniveaus", "Houdbaarheid", "Aanvullende gegevens (Wikidata)", "Aanvullende gegevens (COPTR)"]);
+  const externalOnlySections = new Set(["Aanvullende gegevens (Wikidata)", "Aanvullende gegevens (COPTR)"]);
   for (const section of $("detail").querySelectorAll("section")) {
     if (externalOnlySections.has(section.querySelector("h3")?.textContent)) section.remove();
   }
   const identifierHeading = [...$("detail").querySelectorAll("h4")].find((heading) => heading.textContent === "Andere identifiers");
   if (identifierHeading) identifierHeading.textContent = "Externe bronidentifiers";
   const sourceQuery = encodeURIComponent(record.formatName || puid);
+  const coptrQuery = encodeURIComponent(record.formatFamilies || record.formatName || puid);
   const externalSources = [
     { name: wikidataUrl ? "Wikidata" : "Wikidata zoeken", url: wikidataUrl || `https://www.wikidata.org/w/index.php?search=${sourceQuery}` },
     { name: locUrl ? "Library of Congress FDD" : "Library of Congress FDD-index", url: locUrl || "https://www.loc.gov/preservation/digital/formats/fdd/" },
-    { name: "COPTR-formaatindex", url: "https://coptr.digipres.org/File_Formats" },
+    { name: `COPTR zoeken: ${record.formatFamilies || record.formatName || puid}`, url: `https://coptr.digipres.org/index.php?title=Special:Search&search=${coptrQuery}` },
   ];
   const sourceSection = document.createElement("section");
-  sourceSection.innerHTML = `<h3>Externe bronnen</h3>${externalSourceList(externalSources)}`;
+  sourceSection.innerHTML = `<h3>Externe bronnen</h3>${externalSourceList(externalSources)}${formatProfile?.revision_timestamp ? `<p class="muted">Profiel bijgewerkt: ${esc(profile.bron_bijgewerkt_op || "onbekend")}</p>` : ""}`;
   $("detail").append(sourceSection);
   $("detail").hidden = false;
   $("detail").querySelector(".close-detail").addEventListener("click", () => {
     state.active = null;
     const url = new URL(location.href);
     url.searchParams.delete("puid");
+    if (url.hash === "#detail") url.hash = "";
     history.replaceState(null, "", url);
     renderDetail();
   });

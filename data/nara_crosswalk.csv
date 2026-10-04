@@ -1,0 +1,266 @@
+puid,nara_format_id,basis,evidence,scope
+fmt/100,NF00572,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Hypertext Markup Language 4.01' -> NARA Format Name='Hypertext Markup Language 4.01',individual
+fmt/101,NF00187,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Extensible Markup Language 1.0' -> NARA Format Name='eXtensible Markup Language 1.0',individual
+fmt/102,NF00185,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Extensible Hypertext Markup Language 1.0' -> NARA Format Name='eXtensible Hypertext Markup Language 1.0',individual
+fmt/103,NF00186,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Extensible Hypertext Markup Language 1.1' -> NARA Format Name='eXtensible Hypertext Markup Language 1.1',individual
+fmt/1042,NF00788,Interne PRONOM-signatuur exact,Interne PRONOM-signatuur='WordPerfect Graphics 2.0' -> NARA Format Name='WordPerfect Graphics 2.0',individual
+fmt/1047,NF00200,PRONOM-formatnaam exact,PRONOM-formatnaam='Geography Markup Language' -> NARA Format Name='Geography Markup Language',shared_family
+fmt/108,NF00580,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Macromedia Flash 5' -> NARA Format Name='Macromedia Flash 5',individual
+fmt/109,NF00242,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Macromedia Flash 6' -> NARA Format Name='Macromedia Flash 6',individual
+fmt/11,NF00381,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Portable Network Graphics 1.0' -> NARA Format Name='Portable Network Graphics 1.0',individual
+fmt/110,NF00243,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Macromedia Flash 7' -> NARA Format Name='Macromedia Flash 7',individual
+fmt/1101,NF00638,Interne PRONOM-signatuur via NARA-afkorting,Interne PRONOM-signatuur='HEIF' -> NARA Format Name='High Efficiency Image File Format (HEIF)',individual
+fmt/116,NF00442,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Windows Bitmap 3.0' -> NARA Format Name='Windows Bitmap 3.0',individual
+fmt/118,NF00624,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Windows Bitmap 4.0' -> NARA Format Name='Windows Bitmap 4.0',individual
+fmt/119,NF00625,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Windows Bitmap 5.0' -> NARA Format Name='Windows Bitmap 5.0',individual
+fmt/12,NF00382,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Portable Network Graphics 1.1' -> NARA Format Name='Portable Network Graphics 1.1',individual
+fmt/122,NF00171,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Encapsulated PostScript File Format 1.2' -> NARA Format Name='Encapsulated PostScript File Format 1.2',individual
+fmt/124,NF00485,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Encapsulated PostScript File Format 3' -> NARA Format Name='Encapsulated PostScript File Format 3',individual
+fmt/125,NF00291,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Powerpoint Presentation 95' -> NARA Format Name='Microsoft PowerPoint Presentation 95',individual
+fmt/126,NF00284,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Powerpoint Presentation 97-2003' -> NARA Format Name='Microsoft PowerPoint Presentation 97-2003',individual
+fmt/1274,NF00709,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Sonic Scenarist Closed Caption Format' -> NARA Format Name='Sonic Scenarist Closed Caption Format',individual
+fmt/1280,NF00600,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='NCH Dictation Audio File' -> NARA Format Name='NCH Dictation Audio File',individual
+fmt/1281,NF00623,Wegwijzer-profielnaam via NARA-afkorting,Wegwijzer-profielnaam='WARC 1.1' -> NARA Format Name='Web ARChive (WARC) 1.1',individual
+fmt/13,NF00383,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Portable Network Graphics 1.2' -> NARA Format Name='Portable Network Graphics 1.2',individual
+fmt/1355,NF00439,Wegwijzer-profielnaam via NARA-afkorting,Wegwijzer-profielnaam='WARC 1.0' -> NARA Format Name='Web ARChive (WARC) 1.0',individual
+fmt/136,NF00345,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='OpenDocument Text 1.0' -> NARA Format Name='OpenDocument Text 1.0',individual
+fmt/1367,NF00831,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='GeoJSON' -> NARA Format Name='GeoJSON',individual
+fmt/137,NF00349,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='OpenDocument Spreadsheet 1.0' -> NARA Format Name='OpenDocument Spreadsheet 1.0',individual
+fmt/138,NF00348,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='OpenDocument Presentation 1.0' -> NARA Format Name='OpenDocument Presentation 1.0',individual
+fmt/139,NF00347,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='OpenDocument Graphics 1.0' -> NARA Format Name='OpenDocument Graphics 1.0',individual
+fmt/1429,NF00241,PRONOM-formatnaam exact,PRONOM-formatnaam='MacPaint Image' -> NARA Format Name='MacPaint Image',shared_family
+fmt/1451,NF00792,Interne PRONOM-signatuur via NARA-afkorting,Interne PRONOM-signatuur='PDF Portfolio 1.7' -> NARA Format Name='Portable Document Format (PDF) Portfolio 1.7',individual
+fmt/1485,NF00802,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='JPEG XL' -> NARA Format Name='JPEG XL',individual
+fmt/149,NF00221,PRONOM-alias via NARA-afkorting,PRONOM-alias='JTIP' -> NARA Format Name='JPEG Tiled Image Pyramid (JTIP)',individual
+fmt/1507,NF00829,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Exchangeable Image File Format (Compressed)2.3.x' -> NARA Format Name='Exchangeable Image File Format Compressed 2.3.x',individual
+fmt/153,NF00421,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Tagged Image File Format for Image Technology (TIFF/IT)' -> NARA Format Name='Tagged Image File Format for Image Technology (TIFF/IT)',individual
+fmt/154,NF00420,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Tagged Image File Format for Electronic Photography (TIFF/EP)' -> NARA Format Name='Tagged Image File Format for Electronic Photography (TIFF/EP)',individual
+fmt/156,NF00422,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Tagged Image File Format for Internet Fax (TIFF-FX)' -> NARA Format Name='Tagged Image File Format for Internet Fax (TIFF-FX)',individual
+fmt/1566,NF00142,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='ColdFusion Markup Language' -> NARA Format Name='ColdFusion Markup Language',individual
+fmt/162,NF00278,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Multiplan 4.0' -> NARA Format Name='Microsoft Multiplan 4.0',individual
+fmt/1648,NF00150,PRONOM-formatnaam exact,PRONOM-formatnaam='Crystal Reports File' -> NARA Format Name='Crystal Reports File',individual
+fmt/169,NF00315,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Works Database for DOS 1.05' -> NARA Format Name='Microsoft Works Database for DOS 1.05',individual
+fmt/170,NF00316,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Works Database for DOS 1.12' -> NARA Format Name='Microsoft Works Database for DOS 1.12',individual
+fmt/171,NF00317,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Works Database for DOS 2.0' -> NARA Format Name='Microsoft Works Database for DOS 2.0',individual
+fmt/172,NF00268,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Excel for Macintosh 3.0' -> NARA Format Name='Microsoft Excel for Macintosh 3.0',individual
+fmt/173,NF00269,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Excel for Macintosh 4.0' -> NARA Format Name='Microsoft Excel for Macintosh 4.0',individual
+fmt/1730,NF00151,PRONOM-formatnaam exact,PRONOM-formatnaam='Data File' -> NARA Format Name='Data File',individual
+fmt/174,NF00270,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Excel for Macintosh 98' -> NARA Format Name='Microsoft Excel for Macintosh 98',individual
+fmt/175,NF00265,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Excel for Macintosh 2001' -> NARA Format Name='Microsoft Excel for Macintosh 2001',individual
+fmt/1753,NF00798,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='OpenDocument Graphics 1.3' -> NARA Format Name='OpenDocument Graphics 1.3',individual
+fmt/1754,NF00799,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='OpenDocument Presentation 1.3' -> NARA Format Name='OpenDocument Presentation 1.3',individual
+fmt/1755,NF00800,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='OpenDocument Spreadsheet 1.3' -> NARA Format Name='OpenDocument Spreadsheet 1.3',individual
+fmt/1756,NF00801,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='OpenDocument Text 1.3' -> NARA Format Name='OpenDocument Text 1.3',individual
+fmt/176,NF00266,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Excel for Macintosh 2002' -> NARA Format Name='Microsoft Excel for Macintosh 2002',individual
+fmt/177,NF00267,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Excel for Macintosh 2004' -> NARA Format Name='Microsoft Excel for Macintosh 2004',individual
+fmt/1776,NF00561,PRONOM-formatnaam + versie exact,PRONOM-formatnaam + versie='Extensible Markup Language 1.1' -> NARA Format Name='eXtensible Markup Language 1.1',individual
+fmt/1781,NF00475,PRONOM-alias exact,PRONOM-alias='Pentax RAW' -> NARA Format Name='Pentax RAW',individual
+fmt/181,NF00285,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft PowerPoint for Macintosh 2001' -> NARA Format Name='Microsoft PowerPoint for Macintosh 2001',individual
+fmt/1840,NF00796,Wegwijzer-profielnaam via NARA-afkorting,Wegwijzer-profielnaam='WACZ' -> NARA Format Name='Web Archive Collection Zipped (WACZ)',individual
+fmt/1879,NF00432,PRONOM-formatnaam exact,PRONOM-formatnaam='vCard' -> NARA Format Name='vCard',shared_family
+fmt/1880,NF00432,PRONOM-formatnaam exact,PRONOM-formatnaam='vCard' -> NARA Format Name='vCard',shared_family
+fmt/1881,NF00432,PRONOM-formatnaam exact,PRONOM-formatnaam='vCard' -> NARA Format Name='vCard',shared_family
+fmt/1935,NF00637,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='S-57 Electronic Navigation Chart' -> NARA Format Name='S-57 Electronic Navigation Chart',individual
+fmt/196,NF00103,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Adobe InDesign Document CS' -> NARA Format Name='Adobe InDesign Document CS',individual
+fmt/199,NF00339,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='MPEG-4 Media File' -> NARA Format Name='MPEG-4 Media File',individual
+fmt/200,NF00245,PRONOM-formatnaam exact,PRONOM-formatnaam='Material Exchange Format' -> NARA Format Name='Material Exchange Format',shared_family
+fmt/201,NF00246,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Mathematica Notebook' -> NARA Format Name='Mathematica Notebook',individual
+fmt/205,NF00782,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Synchronized Multimedia Integration Language' -> NARA Format Name='Synchronized Multimedia Integration Language',individual
+fmt/208,NF00135,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Binary File' -> NARA Format Name='Binary file',individual
+fmt/209,NF00407,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Sound Designer II Audio File' -> NARA Format Name='Sound Designer II Audio File',individual
+fmt/210,NF00413,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Statistica Report File' -> NARA Format Name='Statistica Report File',individual
+fmt/211,NF00224,Interne PRONOM-signatuur exact,Interne PRONOM-signatuur='Kodak Photo CD' -> NARA Format Name='Kodak PhotoCD',individual
+fmt/212,NF00211,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Information or Setup File' -> NARA Format Name='Information or Setup File',individual
+fmt/217,NF00355,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='PaintShop Pro Browser Cache File' -> NARA Format Name='PaintShop Pro Browser Cache File',individual
+fmt/219,NF00323,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Works Database for Windows 2.0' -> NARA Format Name='Microsoft Works Database for Windows 2.0',individual
+fmt/222,NF00324,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Works Database for Windows 2.0a' -> NARA Format Name='Microsoft Works Database for Windows 2.0a',individual
+fmt/223,NF00326,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Works Database for Windows 3.0' -> NARA Format Name='Microsoft Works Database for Windows 3.0',individual
+fmt/224,NF00327,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Works Database for Windows 3.0a' -> NARA Format Name='Microsoft Works Database for Windows 3.0a',individual
+fmt/225,NF00328,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Works Database for Windows 3.0b' -> NARA Format Name='Microsoft Works Database for Windows 3.0b',individual
+fmt/244,NF00222,Interne PRONOM-signatuur exact,Interne PRONOM-signatuur='Keyhole Markup Language' -> NARA Format Name='Keyhole Markup Language',individual
+fmt/245,NF00415,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Structured Data Exchange Format' -> NARA Format Name='Structured Data eXchange Format',individual
+fmt/246,NF00330,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Works Database for Windows 4.0a' -> NARA Format Name='Microsoft Works Database for Windows 4.0a',individual
+fmt/249,NF00331,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Works Database for Windows 4.5' -> NARA Format Name='Microsoft Works Database for Windows 4.5',individual
+fmt/252,NF00332,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Works Database for Windows 4.5a' -> NARA Format Name='Microsoft Works Database for Windows 4.5a',individual
+fmt/256,NF00325,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Works Database for Windows 2000' -> NARA Format Name='Microsoft Works Database for Windows 2000',individual
+fmt/259,NF00318,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Works Database for DOS 3' -> NARA Format Name='Microsoft Works Database for DOS 3',individual
+fmt/260,NF00319,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Works Database for DOS 3a' -> NARA Format Name='Microsoft Works Database for DOS 3a',individual
+fmt/261,NF00320,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Works Database for DOS 3b' -> NARA Format Name='Microsoft Works Database for DOS 3b',individual
+fmt/268,NF00321,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Works Database for Macintosh 3' -> NARA Format Name='Microsoft Works Database for Macintosh 3',individual
+fmt/269,NF00322,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Works Database for Macintosh 4' -> NARA Format Name='Microsoft Works Database for Macintosh 4',individual
+fmt/280,NF00225,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='LaTeX (Master document)' -> NARA Format Name='LaTeX Master Document',individual
+fmt/290,NF00507,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='OpenDocument Text 1.1' -> NARA Format Name='OpenDocument Text 1.1',individual
+fmt/291,NF00508,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='OpenDocument Text 1.2' -> NARA Format Name='OpenDocument Text 1.2',individual
+fmt/292,NF00511,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='OpenDocument Presentation 1.1' -> NARA Format Name='OpenDocument Presentation 1.1',individual
+fmt/293,NF00512,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='OpenDocument Presentation 1.2' -> NARA Format Name='OpenDocument Presentation 1.2',individual
+fmt/294,NF00513,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='OpenDocument Spreadsheet 1.1' -> NARA Format Name='OpenDocument Spreadsheet 1.1',individual
+fmt/295,NF00514,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='OpenDocument Spreadsheet 1.2' -> NARA Format Name='OpenDocument Spreadsheet 1.2',individual
+fmt/296,NF00509,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='OpenDocument Graphics 1.1' -> NARA Format Name='OpenDocument Graphics 1.1',individual
+fmt/297,NF00510,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='OpenDocument Graphics 1.2' -> NARA Format Name='OpenDocument Graphics 1.2',individual
+fmt/31,NF00129,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='AutoCAD Drawing R10' -> NARA Format Name='AutoCAD Drawing (R10)',individual
+fmt/317,NF00678,PRONOM-alias exact,PRONOM-alias='Adobe Director' -> NARA Format Name='Adobe Director',individual
+fmt/32,NF00130,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='AutoCAD Drawing R11/12' -> NARA Format Name='AutoCAD Drawing (R11/12)',individual
+fmt/328,NF00172,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='EndNote Import File' -> NARA Format Name='EndNote Import File',individual
+fmt/34,NF00131,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='AutoCAD Drawing R14' -> NARA Format Name='AutoCAD Drawing (R14)',individual
+fmt/35,NF00118,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='AutoCAD Drawing 2000-2002' -> NARA Format Name='AutoCAD Drawing (2000-2002)',individual
+fmt/355,NF00614,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Rich Text Format 1.9' -> NARA Format Name='Rich Text Format 1.9',individual
+fmt/359,NF00276,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Front Page Binary Tree Index' -> NARA Format Name='Microsoft FrontPage Binary Tree Index',individual
+fmt/36,NF00119,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='AutoCAD Drawing 2004-2005' -> NARA Format Name='AutoCAD Drawing (2004-2005)',individual
+fmt/364,NF00692,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='National Imagery Transmission Format 1.0' -> NARA Format Name='National Imagery Transmission Format 1.0',individual
+fmt/365,NF00694,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='National Imagery Transmission Format 2.0' -> NARA Format Name='National Imagery Transmission Format 2.0',individual
+fmt/366,NF00695,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='National Imagery Transmission Format 2.1' -> NARA Format Name='National Imagery Transmission Format 2.1',individual
+fmt/376,NF00663,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='FoxPro Report' -> NARA Format Name='FoxPro Report',individual
+fmt/38,NF00310,Interne PRONOM-signatuur exact,Interne PRONOM-signatuur='Microsoft Word for Windows 2.0' -> NARA Format Name='Microsoft Word for Windows 2.0',individual
+fmt/39,NF00302,Interne PRONOM-signatuur exact,Interne PRONOM-signatuur='Microsoft Word for Windows 6.0/95' -> NARA Format Name='Microsoft Word for Windows 6.0-95',individual
+fmt/395,NF00432,PRONOM-formatnaam exact,PRONOM-formatnaam='vCard' -> NARA Format Name='vCard',shared_family
+fmt/404,NF00604,PRONOM-formatnaam exact,PRONOM-formatnaam='RealAudio' -> NARA Format Name='RealAudio',shared_family
+fmt/413,NF00403,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Scalable Vector Graphics Tiny 1.2' -> NARA Format Name='Scalable Vector Graphics Tiny 1.2',individual
+fmt/42,NF00220,PRONOM-alias via NARA-afkorting,PRONOM-alias='JFIF (1.00)' -> NARA Format Name='JPEG File Interchange Format (JFIF) 1.00',individual
+fmt/43,NF00491,PRONOM-alias via NARA-afkorting,PRONOM-alias='JFIF (1.01)' -> NARA Format Name='JPEG File Interchange Format (JFIF) 1.01',individual
+fmt/44,NF00492,PRONOM-alias via NARA-afkorting,PRONOM-alias='JFIF (1.02)' -> NARA Format Name='JPEG File Interchange Format (JFIF) 1.02',individual
+fmt/440,NF00683,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Project 2007' -> NARA Format Name='Microsoft Project 2007',individual
+fmt/443,NF00505,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Visio Drawing 2003-2010' -> NARA Format Name='Microsoft Visio Drawing 2003-2010',individual
+fmt/445,NF00665,PRONOM-formatnaam exact,PRONOM-formatnaam='Microsoft Excel Macro-Enabled' -> NARA Format Name='Microsoft Excel Macro-enabled',individual
+fmt/46,NF00606,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Rich Text Format 1.1' -> NARA Format Name='Rich Text Format 1.1',individual
+fmt/461,NF00640,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Verity Collection Index Descriptor File' -> NARA Format Name='Verity Collection Index Descriptor File',individual
+fmt/47,NF00607,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Rich Text Format 1.2' -> NARA Format Name='Rich Text Format 1.2',individual
+fmt/471,NF00573,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Hypertext Markup Language 5' -> NARA Format Name='Hypertext Markup Language 5',individual
+fmt/48,NF00608,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Rich Text Format 1.3' -> NARA Format Name='Rich Text Format 1.3',individual
+fmt/485,NF00726,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Rocket Book eBook format' -> NARA Format Name='Rocket Book eBook format',individual
+fmt/49,NF00609,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Rich Text Format 1.4' -> NARA Format Name='Rich Text Format 1.4',individual
+fmt/5,NF00117,Interne PRONOM-signatuur via NARA-afkorting,Interne PRONOM-signatuur='AVI' -> NARA Format Name='Audio Video Interleave Format (AVI)',individual
+fmt/51,NF00611,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Rich Text Format 1.6' -> NARA Format Name='Rich Text Format 1.6',individual
+fmt/52,NF00612,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Rich Text Format 1.7' -> NARA Format Name='Rich Text Format 1.7',individual
+fmt/53,NF00613,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Rich Text Format 1.8' -> NARA Format Name='Rich Text Format 1.8',individual
+fmt/545,NF00840,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Macromedia FreeHand 8' -> NARA Format Name='Macromedia FreeHand 8',individual
+fmt/548,NF00463,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Adobe InDesign Document CS2' -> NARA Format Name='Adobe InDesign Document CS2',individual
+fmt/549,NF00464,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Adobe InDesign Document CS3' -> NARA Format Name='Adobe InDesign Document CS3',individual
+fmt/550,NF00465,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Adobe InDesign Document CS4' -> NARA Format Name='Adobe InDesign Document CS4',individual
+fmt/551,NF00466,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Adobe InDesign Document CS5' -> NARA Format Name='Adobe InDesign Document CS5',individual
+fmt/552,NF00467,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Adobe InDesign Document CS6' -> NARA Format Name='Adobe InDesign Document CS6',individual
+fmt/566,NF00860,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='WebP Lossy' -> NARA Format Name='WebP Lossy',individual
+fmt/598,NF00770,PRONOM-formatnaam exact,PRONOM-formatnaam='Microsoft Excel Template' -> NARA Format Name='Microsoft Excel Template',shared_family
+fmt/599,NF00589,PRONOM-formatnaam exact,PRONOM-formatnaam='Microsoft Word Macro-Enabled Document Template' -> NARA Format Name='Microsoft Word Macro-enabled Document Template',individual
+fmt/63,NF00165,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Drawing Interchange File Format (ASCII) Generic' -> NARA Format Name='Drawing Interchange File Format ASCII Generic',individual
+fmt/631,NF00771,PRONOM-formatnaam exact,PRONOM-formatnaam='Microsoft PowerPoint Template' -> NARA Format Name='Microsoft PowerPoint Template',individual
+fmt/634,NF00700,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Compiled HTML Help' -> NARA Format Name='Microsoft Compiled HTML Help',individual
+fmt/637,NF00664,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft OneNote' -> NARA Format Name='Microsoft OneNote',individual
+fmt/645,NF00828,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Exchangeable Image File Format (Compressed) 2.2.1' -> NARA Format Name='Exchangeable Image File Format Compressed 2.21',individual
+fmt/649,NF00859,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='MPEG-1 Elementary Stream' -> NARA Format Name='MPEG-1 Elementary Stream',individual
+fmt/657,NF00502,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Open XML Paper Specification' -> NARA Format Name='Open XML Paper Specification',individual
+fmt/668,NF00474,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Olympus RAW' -> NARA Format Name='Olympus RAW',individual
+fmt/688,NF00759,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Executable and Linkable Format 32bit Little Endian' -> NARA Format Name='Executable and Linkable Format 32-bit Little Endian',individual
+fmt/689,NF00758,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Executable and Linkable Format 32bit Big Endian' -> NARA Format Name='Executable and Linkable Format 32-bit Big Endian',individual
+fmt/690,NF00761,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Executable and Linkable Format 64bit Little Endian' -> NARA Format Name='Executable and Linkable Format 64-bit Little Endian',individual
+fmt/691,NF00760,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Executable and Linkable Format 64bit Big Endian' -> NARA Format Name='Executable and Linkable Format 64-bit Big Endian',individual
+fmt/698,NF00409,PRONOM-alias via NARA-afkorting,PRONOM-alias='STEP' -> NARA Format Name='Standard for the Exchange of Product Model Data (STEP)',individual
+fmt/724,NF00577,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Keyhole Markup Language (Container)' -> NARA Format Name='Keyhole Markup Language (Container)',individual
+fmt/725,NF00684,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Project 2010' -> NARA Format Name='Microsoft Project 2010',individual
+fmt/783,NF00245,PRONOM-formatnaam exact,PRONOM-formatnaam='Material Exchange Format' -> NARA Format Name='Material Exchange Format',shared_family
+fmt/784,NF00245,PRONOM-formatnaam exact,PRONOM-formatnaam='Material Exchange Format' -> NARA Format Name='Material Exchange Format',shared_family
+fmt/785,NF00245,PRONOM-formatnaam exact,PRONOM-formatnaam='Material Exchange Format' -> NARA Format Name='Material Exchange Format',shared_family
+fmt/786,NF00245,PRONOM-formatnaam exact,PRONOM-formatnaam='Material Exchange Format' -> NARA Format Name='Material Exchange Format',shared_family
+fmt/787,NF00245,PRONOM-formatnaam exact,PRONOM-formatnaam='Material Exchange Format' -> NARA Format Name='Material Exchange Format',shared_family
+fmt/788,NF00245,PRONOM-formatnaam exact,PRONOM-formatnaam='Material Exchange Format' -> NARA Format Name='Material Exchange Format',shared_family
+fmt/789,NF00245,PRONOM-formatnaam exact,PRONOM-formatnaam='Material Exchange Format' -> NARA Format Name='Material Exchange Format',shared_family
+fmt/790,NF00245,PRONOM-formatnaam exact,PRONOM-formatnaam='Material Exchange Format' -> NARA Format Name='Material Exchange Format',shared_family
+fmt/791,NF00245,PRONOM-formatnaam exact,PRONOM-formatnaam='Material Exchange Format' -> NARA Format Name='Material Exchange Format',shared_family
+fmt/834,NF00391,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Quattro Pro Spreadsheet for Windows 1/5' -> NARA Format Name='Quattro Pro Spreadsheet for Windows 1-5',individual
+fmt/835,NF00529,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Quattro Pro Spreadsheet for Windows 6' -> NARA Format Name='Quattro Pro Spreadsheet for Windows 6',individual
+fmt/836,NF00527,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Quattro Pro Spreadsheet 7-8' -> NARA Format Name='Quattro Pro Spreadsheet 7-8',individual
+fmt/866,NF00888,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Apple Safari Webarchive' -> NARA Format Name='Apple Safari Web Archive',individual
+fmt/869,NF00833,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='CDX Internet Archive Index' -> NARA Format Name='CDX Internet Archive Index',individual
+fmt/886,NF00775,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='HTML Components' -> NARA Format Name='HTML Components',individual
+fmt/91,NF00401,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Scalable Vector Graphics 1.0' -> NARA Format Name='Scalable Vector Graphics 1.0',individual
+fmt/92,NF00402,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Scalable Vector Graphics 1.1' -> NARA Format Name='Scalable Vector Graphics 1.1',individual
+fmt/924,NF00300,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Visio Drawing 2013' -> NARA Format Name='Microsoft Visio Drawing 2013',individual
+fmt/94,NF00830,PRONOM-alias exact,PRONOM-alias='VRML (97)' -> NARA Format Name='VRML97',individual
+fmt/941,NF00734,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Back Up File' -> NARA Format Name='Backup File',individual
+fmt/97,NF00569,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Hypertext Markup Language 2.0' -> NARA Format Name='Hypertext Markup Language 2.0',individual
+fmt/978,NF00100,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='3DS Max' -> NARA Format Name='3DS Max',individual
+fmt/98,NF00570,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Hypertext Markup Language 3.2' -> NARA Format Name='Hypertext Markup Language 3.2',individual
+fmt/99,NF00571,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Hypertext Markup Language 4.0' -> NARA Format Name='Hypertext Markup Language 4.0',individual
+fmt/990,NF00836,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='ESRI File Geodatabase' -> NARA Format Name='ESRI File Geodatabase',individual
+x-fmt/101,NF00490,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Harvard Graphics Show 3.0' -> NARA Format Name='Harvard Graphics Show 3.0',individual
+x-fmt/113,NF00506,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Visio Drawing 5.0' -> NARA Format Name='Microsoft Visio Drawing 5.0',individual
+x-fmt/114,NF00229,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Lotus 1-2-3 Worksheet 2.0' -> NARA Format Name='Lotus 1-2-3 Worksheet 2.0',individual
+x-fmt/115,NF00230,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Lotus 1-2-3 Worksheet 3.0' -> NARA Format Name='Lotus 1-2-3 Worksheet 3.0',individual
+x-fmt/116,NF00231,Interne PRONOM-signatuur exact,Interne PRONOM-signatuur='Lotus 123 Worksheet 4.0-5.0' -> NARA Format Name='Lotus 1-2-3 Worksheet 4.0/5.0',individual
+x-fmt/121,NF00390,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Quattro Pro Spreadsheet for DOS 1-4' -> NARA Format Name='Quattro Pro Spreadsheet for DOS 1-4',individual
+x-fmt/128,NF00273,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Excel Workspace' -> NARA Format Name='Microsoft Excel Workspace',individual
+x-fmt/13,NF00418,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Tab-separated values' -> NARA Format Name='Tab Separated Values',individual
+x-fmt/143,NF00351,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='OS/2 Change Control File' -> NARA Format Name='OS/2 Change Control File',individual
+x-fmt/161,NF00241,PRONOM-formatnaam exact,PRONOM-formatnaam='MacPaint Image' -> NARA Format Name='MacPaint Image',shared_family
+x-fmt/167,NF00104,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Adobe PhotoDeluxe' -> NARA Format Name='Adobe PhotoDeluxe',individual
+x-fmt/17,NF00770,PRONOM-formatnaam exact,PRONOM-formatnaam='Microsoft Excel Template' -> NARA Format Name='Microsoft Excel Template',shared_family
+x-fmt/173,NF00352,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='PageMaker Document 5.0' -> NARA Format Name='PageMaker Document 5.0',individual
+x-fmt/18,NF00143,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Comma Separated Values' -> NARA Format Name='Comma Separated Values',individual
+x-fmt/184,NF00417,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Sun Raster Image' -> NARA Format Name='Sun Raster Image',individual
+x-fmt/185,NF00395,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Raw Bitmap' -> NARA Format Name='Raw Bitmap',individual
+x-fmt/190,NF00396,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='RealMedia' -> NARA Format Name='RealMedia',individual
+x-fmt/195,NF00410,PRONOM-alias via NARA-afkorting,PRONOM-alias='SGML' -> NARA Format Name='Standard Generalized Markup Language (SGML)',individual
+x-fmt/198,NF00353,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Pagemaker TableEditor Graphics' -> NARA Format Name='PageMaker TableEditor Graphics',individual
+x-fmt/202,NF00149,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Corel Wavelet Compressed Bitmap' -> NARA Format Name='Corel Wavelet Compressed Bitmap',individual
+x-fmt/227,NF00200,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Geography Markup Language' -> NARA Format Name='Geography Markup Language',shared_family
+x-fmt/23,NF00264,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Excel Backup' -> NARA Format Name='Microsoft Excel Backup',individual
+x-fmt/243,NF00679,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Project 4.0' -> NARA Format Name='Microsoft Project 4.0',individual
+x-fmt/244,NF00680,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Project 95' -> NARA Format Name='Microsoft Project 95',individual
+x-fmt/245,NF00681,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Project 98' -> NARA Format Name='Microsoft Project 98',individual
+x-fmt/247,NF00682,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Project 2000-2003' -> NARA Format Name='Microsoft Project 2000-2003',individual
+x-fmt/25,NF00350,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='OS/2 Bitmap 1.0' -> NARA Format Name='OS/2 Bitmap 1.0',individual
+x-fmt/252,NF00293,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Publisher 2.0' -> NARA Format Name='Microsoft Publisher 2.0',individual
+x-fmt/253,NF00296,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Publisher 95' -> NARA Format Name='Microsoft Publisher 95',individual
+x-fmt/254,NF00297,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Publisher 97' -> NARA Format Name='Microsoft Publisher 97',individual
+x-fmt/255,NF00298,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Publisher 98' -> NARA Format Name='Microsoft Publisher 98',individual
+x-fmt/256,NF00294,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Publisher 2000' -> NARA Format Name='Microsoft Publisher 2000',individual
+x-fmt/257,NF00295,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Publisher 2002' -> NARA Format Name='Microsoft Publisher 2002',individual
+x-fmt/258,NF00503,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Visio Drawing 2000' -> NARA Format Name='Microsoft Visio Drawing 2000',individual
+x-fmt/259,NF00504,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Visio Drawing 2002' -> NARA Format Name='Microsoft Visio Drawing 2002',individual
+x-fmt/265,NF00423,PRONOM-alias via NARA-afkorting,PRONOM-alias='tar' -> NARA Format Name='Tape Archive Format (TAR)',individual
+x-fmt/270,NF00515,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='OS/2 Bitmap 2.0' -> NARA Format Name='OS/2 Bitmap 2.0',individual
+x-fmt/278,NF00604,PRONOM-formatnaam exact,PRONOM-formatnaam='RealAudio' -> NARA Format Name='RealAudio',shared_family
+x-fmt/28,NF00139,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='CALS Compressed Bitmap' -> NARA Format Name='CALS Compressed Bitmap',individual
+x-fmt/294,NF00251,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Micrografx Draw 3.0' -> NARA Format Name='Micrografx Draw 3.0',individual
+x-fmt/295,NF00252,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Micrografx Draw 4.0' -> NARA Format Name='Micrografx Draw 4.0',individual
+x-fmt/296,NF00249,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Micrografx Designer 3.1' -> NARA Format Name='Micrografx Designer 3.1',individual
+x-fmt/312,NF00157,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='DesignCAD Drawing' -> NARA Format Name='DesignCAD Drawing',individual
+x-fmt/313,NF00479,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='DesignCAD for Windows Drawing' -> NARA Format Name='DesignCAD for Windows Drawing',individual
+x-fmt/32,NF00566,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Harvard Graphics Chart 3.0' -> NARA Format Name='Harvard Graphics Chart 3.0',individual
+x-fmt/321,NF00197,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Framework Database II' -> NARA Format Name='Framework Database II',individual
+x-fmt/324,NF00205,Interne PRONOM-signatuur exact,Interne PRONOM-signatuur='Harvard Graphics Show 2.0' -> NARA Format Name='Harvard Graphics Show 2.0',individual
+x-fmt/329,NF00213,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Interleaf Document' -> NARA Format Name='Interleaf Document',individual
+x-fmt/332,NF00776,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Lotus 1-2-3 Spreadsheet Formatting File 3.0' -> NARA Format Name='Lotus 1-2-3 Spreadsheet Formatting file 3.0',individual
+x-fmt/335,NF00236,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Lotus Freelance Smartmaster Graphics' -> NARA Format Name='Lotus Freelance Smartmaster Graphics',individual
+x-fmt/336,NF00237,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Lotus Notes Database 2' -> NARA Format Name='Lotus Notes Database 2',individual
+x-fmt/337,NF00238,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Lotus Notes Database 3' -> NARA Format Name='Lotus Notes Database 3',individual
+x-fmt/338,NF00239,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Lotus Notes Database 4' -> NARA Format Name='Lotus Notes Database 4',individual
+x-fmt/346,NF00333,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microstation CAD Drawing 95' -> NARA Format Name='Microstation CAD Drawing 95',individual
+x-fmt/349,NF00342,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Nota Bene Text File' -> NARA Format Name='Nota Bene Text File',individual
+x-fmt/350,NF00344,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='OmniPage Pro Document 5-9' -> NARA Format Name='OmniPage Pro Document 5-9',individual
+x-fmt/355,NF00399,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='SAS Data File' -> NARA Format Name='SAS Data File',individual
+x-fmt/356,NF00400,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='SAS for MS-DOS Database' -> NARA Format Name='SAS for MS-DOS Database',individual
+x-fmt/369,NF00436,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Vista Pro Graphics' -> NARA Format Name='Vista Pro Graphics',individual
+x-fmt/384,NF00393,PRONOM-alias via NARA-afkorting,PRONOM-alias='MOV' -> NARA Format Name='QuickTime File Format (MOV)',individual
+x-fmt/385,NF00336,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='MPEG-1 Program Stream' -> NARA Format Name='MPEG-1 Program Stream',individual
+x-fmt/386,NF00778,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='MPEG-2 Program Stream' -> NARA Format Name='MPEG-2 Program Stream',individual
+x-fmt/387,NF00181,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Exchangeable Image File Format (Uncompressed) 2.2' -> NARA Format Name='Exchangeable Image File Format Uncompressed 2.2',individual
+x-fmt/388,NF00180,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Exchangeable Image File Format (Uncompressed) 2.1' -> NARA Format Name='Exchangeable Image File Format Uncompressed 2.1',individual
+x-fmt/390,NF00178,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Exchangeable Image File Format (Compressed) 2.1' -> NARA Format Name='Exchangeable Image File Format Compressed 2.1',individual
+x-fmt/391,NF00179,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Exchangeable Image File Format (Compressed) 2.2' -> NARA Format Name='Exchangeable Image File Format Compressed 2.2',individual
+x-fmt/395,NF00787,Interne PRONOM-signatuur exact,Interne PRONOM-signatuur='WordPerfect Graphics 1.0' -> NARA Format Name='WordPerfect Graphics 1.0',individual
+x-fmt/396,NF00176,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Exchangeable Image File Format (Audio) 2.2' -> NARA Format Name='Exchangeable Image File Format Audio 2.2',individual
+x-fmt/398,NF00177,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Exchangeable Image File Format (Compressed) 2.0' -> NARA Format Name='Exchangeable Image File Format Compressed 2.0',individual
+x-fmt/406,NF00384,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='PostScript 2.0' -> NARA Format Name='PostScript 2.0',individual
+x-fmt/408,NF00385,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='PostScript 3.0' -> NARA Format Name='PostScript 3.0',individual
+x-fmt/414,NF00445,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Windows Cabinet File' -> NARA Format Name='Windows Cabinet File',individual
+x-fmt/418,NF00210,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Icon file format' -> NARA Format Name='Icon file format',individual
+x-fmt/429,NF00334,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='MHTML' -> NARA Format Name='MHTML',individual
+x-fmt/43,NF00456,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Wordperfect Secondary File 5.1/5.2' -> NARA Format Name='WordPerfect Secondary File 5.1/5.2',individual
+x-fmt/453,NF00427,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='TrueType Font' -> NARA Format Name='TrueType Font',individual
+x-fmt/455,NF00120,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='AutoCAD Drawing 2007-2008' -> NARA Format Name='AutoCAD Drawing (2007-2008)',individual
+x-fmt/62,NF00227,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Log File' -> NARA Format Name='Log File',individual
+x-fmt/67,NF00248,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Met Metafile' -> NARA Format Name='MET Metafile',individual
+x-fmt/82,NF00233,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Lotus 1-2-3 Chart' -> NARA Format Name='Lotus 1-2-3 Chart',individual
+x-fmt/83,NF00207,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Hewlett Packard Vector Graphic Plotter File' -> NARA Format Name='Hewlett Packard Vector Graphic Plotter File',individual
+x-fmt/88,NF00290,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Microsoft Powerpoint Presentation 4.0' -> NARA Format Name='Microsoft PowerPoint Presentation 4.0',individual
+x-fmt/92,NF00105,Wegwijzer-profielnaam exact,Wegwijzer-profielnaam='Adobe Photoshop' -> NARA Format Name='Adobe Photoshop',individual

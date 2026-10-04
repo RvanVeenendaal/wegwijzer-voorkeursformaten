@@ -12,10 +12,11 @@ import yaml
 ROOT = Path(__file__).resolve().parent.parent
 SOURCE_PATH = ROOT / "data" / "pronom_catalog.json"
 TAXONOMY_PATH = ROOT / "data" / "pronom_taxonomy.yaml"
+FORMAT_PROFILES_PATH = ROOT / "data" / "format_profiles.json"
 OUTPUT_PATH = ROOT / "site" / "pronom-catalog.json"
 
 
-def verrijk_pronom_catalogus(catalogus, taxonomy):
+def verrijk_pronom_catalogus(catalogus, taxonomy, format_profiles=None):
     if taxonomy.get("schema_versie") != 1:
         raise ValueError("pronom_taxonomy.yaml moet schema_versie 1 hebben")
 
@@ -26,6 +27,13 @@ def verrijk_pronom_catalogus(catalogus, taxonomy):
     mappings = taxonomy.get("type_naar_toepassingsgebied", {})
     overrides = taxonomy.get("familie_overrides", {})
     bekende_gebieden = set(application_areas)
+    if format_profiles is None:
+        format_profiles = {}
+    if not isinstance(format_profiles, dict):
+        raise ValueError("format_profiles.json moet records per PUID bevatten")
+    unknown_puids = set(format_profiles) - set(catalogus.get("records", {}))
+    if unknown_puids:
+        raise ValueError(f"onbekende PUID's in formaatprofielen: {sorted(unknown_puids)}")
     for type_naam, gebieden in mappings.items():
         onbekend = set(gebieden) - bekende_gebieden
         if onbekend:
@@ -64,6 +72,7 @@ def verrijk_pronom_catalogus(catalogus, taxonomy):
     catalogus["browse_taxonomy_version"] = taxonomy["schema_versie"]
     catalogus["browse_application_areas"] = application_areas
     catalogus["browse_unassigned_count"] = niet_ingedeeld
+    catalogus["format_profiles"] = format_profiles
     return catalogus
 
 
@@ -76,7 +85,10 @@ def main():
 
     catalogus = json.loads(args.source.read_text(encoding="utf-8"))
     taxonomy = yaml.safe_load(args.taxonomy.read_text(encoding="utf-8")) or {}
-    enriched = verrijk_pronom_catalogus(catalogus, taxonomy)
+    profile_document = json.loads(FORMAT_PROFILES_PATH.read_text(encoding="utf-8"))
+    if profile_document.get("schema_version") != 1:
+        raise ValueError("format_profiles.json moet schema_version 1 hebben")
+    enriched = verrijk_pronom_catalogus(catalogus, taxonomy, profile_document.get("records", {}))
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(
         json.dumps(enriched, ensure_ascii=False, indent=2) + "\n",
